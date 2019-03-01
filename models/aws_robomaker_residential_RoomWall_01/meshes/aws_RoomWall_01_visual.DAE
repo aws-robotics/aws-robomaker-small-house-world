@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-10T11:30:26Z</created><keywords></keywords><modified>2018-10-10T11:30:26Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_images>
+    <image id="Map #6-image" name="Map #6"><init_from>../materials/textures/aws_RoomWall_01.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="Material #112" name="Material #112">
+      <instance_effect url="#Material #112-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Material #112-fx" name="Material #112">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #6-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_RoomWall_01_visual-lib" name="aws_RoomWall_01_visualMesh">
+      <mesh>
+        <source id="aws_RoomWall_01_visual-POSITION">
+          <float_array id="aws_RoomWall_01_visual-POSITION-array" count="84">
+-338.841492 -10.498962 0.000000
+340.341492 -8.998962 1.500000
+-340.341492 8.998962 0.000000
+338.841492 10.498962 0.000000
+-338.841492 -10.498962 308.220184
+340.341492 -8.998962 308.220184
+-340.341492 8.998962 308.220184
+338.841492 10.498962 308.220184
+-340.341492 -8.998962 0.000000
+338.841492 -10.498962 0.000000
+-338.841492 10.498962 0.000000
+340.341492 8.998962 1.500000
+-338.841492 -8.998962 309.720184
+-340.341492 -8.998962 308.220184
+338.841492 -8.998962 309.720184
+338.841492 -10.498962 308.220184
+-338.841492 8.998962 309.720184
+-338.841492 10.498962 308.220184
+338.841492 8.998962 309.720184
+340.341492 8.998962 308.220184
+-320.563263 -10.498960 262.339813
+320.563263 -10.498960 262.339813
+320.563263 -10.498960 286.235382
+-320.563263 -10.498960 286.235382
+320.563263 10.498960 262.339813
+-320.563263 10.498960 262.339813
+-320.563263 10.498960 286.235382
+320.563263 10.498960 286.235382
+</float_array>
+          <technique_common>
+            <accessor source="#aws_RoomWall_01_visual-POSITION-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_RoomWall_01_visual-Normal0">
+          <float_array id="aws_RoomWall_01_visual-Normal0-array" count="324">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-0.577350 -0.577350 0.577350
+-0.577350 -0.577350 0.577350
+-0.577350 -0.577350 0.577350
+0.577350 -0.577350 0.577350
+0.577350 -0.577350 0.577350
+0.577350 -0.577350 0.577350
+-0.577350 0.577350 0.577350
+-0.577350 0.577350 0.577350
+-0.577350 0.577350 0.577350
+0.577350 0.577350 0.577350
+0.577350 0.577350 0.577350
+0.577350 0.577350 0.577350
+0.707107 0.000000 -0.707107
+0.707107 0.000000 -0.707107
+0.707107 0.000000 -0.707107
+0.707107 0.000000 -0.707107
+0.000000 -0.707107 0.707107
+0.000000 -0.707107 0.707107
+0.000000 -0.707107 0.707107
+0.000000 -0.707107 0.707107
+0.707107 0.000000 0.707107
+0.707107 0.000000 0.707107
+0.707107 0.000000 0.707107
+0.707107 0.000000 0.707107
+0.000000 0.707107 0.707107
+0.000000 0.707107 0.707107
+0.000000 0.707107 0.707107
+0.000000 0.707107 0.707107
+-0.707107 0.000000 0.707107
+-0.707107 0.000000 0.707107
+-0.707107 0.000000 0.707107
+-0.707107 0.000000 0.707107
+0.707107 -0.707107 0.000000
+0.707107 -0.707107 0.000000
+0.707107 -0.707107 0.000000
+0.707107 -0.707107 0.000000
+-0.707107 -0.707107 0.000000
+-0.707107 -0.707107 0.000000
+-0.707107 -0.707107 0.000000
+-0.707107 -0.707107 0.000000
+0.707107 0.707107 0.000000
+0.707107 0.707107 0.000000
+0.707107 0.707107 0.000000
+0.707107 0.707107 0.000000
+-0.707107 0.707107 0.000000
+-0.707107 0.707107 0.000000
+-0.707107 0.707107 0.000000
+-0.707107 0.707107 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+-0.000000 -1.000000 -0.000000
+-0.000000 -1.000000 -0.000000
+-0.000000 -1.000000 -0.000000
+-0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_RoomWall_01_visual-Normal0-array" count="108" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_RoomWall_01_visual-UV0">
+          <float_array id="aws_RoomWall_01_visual-UV0-array" count="86">
+2.665633 1.192544
+0.209954 1.192544
+0.209847 1.127563
+2.664345 1.127563
+-2.313082 1.127501
+-2.313082 1.122081
+2.738556 1.120401
+0.135715 1.122138
+0.141416 0.013625
+0.206459 0.013625
+0.141811 1.122138
+0.206178 1.122081
+0.212160 1.122081
+2.660676 1.122081
+2.666377 0.008204
+2.731421 0.008204
+2.666658 1.122081
+2.731373 1.122092
+2.733934 1.127524
+0.139441 1.127606
+0.135995 0.008204
+-2.313082 0.008204
+0.211880 0.008204
+2.738510 0.006535
+2.660957 0.008204
+2.514361 1.728517
+0.024688 1.652633
+0.111044 1.652633
+2.428006 1.728517
+0.111044 1.728517
+2.428006 1.652633
+2.514361 1.652633
+0.024688 1.728517
+2.594901 0.956274
+0.277935 0.956274
+2.594901 1.042630
+0.277935 1.042630
+0.069940 0.956274
+-2.247026 0.956274
+0.069940 1.042630
+-2.247026 1.042630
+-2.292278 1.728517
+-2.292278 1.652633
+</float_array>
+          <technique_common>
+            <accessor source="#aws_RoomWall_01_visual-UV0-array" count="43" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_RoomWall_01_visual-VERTEX">
+          <input semantic="POSITION" source="#aws_RoomWall_01_visual-POSITION"/>
+        </vertices>
+        <polylist count="28" material="Material #112"><input semantic="VERTEX" offset="0" source="#aws_RoomWall_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_RoomWall_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_RoomWall_01_visual-UV0"/><vcount>4 4 4 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount><p> 12 0 0 14 1 1 18 2 2 16 3 3 1 4 8 11 5 9 19 6 11 5 7 10 2 8 14 8 9 15 13 10 17 6 11 16 4 12 6 12 13 18 13 14 17 5 15 10 14 16 19 15 17 7 6 18 16 16 19 3 17 20 13 7 21 12 18 22 2 19 23 11 1 24 8 9 25 20 3 26 22 11 27 9 12 28 4 4 29 5 15 30 7 14 31 19 14 32 19 5 33 10 19 34 11 18 35 2 18 36 2 7 37 12 17 38 13 16 39 3 16 40 3 6 41 16 13 42 17 12 43 18 9 44 20 1 45 8 5 46 10 15 47 7 4 48 6 13 49 17 8 50 15 0 51 23 11 52 9 3 53 22 7 54 12 19 55 11 10 56 24 2 57 14 6 58 16 17 59 13 0 60 21 9 61 20 21 62 37 20 63 38 9 64 20 15 65 7 22 66 39 21 67 37 15 68 7 4 69 5 23 70 40 22 71 39 4 72 5 0 73 21 20 74 38 23 75 40 3 76 22 10 77 24 25 78 33 24 79 34 10 80 24 17 81 13 26 82 35 25 83 33 17 84 13 7 85 12 27 86 36 26 87 35 7 88 12 3 89 22 24 90 34 27 91 36 25 92 41 20 93 42 21 94 26 24 95 32 22 96 27 27 97 29 24 98 32 21 99 26 23 100 30 26 101 28 27 102 29 22 103 27 26 104 28 23 105 30 20 106 31 25 107 25</p></polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_RoomWall_01_visual" name="aws_RoomWall_01_visual">
+      <node name="aws_RoomWall_01_visual" id="aws_RoomWall_01_visual" sid="aws_RoomWall_01_visual"><matrix sid="matrix">0.650818 0.000000 0.000000 0.000000 0.000000 0.499083 0.000000 0.000000 0.000000 0.000000 0.599128 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_RoomWall_01_visual-lib"><bind_material><technique_common><instance_material symbol="Material #112" target="#Material #112"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_RoomWall_01_visual"></instance_visual_scene>
+  </scene>
+</COLLADA>

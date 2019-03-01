@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-15T12:12:47Z</created><keywords></keywords><modified>2018-10-15T12:12:47Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_materials>
+    <material id="UCX_aws_RangeFBXASC032hood_01_default" name="UCX_aws_RangeFBXASC032hood_01_default">
+      <instance_effect url="#UCX_aws_RangeFBXASC032hood_01_default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="UCX_aws_RangeFBXASC032hood_01_default-fx" name="UCX_aws_RangeFBXASC032hood_01_default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.588000  0.588000 0.588000 1.000000</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_Rangehood_01_collision-lib" name="aws_Rangehood_01_collisionMesh">
+      <mesh>
+        <source id="aws_Rangehood_01_collision-POSITION">
+          <float_array id="aws_Rangehood_01_collision-POSITION-array" count="48">
+-41.160099 48.019199 27.688999
+-41.160099 48.019199 205.415405
+39.579899 48.019199 205.415405
+39.579899 48.019199 27.688999
+-41.160099 -11.484100 27.688999
+39.579899 -11.484100 27.688999
+39.579899 -11.484100 205.415298
+-41.160099 -11.484100 205.415298
+-113.934196 -54.641701 -3.355700
+-113.934196 48.402000 -3.355700
+114.538200 48.402000 -3.355700
+114.538200 -54.641701 -3.355700
+-113.934196 -54.641701 28.851900
+114.538200 -54.641701 28.851900
+114.538200 48.402000 28.851900
+-113.934196 48.402000 28.851900
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Rangehood_01_collision-POSITION-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_Rangehood_01_collision-Normal0">
+          <float_array id="aws_Rangehood_01_collision-Normal0-array" count="216">
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Rangehood_01_collision-Normal0-array" count="72" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_Rangehood_01_collision-UV0">
+          <float_array id="aws_Rangehood_01_collision-UV0-array" count="8">
+1.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Rangehood_01_collision-UV0-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_Rangehood_01_collision-VERTEX">
+          <input semantic="POSITION" source="#aws_Rangehood_01_collision-POSITION"/>
+        </vertices>
+        <polylist count="24" material="UCX_aws_RangeFBXASC032hood_01_default"><input semantic="VERTEX" offset="0" source="#aws_Rangehood_01_collision-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_Rangehood_01_collision-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_Rangehood_01_collision-UV0"/><vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount><p> 1 0 1 2 1 2 3 2 3 3 3 3 0 4 0 1 5 1 5 6 0 6 7 1 7 8 2 7 9 2 4 10 3 5 11 0 3 12 0 5 13 1 4 14 2 4 15 2 0 16 3 3 17 0 2 18 0 6 19 1 5 20 2 5 21 2 3 22 3 2 23 0 1 24 0 7 25 1 6 26 2 6 27 2 2 28 3 1 29 0 0 30 0 4 31 1 7 32 2 7 33 2 1 34 3 0 35 0 9 36 1 10 37 2 11 38 3 11 39 3 8 40 0 9 41 1 13 42 0 14 43 1 15 44 2 15 45 2 12 46 3 13 47 0 11 48 0 13 49 1 12 50 2 12 51 2 8 52 3 11 53 0 10 54 0 14 55 1 13 56 2 13 57 2 11 58 3 10 59 0 9 60 0 15 61 1 14 62 2 14 63 2 10 64 3 9 65 0 8 66 0 12 67 1 15 68 2 15 69 2 9 70 3 8 71 0</p></polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_Rangehood_01_collision" name="aws_Rangehood_01_collision">
+      <node name="aws_Rangehood_01_collision" id="aws_Rangehood_01_collision" sid="aws_Rangehood_01_collision"><matrix sid="matrix">-0.000000 0.545103 0.000000 0.000000 -0.545103 -0.000000 0.000000 0.000000 0.000000 0.000000 0.545103 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_Rangehood_01_collision-lib"><bind_material><technique_common><instance_material symbol="UCX_aws_RangeFBXASC032hood_01_default" target="#UCX_aws_RangeFBXASC032hood_01_default"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_Rangehood_01_collision"></instance_visual_scene>
+  </scene>
+</COLLADA>

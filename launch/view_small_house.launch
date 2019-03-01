@@ -1,0 +1,6 @@
+<launch>
+  <!-- Show Gazebo GUI on launch -->
+  <include file="$(find aws_robomaker_small_house_world)/launch/small_house.launch">
+    <arg name="gui" value="true"/>
+  </include>
+</launch>

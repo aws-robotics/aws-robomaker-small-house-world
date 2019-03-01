@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="aws_robomaker_residential_CoffeeTable_01">
+    <link name="link">
+      <inertial>
+        <mass>21.7</mass>
+
+        <inertia>
+          <ixx>0.8137499999999998</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.76675</iyy>
+          <iyz>0</iyz>
+          <izz>3.254</izz>
+        </inertia>
+
+
+      </inertial>
+      
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>file://models/aws_robomaker_residential_CoffeeTable_01/meshes/aws_CoffeeTable_01_collision.DAE</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+
+        <surface>
+          <contact>
+            <ode>
+              <max_vel>0.01</max_vel>
+            </ode>
+          </contact>
+         </surface>
+      </collision>
+
+      <visual name="visual">
+	    <geometry>
+          <mesh>
+            <uri>file://models/aws_robomaker_residential_CoffeeTable_01/meshes/aws_CoffeeTable_01_visual.DAE</uri>
+          </mesh>
+        </geometry>
+      <meta> <layer> 1 </layer></meta>
+</visual>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>

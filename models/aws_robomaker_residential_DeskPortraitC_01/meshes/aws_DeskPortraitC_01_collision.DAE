@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-26T09:16:00Z</created><keywords></keywords><modified>2018-10-26T09:16:00Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_materials>
+    <material id="_01 - Default" name="_01 - Default">
+      <instance_effect url="#_01 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_01 - Default-fx" name="_01 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.588235  0.588235 0.588235 1.000000</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_DeskPortraitC_01_collision-lib" name="aws_DeskPortraitC_01_collisionMesh">
+      <mesh>
+        <source id="aws_DeskPortraitC_01_collision-POSITION">
+          <float_array id="aws_DeskPortraitC_01_collision-POSITION-array" count="48">
+-4.379550 -0.222730 -8.523986
+-3.140603 -0.222730 -8.523986
+-4.379550 16.949585 -8.523987
+-3.140603 16.949585 -8.523987
+-4.379551 -0.222729 8.511460
+-3.140604 -0.222729 8.511459
+-4.379551 16.949585 8.511458
+-3.140603 16.949585 8.511457
+-3.140603 11.161187 -1.849927
+-3.140603 12.424191 -1.849927
+-3.140603 12.424191 2.039698
+-3.140603 11.161187 2.039698
+3.723309 -0.220351 -1.849927
+4.332748 -0.222851 -1.849927
+4.332747 -0.222851 2.039699
+3.723309 -0.220351 2.039699
+</float_array>
+          <technique_common>
+            <accessor source="#aws_DeskPortraitC_01_collision-POSITION-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_DeskPortraitC_01_collision-Normal0">
+          <float_array id="aws_DeskPortraitC_01_collision-Normal0-array" count="252">
+0.000000 -0.000000 -1.000000
+0.000000 -0.000000 -1.000000
+0.000000 -0.000000 -1.000000
+0.000000 -0.000000 -1.000000
+0.000000 -0.000000 -1.000000
+0.000000 -0.000000 -1.000000
+0.000001 0.000000 1.000000
+0.000001 0.000000 1.000000
+0.000001 0.000000 1.000000
+0.000001 0.000000 1.000000
+0.000001 0.000000 1.000000
+0.000001 0.000000 1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+-0.004101 -0.999992 -0.000000
+-0.004101 -0.999992 -0.000000
+-0.004101 -0.999992 -0.000000
+-0.004101 -0.999992 -0.000000
+-0.004101 -0.999992 -0.000000
+-0.004101 -0.999992 -0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 -0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.860924 0.508734 0.000000
+0.860924 0.508734 0.000000
+0.860924 0.508734 0.000000
+0.860924 0.508734 0.000000
+0.860924 0.508734 0.000000
+0.860924 0.508734 0.000000
+-0.000001 -0.000000 1.000000
+-0.000001 -0.000000 1.000000
+-0.000001 -0.000000 1.000000
+-0.000001 -0.000000 1.000000
+-0.000001 -0.000000 1.000000
+-0.000001 -0.000000 1.000000
+-0.856329 -0.516430 0.000000
+-0.856329 -0.516430 0.000000
+-0.856329 -0.516430 0.000000
+-0.856329 -0.516430 0.000000
+-0.856329 -0.516430 0.000000
+-0.856329 -0.516430 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_DeskPortraitC_01_collision-Normal0-array" count="84" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_DeskPortraitC_01_collision-UV0">
+          <float_array id="aws_DeskPortraitC_01_collision-UV0-array" count="64">
+1.000000 0.000000
+0.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_DeskPortraitC_01_collision-UV0-array" count="32" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_DeskPortraitC_01_collision-VERTEX">
+          <input semantic="POSITION" source="#aws_DeskPortraitC_01_collision-POSITION"/>
+        </vertices>
+        <triangles count="28" material="_01 - Default"><input semantic="VERTEX" offset="0" source="#aws_DeskPortraitC_01_collision-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_DeskPortraitC_01_collision-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_DeskPortraitC_01_collision-UV0"/><p> 3 0 3 1 1 1 0 2 0 0 3 0 2 4 2 3 5 3 6 6 6 4 7 4 7 8 7 7 9 7 4 10 4 5 11 5 4 12 10 0 13 8 5 14 11 5 15 11 0 16 8 1 17 9 15 18 31 13 19 29 14 20 30 13 21 29 15 22 31 12 23 28 7 24 18 2 25 17 6 26 19 2 27 17 7 28 18 3 29 16 6 30 22 0 31 21 4 32 23 0 33 21 6 34 22 2 35 20 3 36 13 8 37 24 1 38 12 8 39 24 3 40 13 9 41 25 7 42 15 9 43 25 3 44 13 9 45 25 7 46 15 10 47 26 5 48 14 11 49 27 7 50 15 7 51 15 11 52 27 10 53 26 11 54 27 5 55 14 8 56 24 5 57 14 1 58 12 8 59 24 9 60 25 13 61 29 8 62 24 8 63 24 13 64 29 12 65 28 10 66 26 13 67 29 9 68 25 13 69 29 10 70 26 14 71 30 14 72 30 11 73 27 15 74 31 11 75 27 14 76 30 10 77 26 8 78 24 12 79 28 11 80 27 15 81 31 11 82 27 12 83 28</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_DeskPortraitC_01_collision" name="aws_DeskPortraitC_01_collision">
+      <node name="aws_DeskPortraitC_01_collision" id="aws_DeskPortraitC_01_collision" sid="aws_DeskPortraitC_01_collision"><matrix sid="matrix">-0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_DeskPortraitC_01_collision-lib"><bind_material><technique_common><instance_material symbol="_01 - Default" target="#_01 - Default"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_DeskPortraitC_01_collision"></instance_visual_scene>
+  </scene>
+</COLLADA>

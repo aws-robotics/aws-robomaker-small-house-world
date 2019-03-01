@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-24T10:15:20Z</created><keywords></keywords><modified>2018-10-24T10:15:20Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_images>
+    <image id="Map #1-image" name="Map #1"><init_from>../materials/textures/aws_FloorB_01.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="Material #76" name="Material #76">
+      <instance_effect url="#Material #76-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Material #76-fx" name="Material #76">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_FloorB_01_visual-lib" name="aws_FloorB_01_visualMesh">
+      <mesh>
+        <source id="aws_FloorB_01_visual-POSITION">
+          <float_array id="aws_FloorB_01_visual-POSITION-array" count="30">
+-9.500000 -5.700004 -0.000050
+9.500000 -5.700004 -0.000050
+-9.500000 3.299996 -0.000050
+-2.500000 3.299996 -0.000050
+9.500000 3.299996 -0.000050
+-2.500000 5.699996 -0.000050
+4.897736 -5.700004 -0.000050
+4.836213 3.299996 -0.000050
+4.836213 5.700004 -0.000050
+-2.500000 -5.700004 -0.000050
+</float_array>
+          <technique_common>
+            <accessor source="#aws_FloorB_01_visual-POSITION-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_FloorB_01_visual-Normal0">
+          <float_array id="aws_FloorB_01_visual-Normal0-array" count="72">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_FloorB_01_visual-Normal0-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_FloorB_01_visual-UV0">
+          <float_array id="aws_FloorB_01_visual-UV0-array" count="20">
+2.020248 -2.494665
+2.020356 3.139271
+-0.648667 -2.494813
+-0.648763 -0.418962
+-0.648550 3.139495
+-1.360479 -0.418930
+2.020313 1.774538
+-0.648646 1.756562
+-1.360416 1.756605
+2.020196 -0.418908
+</float_array>
+          <technique_common>
+            <accessor source="#aws_FloorB_01_visual-UV0-array" count="10" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_FloorB_01_visual-UV1">
+          <float_array id="aws_FloorB_01_visual-UV1-array" count="20">
+0.000500 0.900084
+0.288096 0.676398
+0.288096 0.900084
+0.000500 0.440003
+0.288096 0.441969
+0.000500 0.292937
+0.288096 0.292937
+0.364788 0.441969
+0.364788 0.676398
+0.000500 0.676398
+</float_array>
+          <technique_common>
+            <accessor source="#aws_FloorB_01_visual-UV1-array" count="10" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_FloorB_01_visual-VERTEX">
+          <input semantic="POSITION" source="#aws_FloorB_01_visual-POSITION"/>
+        </vertices>
+        <triangles count="8" material="Material #76"><input semantic="VERTEX" offset="0" source="#aws_FloorB_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_FloorB_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_FloorB_01_visual-UV0"/><input semantic="TEXCOORD" offset="3" set="1" source="#aws_FloorB_01_visual-UV1"/><p> 3 0 3 1 2 1 2 2 0 2 0 0 3 3 3 1 0 4 0 0 9 5 9 9 7 6 7 4 3 7 3 1 9 8 9 9 7 9 7 4 9 10 9 9 6 11 6 3 4 12 4 6 6 13 6 3 1 14 1 5 6 15 6 3 4 16 4 6 7 17 7 4 5 18 5 8 7 19 7 4 8 20 8 7 7 21 7 4 5 22 5 8 3 23 3 1</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_FloorB_01_visual" name="aws_FloorB_01_visual">
+      <node name="aws_FloorB_01_visual" id="aws_FloorB_01_visual" sid="aws_FloorB_01_visual"><matrix sid="matrix">100.000000 0.000000 0.000000 0.000000 0.000000 100.000000 0.000000 0.000000 0.000000 0.000000 100.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_FloorB_01_visual-lib"><bind_material><technique_common><instance_material symbol="Material #76" target="#Material #76"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_FloorB_01_visual"></instance_visual_scene>
+  </scene>
+</COLLADA>

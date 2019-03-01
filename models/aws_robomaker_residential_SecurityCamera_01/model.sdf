@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="aws_robomaker_residential_SecurityCamera_01">
+    <link name="link">
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>18.2222</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>18.2222</iyy>
+          <iyz>0</iyz>
+          <izz>0.0018767</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>file://models/aws_robomaker_residential_SecurityCamera_01/meshes/aws_SecurityCamera_01_collision.DAE</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	    <geometry>
+          <mesh>
+            <uri>file://models/aws_robomaker_residential_SecurityCamera_01/meshes/aws_SecurityCamera_01_visual.DAE</uri>
+          </mesh>
+        </geometry>
+        <meta>
+          <layer>2</layer>
+        </meta>
+      </visual>
+    </link>
+  </model>
+</sdf>

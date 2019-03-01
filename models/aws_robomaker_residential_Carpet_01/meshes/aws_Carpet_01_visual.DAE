@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-11-02T06:11:52Z</created><keywords></keywords><modified>2018-11-02T06:11:52Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_images>
+    <image id="Map #2-image" name="Map #2"><init_from>../materials/textures/aws_Carpet_01.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="Material #34" name="Material #34">
+      <instance_effect url="#Material #34-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Material #34-fx" name="Material #34">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #2-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_Carpet_01_visual-lib" name="aws_Carpet_01_visualMesh">
+      <mesh>
+        <source id="aws_Carpet_01_visual-POSITION">
+          <float_array id="aws_Carpet_01_visual-POSITION-array" count="24">
+-173.208344 -200.595978 0.000000
+173.208344 -200.595978 0.000000
+-173.208344 200.595978 0.000000
+173.208344 200.595978 0.000000
+-173.208344 -200.595978 0.200000
+173.208344 -200.595978 0.200000
+-173.208344 200.595978 0.200000
+173.208344 200.595978 0.200000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Carpet_01_visual-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_Carpet_01_visual-Normal0">
+          <float_array id="aws_Carpet_01_visual-Normal0-array" count="108">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Carpet_01_visual-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_Carpet_01_visual-UV0">
+          <float_array id="aws_Carpet_01_visual-UV0-array" count="72">
+1.450130 1.592581
+0.025897 1.592080
+0.026306 -0.752403
+1.450130 1.592581
+0.026306 -0.752403
+1.450538 -0.751900
+1.450538 -0.751900
+0.026306 -0.752403
+0.026102 -0.787734
+1.450538 -0.751900
+0.026102 -0.787734
+1.450333 -0.787231
+1.450130 1.592581
+1.450538 -0.751900
+1.479324 -0.752240
+1.450130 1.592581
+1.479324 -0.752240
+1.478917 1.592241
+0.025897 1.592080
+1.450130 1.592581
+1.450335 1.627911
+0.025897 1.592080
+1.450335 1.627911
+0.026102 1.627414
+0.026306 -0.752403
+0.025897 1.592080
+-0.002889 1.592420
+0.026306 -0.752403
+-0.002889 1.592420
+-0.002480 -0.752063
+1.479324 -0.752240
+0.026102 -0.787734
+-0.002889 1.592420
+1.479324 -0.752240
+-0.002889 1.592420
+1.450335 1.627911
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Carpet_01_visual-UV0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_Carpet_01_visual-UV1">
+          <float_array id="aws_Carpet_01_visual-UV1-array" count="72">
+0.487268 0.008217
+0.989352 0.008326
+0.989208 0.520433
+0.487268 0.008217
+0.989208 0.520433
+0.487124 0.520323
+0.487124 0.520323
+0.989208 0.520433
+0.989280 0.528150
+0.487124 0.520323
+0.989280 0.528150
+0.487196 0.528041
+0.487268 0.008217
+0.487124 0.520323
+0.476976 0.520397
+0.487268 0.008217
+0.476976 0.520397
+0.477120 0.008291
+0.989352 0.008326
+0.487268 0.008217
+0.487195 0.000500
+0.989352 0.008326
+0.487195 0.000500
+0.989280 0.000609
+0.989208 0.520433
+0.989352 0.008326
+0.999500 0.008252
+0.989208 0.520433
+0.999500 0.008252
+0.999356 0.520358
+0.475114 0.553825
+0.000500 0.553825
+0.000500 0.004165
+0.475114 0.553825
+0.000500 0.004165
+0.475114 0.004165
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Carpet_01_visual-UV1-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_Carpet_01_visual-VERTEX">
+          <input semantic="POSITION" source="#aws_Carpet_01_visual-POSITION"/>
+        </vertices>
+        <triangles count="12" material="Material #34"><input semantic="VERTEX" offset="0" source="#aws_Carpet_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_Carpet_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_Carpet_01_visual-UV0"/><input semantic="TEXCOORD" offset="3" set="1" source="#aws_Carpet_01_visual-UV1"/><p> 7 0 0 0 6 1 1 1 4 2 2 2 7 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 4 7 7 7 0 8 8 8 5 9 9 9 0 10 10 10 1 11 11 11 7 12 12 12 5 13 13 13 1 14 14 14 7 15 15 15 1 16 16 16 3 17 17 17 6 18 18 18 7 19 19 19 3 20 20 20 6 21 21 21 3 22 22 22 2 23 23 23 4 24 24 24 6 25 25 25 2 26 26 26 4 27 27 27 2 28 28 28 0 29 29 29 1 30 30 30 0 31 31 31 2 32 32 32 1 33 33 33 2 34 34 34 3 35 35 35</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_Carpet_01_visual" name="aws_Carpet_01_visual">
+      <node name="aws_Carpet_01_visual" id="aws_Carpet_01_visual" sid="aws_Carpet_01_visual"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_Carpet_01_visual-lib"><bind_material><technique_common><instance_material symbol="Material #34" target="#Material #34"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_Carpet_01_visual"></instance_visual_scene>
+  </scene>
+</COLLADA>

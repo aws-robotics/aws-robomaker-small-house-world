@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-15T11:34:48Z</created><keywords></keywords><modified>2018-10-15T11:34:48Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_materials>
+    <material id="MaterialFBXASC032FBXASC03525" name="MaterialFBXASC032FBXASC03525">
+      <instance_effect url="#MaterialFBXASC032FBXASC03525-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="MaterialFBXASC032FBXASC03525-fx" name="MaterialFBXASC032FBXASC03525">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.588000  0.588000 0.588000 1.000000</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.800000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_AirconditionerA_01_collision-lib" name="aws_AirconditionerA_01_collisionMesh">
+      <mesh>
+        <source id="aws_AirconditionerA_01_collision-POSITION">
+          <float_array id="aws_AirconditionerA_01_collision-POSITION-array" count="48">
+39.628132 -12.684523 4.580571
+59.112991 -12.684523 4.580571
+39.628132 37.552807 4.580572
+59.112991 37.552807 4.580571
+39.628132 -12.684523 10.362936
+59.112991 -12.684523 10.362935
+39.628132 37.552807 10.362937
+59.112991 37.552807 10.362936
+-40.586243 -0.271708 10.240864
+-40.586250 -0.271708 -10.901352
+-40.586220 25.346292 10.240862
+-40.586235 25.346292 -10.901354
+40.708267 -0.271716 10.240852
+40.708256 -0.271716 -10.901363
+40.708275 25.346285 10.240849
+40.708260 25.346285 -10.901367
+</float_array>
+          <technique_common>
+            <accessor source="#aws_AirconditionerA_01_collision-POSITION-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_AirconditionerA_01_collision-Normal0">
+          <float_array id="aws_AirconditionerA_01_collision-Normal0-array" count="144">
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -1.000000 0.000001
+0.000000 -1.000000 0.000001
+0.000000 -1.000000 0.000001
+0.000000 -1.000000 0.000001
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 1.000000 -0.000001
+0.000000 1.000000 -0.000001
+0.000000 1.000000 -0.000001
+0.000000 1.000000 -0.000001
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_AirconditionerA_01_collision-Normal0-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_AirconditionerA_01_collision-UV0">
+          <float_array id="aws_AirconditionerA_01_collision-UV0-array" count="96">
+1.000000 0.000000
+0.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+1.000000 0.000000
+0.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_AirconditionerA_01_collision-UV0-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_AirconditionerA_01_collision-VERTEX">
+          <input semantic="POSITION" source="#aws_AirconditionerA_01_collision-POSITION"/>
+        </vertices>
+        <polylist count="12" material="MaterialFBXASC032FBXASC03525"><input semantic="VERTEX" offset="0" source="#aws_AirconditionerA_01_collision-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_AirconditionerA_01_collision-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_AirconditionerA_01_collision-UV0"/><vcount>4 4 4 4 4 4 4 4 4 4 4 4 </vcount><p> 0 0 0 2 1 2 3 2 3 1 3 1 4 4 4 5 5 5 7 6 7 6 7 6 0 8 8 1 9 9 5 10 11 4 11 10 1 12 12 3 13 13 7 14 15 5 15 14 3 16 16 2 17 17 6 18 19 7 19 18 2 20 20 0 21 21 4 22 23 6 23 22 8 24 24 10 25 26 11 26 27 9 27 25 12 28 28 13 29 29 15 30 31 14 31 30 8 32 32 9 33 33 13 34 35 12 35 34 9 36 36 11 37 37 15 38 39 13 39 38 11 40 40 10 41 41 14 42 43 15 43 42 10 44 44 8 45 45 12 46 47 14 47 46</p></polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_Airconditioner_01_collision" name="aws_Airconditioner_01_collision">
+      <node name="aws_AirconditionerA_01_collision" id="aws_AirconditionerA_01_collision" sid="aws_AirconditionerA_01_collision"><matrix sid="matrix">-0.000000 -0.000000 -1.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 -0.000000 1.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_AirconditionerA_01_collision-lib"><bind_material><technique_common><instance_material symbol="MaterialFBXASC032FBXASC03525" target="#MaterialFBXASC032FBXASC03525"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_Airconditioner_01_collision"></instance_visual_scene>
+  </scene>
+</COLLADA>

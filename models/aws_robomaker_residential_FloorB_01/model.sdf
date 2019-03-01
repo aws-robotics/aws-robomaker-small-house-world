@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="aws_robomaker_residential_FloorB_01">
+    <link name="link">
+      <inertial>
+        <mass>100</mass>
+      </inertial>
+      
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>file://models/aws_robomaker_residential_FloorB_01/meshes/aws_FloorB_01_collision.DAE</uri>
+            <scale>1 1 0.9</scale>
+          </mesh>
+        </geometry>
+
+        <surface>
+
+        <!-- 
+        src: https://www.engineeringtoolbox.com/friction-coefficients-d_778.html 
+        Wood (Clean & Dry Surfaces): 0.6
+        -->
+          <friction>
+            <ode>
+              <mu>0.6</mu>
+              <mu2>0.6</mu2>
+            </ode>
+          </friction>
+
+        </surface>
+
+      </collision>
+      
+      
+      <visual name="visual">
+	    <geometry>
+          <mesh>
+            <uri>file://models/aws_robomaker_residential_FloorB_01/meshes/aws_FloorB_01_visual.DAE</uri>
+          </mesh>
+        </geometry>
+      <meta> <layer> 1 </layer></meta>
+</visual>
+    </link>
+
+	<static>1</static>
+  </model>
+</sdf>

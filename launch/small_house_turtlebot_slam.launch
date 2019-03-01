@@ -1,0 +1,22 @@
+<launch>
+  <!-- World -->
+  <arg name="gui" default="false"/>
+  <include file="$(find aws_robomaker_small_house_world)/launch/small_house.launch">
+    <arg name="gui" value="$(arg gui)"/>
+  </include>
+
+  <!-- Spawn robot into simulation -->
+  <include file="$(find turtlebot3_description_reduced_mesh)/launch/spawn_turtlebot.launch"/>
+
+  <!-- SLAM 
+    
+    Launch this command to generate a occupancy map for the Turtlebot. This map 
+    can then be used by turtlebot3_navigation.
+
+    See http://emanual.robotis.com/docs/en/platform/turtlebot3/slam/#slam
+
+    -->
+  <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch"/>
+    <arg name="open_rviz" default="false"/>
+    <arg name="slam_methods" default="gmapping"/>
+</launch>
