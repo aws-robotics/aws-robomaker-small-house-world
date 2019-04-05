@@ -1,7 +1,5 @@
 # AWS RoboMaker Small House World ROS package
 
-**This is a pre-release. Do not consume.**
-
 ![Gazebo01](docs/images/gazebo_01.png)
 
 # Include the world from another package
