@@ -2,6 +2,8 @@
 
 ![Gazebo01](docs/images/gazebo_01.png)
 
+**Visit the [RoboMaker website](https://aws.amazon.com/robomaker/) to learn more about building intelligent robotic applications with Amazon Web Services.**
+
 # Include the world from another package
 
 * Update .rosinstall to clone this repository and run `rosws update`
