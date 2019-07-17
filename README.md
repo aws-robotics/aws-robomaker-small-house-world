@@ -36,16 +36,6 @@ source install/setup.sh
 roslaunch aws_robomaker_small_house_world view_small_house.launch
 ```
 
-# Robot Simulation
-Do not use (0,0,0) for the initial position as it will collide with the lounge chairs. Instead, use (-3.5,1.0,0.0).  
-
-With Turtlebot Waffle PI initially positioned between the living and kitchen:
-```
-export TURTLEBOT3_MODEL=waffle_pi
-export ROBOT_INITIAL_POSE="-x 3.5 -y 1.0 -z 0.0 -R 0.0 -P 0.0 -Y 0.0"
-roslaunch turtlebot_gazebo turtlebot_world.launch  world_file:=`pwd`/worlds/small_house.world
-```
-
 # Building
 Include this as a .rosinstall dependency in your SampleApplication simulation workspace. ~colcon build` will build this repository.  
 
@@ -56,38 +46,9 @@ $ rosws update
 $ rosdep install --from-paths . --ignore-src -r -y
 $ colcon build
 ```
- 
 
-# Navigation
-A SLAM-generated map for *Turtlebot Waffle PI* is included with a pre-defined route.
-
-## Run Navigation with Gazebo viewer:
-```bash
-export TURTLEBOT3_MODEL=waffle_pi
-roslaunch aws_robomaker_small_house_world small_house_turtlebot_navigation.launch gui:=true
-```
-
-## Run Navigation with RViz (and Gazebo viewer):
-```bash
-export TURTLEBOT3_MODEL=waffle_pi
-roslaunch aws_robomaker_small_house_world small_house_turtlebot_navigation.launch open_rviz:=true gui:=true
-```
-
-### Run RViz separately for navigation 
-
-This will show you the SLAM map and current plan.
-
-Locally,
-```
-rviz -d rviz/turtlebot3_navigation.rviz
-```
-
-In RoboMaker RViz viewer, use File -> Open:
-```
-.../workspace/<robot|simulation>-application/bundle/opt/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/rviz/turtlebot3_navigation.rviz
-```
-
-![NavPath](docs/images/nav_path_rviz_gazebo.png)
+# Robot Simulation - Initial Position
+Do not use (0,0,0) for the initial position as it will collide with the lounge chairs. Instead, a resonable position is (-3.5,1.0,0.0).  
 
 # How to Replace Photos in Picture Frames
 
