@@ -37,9 +37,9 @@ roslaunch aws_robomaker_small_house_world view_small_house.launch
 ```
 
 # Building
-Include this as a .rosinstall dependency in your SampleApplication simulation workspace. ~colcon build` will build this repository.  
+Include this as a .rosinstall dependency in your SampleApplication simulation workspace. `colcon build` will build this repository.
 
-To build it outside an application, note there is no robot workspace. It is a simulation workspace only. 
+To build it outside an application, note there is no robot workspace. It is a simulation workspace only.
 
 ```bash
 $ rosws update
@@ -48,7 +48,7 @@ $ colcon build
 ```
 
 # Robot Simulation - Initial Position
-Do not use (0,0,0) for the initial position as it will collide with the lounge chairs. Instead, a resonable position is (-3.5,1.0,0.0).  
+Do not use (0,0,0) for the initial position as it will collide with the lounge chairs. Instead, a resonable position is (3.5,1.0,0.0).
 
 # How to Replace Photos in Picture Frames
 
