@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
 <sdf version='1.6'>
   <world name='default'>
     <!-- override the default position of the camera !-->
@@ -14,11 +15,1991 @@
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
-    <physics name='default_physics' default='0' type='ode'>
-      <max_step_size>0.001</max_step_size>
-      <real_time_factor>1</real_time_factor>
+    
+    <physics type='ode' name='rtu=1000,rtf=1,mss=0.001,iters=50' default='true'>
       <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
     </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=1,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=1,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=1,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=1,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=1,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=1,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=1,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=2,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=2,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=2,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=2,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=2,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=2,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=2,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=2,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=5,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=5,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=5,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=5,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=5,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=5,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=5,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=5,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=10,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=10,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=10,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=10,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=10,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=10,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=10,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=10,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=20,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=20,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=20,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=20,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=1000,rtf=20,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=20,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=20,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=1000,rtf=20,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=1,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=1,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=1,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=1,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=1,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=1,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=1,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=1,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=2,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=2,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=2,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=2,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=2,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=2,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=2,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=2,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=5,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=5,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=5,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=5,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=5,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=5,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=5,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=5,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=10,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=10,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=10,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=10,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=10,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=10,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=10,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=10,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=20,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=20,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=20,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=20,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=2000,rtf=20,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=20,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=20,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=2000,rtf=20,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>2000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=1,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=1,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=1,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=1,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=1,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=1,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=1,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=1,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=2,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=2,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=2,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=2,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=2,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=2,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=2,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=2,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=5,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=5,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=5,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=5,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=5,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=5,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=5,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=5,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=10,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=10,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=10,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=10,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=10,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=10,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=10,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=10,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=20,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=20,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=20,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=20,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=5000,rtf=20,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=20,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=20,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=5000,rtf=20,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>5000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=1,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=1,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=1,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=1,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=1,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=1,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=1,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=1,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=2,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=2,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=2,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=2,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=2,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=2,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=2,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=2,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>2</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=5,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=5,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=5,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=5,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=5,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=5,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=5,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=5,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>5</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=10,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=10,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=10,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=10,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=10,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=10,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=10,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=10,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>10</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=20,mss=0.001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=20,mss=0.001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=20,mss=0.001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=20,mss=0.001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    <physics type='ode' name='rtu=10000,rtf=20,mss=0.0001,iters=50' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=20,mss=0.0001,iters=25' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>25</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=20,mss=0.0001,iters=100' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    <physics type='ode' name='rtu=10000,rtf=20,mss=0.0001,iters=200' default='false'>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <real_time_factor>20</real_time_factor>
+      <max_step_size>0.0001</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>200</iters>
+        </solver>
+      </ode>
+    </physics>
+    
+    
+    
+    
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
       <background>0.7 0.7 0.7 1</background>

@@ -4,6 +4,13 @@
   -->
   <arg name="gui" default="false"/>
 
+  <!-- Optional physics profile for Gazebo server. The .world file must have 
+       the corresponding physics profile name. If unspecified, the physics 
+       profile tagged as default=true is used. 
+       See http://gazebosim.org/tutorials?tut=preset_manager&cat=physics
+  -->
+  <arg name="physics_profile" value="$(optenv PHYSICS_PROFILE '')"/>
+
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find aws_robomaker_small_house_world)/worlds/small_house.world"/>
     <arg name="paused" default="false"/>
@@ -12,5 +19,6 @@
     <arg name="headless" default="false"/>
     <arg name="debug" default="false"/>
     <arg name="verbose" default="true"/>
+    <arg name="extra_gazebo_args" value="--profile $(arg physics_profile)" unless="$(eval physics_profile == '')"/>
   </include>
 </launch>
