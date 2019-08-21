@@ -11,8 +11,14 @@
   -->
   <arg name="physics_profile" value="$(optenv PHYSICS_PROFILE '')"/>
 
+  <!-- Optional flag to use dynamic models (static=false) to test physics. 
+       If set, the world will explode due to collisions.
+  -->
+  <arg name="dynamic_world" value="$(optenv DYNAMIC_WORLD false)"/>
+
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find aws_robomaker_small_house_world)/worlds/small_house.world"/>
+    <arg name="world_name" value="$(find aws_robomaker_small_house_world)/worlds/small_house.world" if="$(eval dynamic_world == false)"/>
+    <arg name="world_name" value="$(find aws_robomaker_small_house_world)/worlds/small_house_dynamic.world" if="$(eval dynamic_world == true)"/>
     <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
     <arg name="gui" default="$(arg gui)"/>
