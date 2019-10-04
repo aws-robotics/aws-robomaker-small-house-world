@@ -38,12 +38,19 @@ def generate_launch_description():
     map_dir = LaunchConfiguration(
                     'map',
                     default=map_path)
-    person_detection_launch_dir = get_package_share_directory('turtlebot3_description_reduced_mesh')
+    param_file_name = TURTLEBOT3_MODEL + '.yaml'
+    param_dir = LaunchConfiguration(
+        'params',
+        default=os.path.join(
+            get_package_share_directory('person_detection_simulation'),
+            'param',
+            	param_file_name))
+    nav_launch_dir = get_package_share_directory('turtlebot3_navigation2')
     navigation2_node = launch.actions.IncludeLaunchDescription(
         launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(person_detection_launch_dir, 'launch', 'navigation2.launch.py')
+            os.path.join(nav_launch_dir, 'launch', 'navigation2.launch.py')
         ),
-        launch_arguments={'map': map_dir,'use_sim_time': use_sim_time}.items()
+        launch_arguments={'map': map_dir,'use_sim_time': use_sim_time,'params': param_dir}.items()
     )
 
     return LaunchDescription([
