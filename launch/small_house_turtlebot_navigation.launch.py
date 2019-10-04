@@ -30,18 +30,10 @@ TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
 def generate_launch_description():
     use_sim_time = launch.substitutions.LaunchConfiguration('use_sim_time', default='false')
-    world_file_name = 'small_house.world'
-    package_dir = get_package_share_directory('aws_robomaker_small_house_world')
-    gazebo_ros = get_package_share_directory('gazebo_ros')
-
-    gazebo_client = launch.actions.IncludeLaunchDescription(
-	launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(gazebo_ros, 'launch', 'gzclient.launch.py')),
-        condition=launch.conditions.IfCondition(launch.substitutions.LaunchConfiguration('gui'))
-     )
-    gazebo_server = launch.actions.IncludeLaunchDescription(
+    launch_file_dir = get_package_share_directory('aws_robomaker_small_house_world')
+    small_house_launch = launch.actions.IncludeLaunchDescription(
         launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(gazebo_ros, 'launch', 'gzserver.launch.py'))
+            os.path.join(launch_file_dir, 'launch', 'small_house.launch.py'))
     )
 
     turtlebot3_description_reduced_mesh = get_package_share_directory('turtlebot3_description_reduced_mesh')
@@ -56,29 +48,14 @@ def generate_launch_description():
         ),
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
-    person_detection_launch_dir = get_package_share_directory('aws_robomaker_small_house_world')
+    nav_launch_dir = get_package_share_directory('aws_robomaker_small_house_world')
     navigation2_node = launch.actions.IncludeLaunchDescription(
         launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(person_detection_launch_dir, 'launch', 'turtlebot3_navigation.launch.py'))
+            os.path.join(nav_launch_dir, 'launch', 'turtlebot3_navigation.launch.py'))
     )
+
     return LaunchDescription([
-        DeclareLaunchArgument(
-          'world',
-          default_value=[os.path.join(package_dir, 'worlds', world_file_name), ''],
-          description='SDF world file'),
-        DeclareLaunchArgument(
-            name='gui',
-            default_value='false'
-        ),
-        DeclareLaunchArgument(
-            name='use_sim_time',
-            default_value='false'
-        ),
-        DeclareLaunchArgument('state', 
-            default_value='true',
-            description='Set "true" to load "libgazebo_ros_state.so"'),
-        gazebo_server,
-        gazebo_client,
+        small_house_launch,
         turtlebot3_description_reduced_mesh_launch,
         turtlebot3_state_publisher_launch,
         navigation2_node
