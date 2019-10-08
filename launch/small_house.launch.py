@@ -43,7 +43,7 @@ def generate_launch_description():
         launch.launch_description_sources.PythonLaunchDescriptionSource(
             os.path.join(gazebo_ros, 'launch', 'gzserver.launch.py'))
     )
-    
+
     return LaunchDescription([
         DeclareLaunchArgument(
           'world',
@@ -63,21 +63,3 @@ def generate_launch_description():
         gazebo_server,
         gazebo_client,
     ])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
