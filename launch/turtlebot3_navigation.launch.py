@@ -46,10 +46,8 @@ for file_name in src_files:
 def generate_launch_description():
     use_sim_time = launch.substitutions.LaunchConfiguration('use_sim_time', default='false')
 
-    map_path = os.path.join('/tmp/maps/'
-                            'map.yaml')
-    map_dir = LaunchConfiguration('map',
-                                  default=map_path)
+    map_path = os.path.join(directory, 'map.yaml')
+    map_dir = LaunchConfiguration('map', default=map_path)
     param_file_name = TURTLEBOT3_MODEL + '.yaml'
     param_dir = LaunchConfiguration(
         'params',
