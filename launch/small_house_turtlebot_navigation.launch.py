@@ -17,46 +17,81 @@
 # /* Author: Darby Lim */
 
 import os
-from ament_index_python.packages import get_package_share_directory
+import sys
+
 import launch
-from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
-from launch.actions import IncludeLaunchDescription
-from launch.conditions import IfCondition
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
+import launch_ros.actions
+from ament_index_python.packages import get_package_share_directory
 
 TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
 def generate_launch_description():
-    use_sim_time = launch.substitutions.LaunchConfiguration('use_sim_time', default='false')
-    launch_file_dir = get_package_share_directory('aws_robomaker_small_house_world')
-    small_house_launch = launch.actions.IncludeLaunchDescription(
-        launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(launch_file_dir, 'launch', 'small_house.launch.py'))
-    )
+    turtlebot_urdf_file_name = 'turtlebot3_' + TURTLEBOT3_MODEL + '.urdf'
+    turtlebot_urdf_file_path = os.path.join(get_package_share_directory('turtlebot3_description_reduced_mesh'), 'urdf', turtlebot_urdf_file_name)
+    x_pos = launch.substitutions.LaunchConfiguration('x_pos', default='3.5')
+    y_pos = launch.substitutions.LaunchConfiguration('y_pos', default='1.0')
+    yaw = launch.substitutions.LaunchConfiguration('yaw', default='0.0')
 
-    turtlebot3_description_reduced_mesh = get_package_share_directory('turtlebot3_description_reduced_mesh')
-    turtlebot3_description_reduced_mesh_launch = launch.actions.IncludeLaunchDescription(
-        launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(turtlebot3_description_reduced_mesh, 'launch', 'spawn_turtlebot.launch.py'))
-    )
-    turtlebot3_bringup_launch_file_dir = get_package_share_directory('turtlebot3_bringup')
-    turtlebot3_state_publisher_launch = launch.actions.IncludeLaunchDescription(
-        launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(turtlebot3_bringup_launch_file_dir, 'launch', 'turtlebot3_state_publisher.launch.py')
+    ld = launch.LaunchDescription([
+        launch.actions.DeclareLaunchArgument(
+            name='gui',
+            default_value='false'
         ),
-        launch_arguments={'use_sim_time': use_sim_time}.items()
-    )
-    nav_launch_dir = get_package_share_directory('aws_robomaker_small_house_world')
-    navigation2_node = launch.actions.IncludeLaunchDescription(
-        launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(nav_launch_dir, 'launch', 'turtlebot3_navigation.launch.py'))
-    )
-
-    return LaunchDescription([
-        small_house_launch,
-        turtlebot3_description_reduced_mesh_launch,
-        turtlebot3_state_publisher_launch,
-        navigation2_node
+        launch.actions.DeclareLaunchArgument(
+            name='follow_route',
+            default_value='true'
+        ),
+        launch.actions.DeclareLaunchArgument(
+            name='use_sim_time',
+            default_value='true'
+        ),
+        launch.actions.IncludeLaunchDescription(
+            launch.launch_description_sources.PythonLaunchDescriptionSource(
+                os.path.join(
+                    get_package_share_directory('aws_robomaker_small_house_world'), 
+                    'launch', 
+                    'small_house.launch.py'
+                )
+            )
+        ),
+        launch.actions.IncludeLaunchDescription(
+            launch.launch_description_sources.PythonLaunchDescriptionSource(
+                os.path.join(get_package_share_directory(
+                    'turtlebot3_description_reduced_mesh'), 'launch', 'spawn_turtlebot.launch.py')
+            ),
+            launch_arguments={
+                'gui': launch.substitutions.LaunchConfiguration('gui'),
+                'gazebo_model_path': os.path.split(get_package_share_directory('turtlebot3_description_reduced_mesh'))[0],
+                'x_pos': x_pos,
+                'y_pos': y_pos,
+                'yaw': yaw
+            }.items()
+        ),
+       
+        launch_ros.actions.Node(
+            package='robot_state_publisher',
+            node_executable='robot_state_publisher',
+            node_name='robot_state_publisher',
+            output='screen',
+            parameters=[{
+                'use_sim_time': launch.substitutions.LaunchConfiguration('use_sim_time')
+            }],
+            arguments=[
+                turtlebot_urdf_file_path
+            ]
+        ),
+        launch.actions.IncludeLaunchDescription(
+            launch.launch_description_sources.PythonLaunchDescriptionSource(
+                os.path.join(
+                    get_package_share_directory('aws_robomaker_small_house_world'), 
+                    'launch', 
+                    'turtlebot3_navigation.launch.py'
+                )
+            )
+        )
     ])
+    return ld
+
+
+if __name__ == '__main__':
+    generate_launch_description()
