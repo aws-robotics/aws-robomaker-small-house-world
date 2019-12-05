@@ -22,7 +22,7 @@
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
       <background>0.7 0.7 0.7 1</background>
-      <shadows>1</shadows>
+      <shadows>false</shadows>
       <grid>false</grid>
       <origin_visual>false</origin_visual>
     </scene>
@@ -465,13 +465,13 @@
         <include>
             <uri>model://aws_robomaker_residential_DeskPortraitB_01</uri>
         </include>
-        <pose frame=''>3.547 -5.087950 0.202496 0.007118 -0.000001 3.046683</pose>
+	<pose frame=''>3.547376 -5.083898 -0.012660 -0.336622 -0.000001 3.046741</pose>
 	</model>
     <model name='DeskPortraitB_02'>
         <include>
             <uri>model://aws_robomaker_residential_DeskPortraitB_02</uri>
         </include>
-        <pose frame=''>2.486082 -5.104568 0.202496 0.007118 -0.000001 3.046683</pose>
+	<pose frame=''>2.486270 -5.102525 -0.012660 -0.336621 0.000000 3.046798</pose>
 	</model>
     <!-- Wall & Desk Portraits END -->
 
