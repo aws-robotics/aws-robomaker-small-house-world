@@ -9,7 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package()
 
-install(DIRECTORY launch models worlds maps photos
+install(DIRECTORY launch models worlds maps photos routes
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
