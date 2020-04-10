@@ -1,64 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
-  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-15T11:34:09Z</created><keywords></keywords><modified>2018-10-15T11:34:09Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
-  <library_images>
-    <image id="MapFBXASC032FBXASC0352-image" name="MapFBXASC032FBXASC0352"><init_from>../materials/textures/aws_AirconditionerA_01.png</init_from></image>
-  </library_images>
-  <library_materials>
-    <material id="MaterialFBXASC032FBXASC03525" name="MaterialFBXASC032FBXASC03525">
-      <instance_effect url="#MaterialFBXASC032FBXASC03525-fx"/>
-    </material>
-  </library_materials>
-  <library_effects>
-    <effect id="MaterialFBXASC032FBXASC03525-fx" name="MaterialFBXASC032FBXASC03525">
-      <profile_COMMON>
-        <technique sid="standard">
-          <phong>
-            <emission>
-              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
-            </emission>
-            <ambient>
-              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
-            </ambient>
-            <diffuse>
-              <texture texture="MapFBXASC032FBXASC0352-image" texcoord="CHANNEL0">
-                <extra>
-                  <technique profile="MAYA">
-                    <wrapU sid="wrapU0">TRUE</wrapU>
-                    <wrapV sid="wrapV0">TRUE</wrapV>
-                    <blend_mode>ADD</blend_mode>
-                  </technique>
-                </extra>
-              </texture>
-            </diffuse>
-            <specular>
-              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">2.000000</float>
-            </shininess>
-            <reflective>
-              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
-            </reflective>
-            <reflectivity>
-              <float sid="reflectivity">1.000000</float>
-            </reflectivity>
-            <transparent opaque="RGB_ZERO">
-              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
-            </transparent>
-            <transparency>
-              <float sid="transparency">0.000000</float>
-            </transparency>
-          </phong>
-        </technique>
-      </profile_COMMON>
-    </effect>
-  </library_effects>
-  <library_geometries>
-    <geometry id="aws_AirconditionerA_01_visual-lib" name="aws_AirconditionerA_01_visualMesh">
-      <mesh>
-        <source id="aws_AirconditionerA_01_visual-POSITION">
-          <float_array id="aws_AirconditionerA_01_visual-POSITION-array" count="339">
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	
+  
+	<asset>
+		<contributor>
+			<author/>
+			<authoring_tool>FBX COLLADA exporter</authoring_tool>
+			<comments/>
+		</contributor>
+		<created>2018-10-15T11:34:09Z</created>
+		<keywords/>
+		<modified>2018-10-15T11:34:09Z</modified>
+		<revision/>
+		<subject/>
+		<title/>
+		<unit meter="0.010000" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	
+  
+	<library_images>
+		
+    
+		<image id="MapFBXASC032FBXASC0352-image" name="MapFBXASC032FBXASC0352">
+			<init_from>../materials/textures/aws_AirconditionerA_01.png</init_from>
+		</image>
+		
+  
+	</library_images>
+	
+  
+	<library_materials>
+		
+    
+		<material id="MaterialFBXASC032FBXASC03525" name="MaterialFBXASC032FBXASC03525">
+			
+      
+			<instance_effect url="#MaterialFBXASC032FBXASC03525-fx"/>
+			
+    
+		</material>
+		
+  
+	</library_materials>
+	
+  
+	<library_effects>
+		
+    
+		<effect id="MaterialFBXASC032FBXASC03525-fx" name="MaterialFBXASC032FBXASC03525">
+			
+      
+			<profile_COMMON>
+				
+        
+				<technique sid="standard">
+					
+          
+					<phong>
+						
+            
+						<emission>
+							
+              
+							<color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</emission>
+						
+            
+						<ambient>
+							
+              
+							<color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+							
+            
+						</ambient>
+						
+            
+						<diffuse>
+							
+              
+							<texture texcoord="CHANNEL0" texture="MapFBXASC032FBXASC0352-image">
+								
+                
+								<extra>
+									
+                  
+									<technique profile="MAYA">
+										
+                    
+										<wrapU sid="wrapU0">TRUE</wrapU>
+										
+                    
+										<wrapV sid="wrapV0">TRUE</wrapV>
+										
+                    
+										<blend_mode>ADD</blend_mode>
+										
+                  
+									</technique>
+									
+                
+								</extra>
+								
+              
+							</texture>
+							
+            
+						</diffuse>
+						
+            
+						<specular>
+							
+              
+							<color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</specular>
+						
+            
+						<shininess>
+							
+              
+							<float sid="shininess">2.000000</float>
+							
+            
+						</shininess>
+						
+            
+						<reflective>
+							
+              
+							<color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</reflective>
+						
+            
+						<reflectivity>
+							
+              
+							<float sid="reflectivity">1.000000</float>
+							
+            
+						</reflectivity>
+						
+            
+						<transparent opaque="RGB_ZERO">
+							
+              
+							<color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+							
+            
+						</transparent>
+						
+            
+						<transparency>
+							
+              
+							<float sid="transparency">0.000000</float>
+							
+            
+						</transparency>
+						
+          
+					</phong>
+					
+        
+				</technique>
+				
+      
+			</profile_COMMON>
+			
+    
+		</effect>
+		
+  
+	</library_effects>
+	
+  
+	<library_geometries>
+		
+    
+		<geometry id="aws_AirconditionerA_01_visual-lib" name="aws_AirconditionerA_01_visualMesh">
+			
+      
+			<mesh>
+				
+        
+				<source id="aws_AirconditionerA_01_visual-POSITION">
+					
+          
+					<float_array count="339" id="aws_AirconditionerA_01_visual-POSITION-array">
 -10.000000 -40.000000 0.000000
 10.000000 -40.000000 6.210805
 -10.000000 40.000000 0.000000
@@ -173,16 +307,36 @@
 -5.037854 -42.265839 3.685630
 -5.753907 -42.265839 2.995045
 </float_array>
-          <technique_common>
-            <accessor source="#aws_AirconditionerA_01_visual-POSITION-array" count="113" stride="3">
-              <param name="X" type="float"/>
-              <param name="Y" type="float"/>
-              <param name="Z" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="aws_AirconditionerA_01_visual-Normal0">
-          <float_array id="aws_AirconditionerA_01_visual-Normal0-array" count="1158">
+					
+          
+					<technique_common>
+						
+            
+						<accessor count="113" source="#aws_AirconditionerA_01_visual-POSITION-array" stride="3">
+							
+              
+							<param name="X" type="float"/>
+							
+              
+							<param name="Y" type="float"/>
+							
+              
+							<param name="Z" type="float"/>
+							
+            
+						</accessor>
+						
+          
+					</technique_common>
+					
+        
+				</source>
+				
+        
+				<source id="aws_AirconditionerA_01_visual-Normal0">
+					
+          
+					<float_array count="1158" id="aws_AirconditionerA_01_visual-Normal0-array">
 0.098538 0.000000 -0.995133
 0.000000 0.000000 -1.000000
 0.000000 0.000000 -1.000000
@@ -570,16 +724,36 @@
 0.000000 -1.000000 0.000000
 0.000000 -1.000000 0.000000
 </float_array>
-          <technique_common>
-            <accessor source="#aws_AirconditionerA_01_visual-Normal0-array" count="386" stride="3">
-              <param name="X" type="float"/>
-              <param name="Y" type="float"/>
-              <param name="Z" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="aws_AirconditionerA_01_visual-UV0">
-          <float_array id="aws_AirconditionerA_01_visual-UV0-array" count="1504">
+					
+          
+					<technique_common>
+						
+            
+						<accessor count="386" source="#aws_AirconditionerA_01_visual-Normal0-array" stride="3">
+							
+              
+							<param name="X" type="float"/>
+							
+              
+							<param name="Y" type="float"/>
+							
+              
+							<param name="Z" type="float"/>
+							
+            
+						</accessor>
+						
+          
+					</technique_common>
+					
+        
+				</source>
+				
+        
+				<source id="aws_AirconditionerA_01_visual-UV0">
+					
+          
+					<float_array count="1504" id="aws_AirconditionerA_01_visual-UV0-array">
 0.949426 0.159681
 0.249095 0.159681
 0.249095 0.027080
@@ -1333,15 +1507,33 @@
 0.460294 0.552582
 0.414465 0.546017
 </float_array>
-          <technique_common>
-            <accessor source="#aws_AirconditionerA_01_visual-UV0-array" count="752" stride="2">
-              <param name="S" type="float"/>
-              <param name="T" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="aws_AirconditionerA_01_visual-UV1">
-          <float_array id="aws_AirconditionerA_01_visual-UV1-array" count="1532">
+					
+          
+					<technique_common>
+						
+            
+						<accessor count="752" source="#aws_AirconditionerA_01_visual-UV0-array" stride="2">
+							
+              
+							<param name="S" type="float"/>
+							
+              
+							<param name="T" type="float"/>
+							
+            
+						</accessor>
+						
+          
+					</technique_common>
+					
+        
+				</source>
+				
+        
+				<source id="aws_AirconditionerA_01_visual-UV1">
+					
+          
+					<float_array count="1532" id="aws_AirconditionerA_01_visual-UV1-array">
 0.949426 0.159681
 0.249095 0.159681
 0.249095 0.027080
@@ -2109,27 +2301,104 @@
 0.460294 0.552582
 0.414465 0.546017
 </float_array>
-          <technique_common>
-            <accessor source="#aws_AirconditionerA_01_visual-UV1-array" count="766" stride="2">
-              <param name="S" type="float"/>
-              <param name="T" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <vertices id="aws_AirconditionerA_01_visual-VERTEX">
-          <input semantic="POSITION" source="#aws_AirconditionerA_01_visual-POSITION"/>
-        </vertices>
-        <polylist count="98" material="MaterialFBXASC032FBXASC03525"><input semantic="VERTEX" offset="0" source="#aws_AirconditionerA_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_AirconditionerA_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_AirconditionerA_01_visual-UV0"/><input semantic="TEXCOORD" offset="3" set="1" source="#aws_AirconditionerA_01_visual-UV1"/><vcount>4 4 4 4 4 3 4 3 4 4 4 4 4 4 3 4 3 4 3 4 4 4 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount><p> 7 0 62 62 0 1 60 60 2 2 59 59 3 3 56 56 15 4 5 5 16 5 12 12 11 6 53 53 17 7 42 42 5 8 10 10 6 9 11 11 8 10 8 8 23 11 111 111 15 12 21 21 17 13 79 79 19 14 125 125 18 15 67 67 9 16 64 64 7 17 62 62 3 18 56 56 10 19 65 65 1 20 15 15 13 21 16 16 12 22 17 17 8 23 90 90 14 24 91 91 13 25 92 92 1 26 93 93 8 27 8 8 6 28 11 11 14 29 19 19 1 30 93 93 22 31 104 104 23 32 100 100 8 33 90 90 15 34 5 5 18 35 74 74 21 36 94 94 16 37 12 12 9 38 97 97 10 39 81 81 23 40 100 100 22 41 104 104 11 42 53 53 20 43 63 63 19 44 73 73 17 45 42 42 6 46 11 11 5 47 10 10 19 48 73 73 20 49 63 63 18 50 74 74 4 51 76 76 12 52 17 17 21 53 94 94 0 54 95 95 7 55 101 101 4 56 76 76 6 57 28 28 20 58 29 29 21 59 38 38 12 60 33 33 3 61 105 105 2 62 107 107 5 63 10 10 3 64 105 105 5 65 10 10 23 66 111 111 10 67 110 110 4 68 76 76 1 69 15 15 12 70 17 17 4 71 76 76 7 72 101 101 9 73 119 119 22 74 115 115 5 75 108 108 4 76 66 66 18 77 67 67 19 78 125 125 5 79 108 108 2 80 120 120 0 81 123 123 4 82 66 66 4 83 76 76 22 84 115 115 1 85 15 15 20 86 29 29 11 87 39 39 16 88 26 26 21 89 38 38 13 90 34 34 14 91 37 37 6 92 28 28 12 93 33 33 30 94 150 150 27 95 151 151 26 96 152 152 24 97 153 153 31 98 154 154 29 99 155 155 27 100 182 182 30 101 181 181 25 102 156 156 28 103 157 157 29 104 174 174 31 105 169 169 24 106 172 172 26 107 167 167 28 108 177 177 25 109 173 173 30 110 170 170 24 111 168 168 25 112 176 176 31 113 178 178 32 114 221 232 33 115 222 233 41 116 189 189 35 117 193 193 38 118 184 184 39 119 187 187 42 120 213 222 36 121 214 223 38 122 184 184 36 123 214 223 41 124 223 237 33 125 224 238 40 126 195 195 43 127 196 196 32 128 188 188 35 129 183 183 34 130 197 197 37 131 198 199 42 132 194 194 39 133 190 190 50 134 199 201 46 135 200 202 48 136 206 211 44 137 205 210 49 138 201 204 45 139 202 205 47 140 220 231 51 141 219 230 51 142 203 207 47 143 204 208 46 144 200 202 50 145 199 201 44 146 205 210 48 147 206 211 45 148 202 205 49 149 201 204 45 150 216 227 48 151 218 229 46 152 215 226 47 153 217 228 37 154 212 221 40 155 211 217 35 156 207 212 42 157 210 216 40 158 185 217 37 159 186 221 34 160 191 235 43 161 192 236 41 162 208 213 36 163 209 215 42 164 210 216 35 165 207 212 54 166 246 260 57 167 259 273 55 168 633 647 52 169 632 646 52 170 230 244 55 171 251 265 56 172 255 269 53 173 238 252 53 174 576 590 56 175 578 592 57 176 259 273 54 177 246 260 57 178 259 273 60 179 687 701 58 180 688 702 55 181 636 650 55 182 251 265 58 183 275 289 59 184 279 293 56 185 255 269 56 186 578 592 59 187 582 596 60 188 283 297 57 189 259 273 60 190 690 704 63 191 642 656 61 192 299 313 58 193 689 703 58 194 275 289 61 195 299 313 62 196 303 317 59 197 279 293 59 198 582 596 62 199 586 600 63 200 307 321 60 201 283 297 63 202 692 706 66 203 331 345 64 204 645 659 61 205 691 705 61 206 299 313 64 207 323 337 65 208 327 341 62 209 303 317 62 210 586 600 65 211 590 604 66 212 331 345 63 213 307 321 66 214 331 345 69 215 367 381 67 216 651 665 64 217 648 662 64 218 323 337 67 219 359 373 68 220 363 377 65 221 327 341 65 222 590 604 68 223 596 610 69 224 367 381 66 225 331 345 69 226 367 381 72 227 693 707 70 228 694 708 67 229 654 668 67 230 359 373 70 231 383 397 71 232 387 401 68 233 363 377 68 234 596 610 71 235 600 614 72 236 391 405 69 237 367 381 72 238 657 671 75 239 695 709 73 240 696 710 70 241 383 397 70 242 383 397 73 243 407 421 74 244 411 425 71 245 387 401 71 246 600 614 74 247 604 618 75 248 415 429 72 249 391 405 75 250 661 675 78 251 662 676 76 252 419 433 73 253 407 421 73 254 407 421 76 255 419 433 77 256 423 437 74 257 411 425 74 258 604 618 77 259 606 620 78 260 427 441 75 261 415 429 78 262 698 712 81 263 451 465 79 264 665 679 76 265 697 711 76 266 419 433 79 267 443 457 80 268 447 461 77 269 423 437 77 270 606 620 80 271 610 624 81 272 451 465 78 273 427 441 81 274 700 714 84 275 475 489 82 276 669 683 79 277 699 713 79 278 443 457 82 279 467 481 83 280 471 485 80 281 447 461 80 282 610 624 83 283 614 628 84 284 475 489 81 285 451 465 84 286 475 489 87 287 701 715 85 288 702 716 82 289 672 686 82 290 467 481 85 291 491 505 86 292 495 509 83 293 471 485 83 294 614 628 86 295 618 632 87 296 499 513 84 297 475 489 87 298 499 513 90 299 703 717 88 300 704 718 85 301 676 690 85 302 491 505 88 303 530 544 89 304 538 552 86 305 495 509 86 306 618 632 89 307 626 640 90 308 546 560 87 309 499 513 88 310 530 544 90 311 679 693 93 312 705 719 91 313 706 720 91 314 554 568 92 315 562 576 89 316 538 552 88 317 530 544 89 318 626 640 92 319 630 644 93 320 570 584 90 321 546 560 94 322 553 567 91 323 554 568 93 324 681 695 96 325 682 696 95 326 561 575 92 327 562 576 91 328 554 568 94 329 553 567 96 330 569 583 93 331 570 584 92 332 630 644 95 333 629 643 100 334 748 762 104 335 749 763 102 336 710 724 98 337 707 721 99 338 715 729 103 339 718 732 101 340 714 728 97 341 711 725 98 342 707 721 102 343 710 724 103 344 718 732 99 345 715 729 97 346 711 725 101 347 714 728 104 348 722 736 100 349 719 733 98 350 707 721 111 351 723 737 112 352 750 764 100 353 748 762 110 354 726 740 111 355 723 737 98 356 707 721 99 357 715 729 109 358 728 742 110 359 726 740 99 360 715 729 97 361 711 725 112 362 730 744 109 363 728 742 97 364 711 725 100 365 719 733 105 366 731 745 108 367 751 765 112 368 750 764 111 369 723 737 111 370 723 737 110 371 726 740 106 372 734 748 105 373 731 745 110 374 726 740 109 375 728 742 107 376 736 750 106 377 734 748 109 378 728 742 112 379 730 744 108 380 738 752 107 381 736 750 107 382 745 759 108 383 747 761 105 384 740 754 106 385 743 757</p></polylist>
-      </mesh>
-    </geometry>
-  </library_geometries>
-  <library_visual_scenes>
-    <visual_scene id="aws_Airconditioner_01_visual" name="aws_Airconditioner_01_visual">
-      <node name="aws_AirconditionerA_01_visual" id="aws_AirconditionerA_01_visual" sid="aws_AirconditionerA_01_visual"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_AirconditionerA_01_visual-lib"><bind_material><technique_common><instance_material symbol="MaterialFBXASC032FBXASC03525" target="#MaterialFBXASC032FBXASC03525"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
-      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
-    </visual_scene>
-  </library_visual_scenes>
-  <scene>
-    <instance_visual_scene url="#aws_Airconditioner_01_visual"></instance_visual_scene>
-  </scene>
+					
+          
+					<technique_common>
+						
+            
+						<accessor count="766" source="#aws_AirconditionerA_01_visual-UV1-array" stride="2">
+							
+              
+							<param name="S" type="float"/>
+							
+              
+							<param name="T" type="float"/>
+							
+            
+						</accessor>
+						
+          
+					</technique_common>
+					
+        
+				</source>
+				
+        
+				<vertices id="aws_AirconditionerA_01_visual-VERTEX">
+					
+          
+					<input semantic="POSITION" source="#aws_AirconditionerA_01_visual-POSITION"/>
+					
+        
+				</vertices>
+				
+        
+				<polylist count="98" material="MaterialFBXASC032FBXASC03525">
+					<input offset="0" semantic="VERTEX" source="#aws_AirconditionerA_01_visual-VERTEX"/>
+					<input offset="1" semantic="NORMAL" source="#aws_AirconditionerA_01_visual-Normal0"/>
+					<input offset="2" semantic="TEXCOORD" set="0" source="#aws_AirconditionerA_01_visual-UV0"/>
+					<input offset="3" semantic="TEXCOORD" set="1" source="#aws_AirconditionerA_01_visual-UV1"/>
+					<vcount>4 4 4 4 4 3 4 3 4 4 4 4 4 4 3 4 3 4 3 4 4 4 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
+					<p> 7 0 62 62 0 1 60 60 2 2 59 59 3 3 56 56 15 4 5 5 16 5 12 12 11 6 53 53 17 7 42 42 5 8 10 10 6 9 11 11 8 10 8 8 23 11 111 111 15 12 21 21 17 13 79 79 19 14 125 125 18 15 67 67 9 16 64 64 7 17 62 62 3 18 56 56 10 19 65 65 1 20 15 15 13 21 16 16 12 22 17 17 8 23 90 90 14 24 91 91 13 25 92 92 1 26 93 93 8 27 8 8 6 28 11 11 14 29 19 19 1 30 93 93 22 31 104 104 23 32 100 100 8 33 90 90 15 34 5 5 18 35 74 74 21 36 94 94 16 37 12 12 9 38 97 97 10 39 81 81 23 40 100 100 22 41 104 104 11 42 53 53 20 43 63 63 19 44 73 73 17 45 42 42 6 46 11 11 5 47 10 10 19 48 73 73 20 49 63 63 18 50 74 74 4 51 76 76 12 52 17 17 21 53 94 94 0 54 95 95 7 55 101 101 4 56 76 76 6 57 28 28 20 58 29 29 21 59 38 38 12 60 33 33 3 61 105 105 2 62 107 107 5 63 10 10 3 64 105 105 5 65 10 10 23 66 111 111 10 67 110 110 4 68 76 76 1 69 15 15 12 70 17 17 4 71 76 76 7 72 101 101 9 73 119 119 22 74 115 115 5 75 108 108 4 76 66 66 18 77 67 67 19 78 125 125 5 79 108 108 2 80 120 120 0 81 123 123 4 82 66 66 4 83 76 76 22 84 115 115 1 85 15 15 20 86 29 29 11 87 39 39 16 88 26 26 21 89 38 38 13 90 34 34 14 91 37 37 6 92 28 28 12 93 33 33 30 94 150 150 27 95 151 151 26 96 152 152 24 97 153 153 31 98 154 154 29 99 155 155 27 100 182 182 30 101 181 181 25 102 156 156 28 103 157 157 29 104 174 174 31 105 169 169 24 106 172 172 26 107 167 167 28 108 177 177 25 109 173 173 30 110 170 170 24 111 168 168 25 112 176 176 31 113 178 178 32 114 221 232 33 115 222 233 41 116 189 189 35 117 193 193 38 118 184 184 39 119 187 187 42 120 213 222 36 121 214 223 38 122 184 184 36 123 214 223 41 124 223 237 33 125 224 238 40 126 195 195 43 127 196 196 32 128 188 188 35 129 183 183 34 130 197 197 37 131 198 199 42 132 194 194 39 133 190 190 50 134 199 201 46 135 200 202 48 136 206 211 44 137 205 210 49 138 201 204 45 139 202 205 47 140 220 231 51 141 219 230 51 142 203 207 47 143 204 208 46 144 200 202 50 145 199 201 44 146 205 210 48 147 206 211 45 148 202 205 49 149 201 204 45 150 216 227 48 151 218 229 46 152 215 226 47 153 217 228 37 154 212 221 40 155 211 217 35 156 207 212 42 157 210 216 40 158 185 217 37 159 186 221 34 160 191 235 43 161 192 236 41 162 208 213 36 163 209 215 42 164 210 216 35 165 207 212 54 166 246 260 57 167 259 273 55 168 633 647 52 169 632 646 52 170 230 244 55 171 251 265 56 172 255 269 53 173 238 252 53 174 576 590 56 175 578 592 57 176 259 273 54 177 246 260 57 178 259 273 60 179 687 701 58 180 688 702 55 181 636 650 55 182 251 265 58 183 275 289 59 184 279 293 56 185 255 269 56 186 578 592 59 187 582 596 60 188 283 297 57 189 259 273 60 190 690 704 63 191 642 656 61 192 299 313 58 193 689 703 58 194 275 289 61 195 299 313 62 196 303 317 59 197 279 293 59 198 582 596 62 199 586 600 63 200 307 321 60 201 283 297 63 202 692 706 66 203 331 345 64 204 645 659 61 205 691 705 61 206 299 313 64 207 323 337 65 208 327 341 62 209 303 317 62 210 586 600 65 211 590 604 66 212 331 345 63 213 307 321 66 214 331 345 69 215 367 381 67 216 651 665 64 217 648 662 64 218 323 337 67 219 359 373 68 220 363 377 65 221 327 341 65 222 590 604 68 223 596 610 69 224 367 381 66 225 331 345 69 226 367 381 72 227 693 707 70 228 694 708 67 229 654 668 67 230 359 373 70 231 383 397 71 232 387 401 68 233 363 377 68 234 596 610 71 235 600 614 72 236 391 405 69 237 367 381 72 238 657 671 75 239 695 709 73 240 696 710 70 241 383 397 70 242 383 397 73 243 407 421 74 244 411 425 71 245 387 401 71 246 600 614 74 247 604 618 75 248 415 429 72 249 391 405 75 250 661 675 78 251 662 676 76 252 419 433 73 253 407 421 73 254 407 421 76 255 419 433 77 256 423 437 74 257 411 425 74 258 604 618 77 259 606 620 78 260 427 441 75 261 415 429 78 262 698 712 81 263 451 465 79 264 665 679 76 265 697 711 76 266 419 433 79 267 443 457 80 268 447 461 77 269 423 437 77 270 606 620 80 271 610 624 81 272 451 465 78 273 427 441 81 274 700 714 84 275 475 489 82 276 669 683 79 277 699 713 79 278 443 457 82 279 467 481 83 280 471 485 80 281 447 461 80 282 610 624 83 283 614 628 84 284 475 489 81 285 451 465 84 286 475 489 87 287 701 715 85 288 702 716 82 289 672 686 82 290 467 481 85 291 491 505 86 292 495 509 83 293 471 485 83 294 614 628 86 295 618 632 87 296 499 513 84 297 475 489 87 298 499 513 90 299 703 717 88 300 704 718 85 301 676 690 85 302 491 505 88 303 530 544 89 304 538 552 86 305 495 509 86 306 618 632 89 307 626 640 90 308 546 560 87 309 499 513 88 310 530 544 90 311 679 693 93 312 705 719 91 313 706 720 91 314 554 568 92 315 562 576 89 316 538 552 88 317 530 544 89 318 626 640 92 319 630 644 93 320 570 584 90 321 546 560 94 322 553 567 91 323 554 568 93 324 681 695 96 325 682 696 95 326 561 575 92 327 562 576 91 328 554 568 94 329 553 567 96 330 569 583 93 331 570 584 92 332 630 644 95 333 629 643 100 334 748 762 104 335 749 763 102 336 710 724 98 337 707 721 99 338 715 729 103 339 718 732 101 340 714 728 97 341 711 725 98 342 707 721 102 343 710 724 103 344 718 732 99 345 715 729 97 346 711 725 101 347 714 728 104 348 722 736 100 349 719 733 98 350 707 721 111 351 723 737 112 352 750 764 100 353 748 762 110 354 726 740 111 355 723 737 98 356 707 721 99 357 715 729 109 358 728 742 110 359 726 740 99 360 715 729 97 361 711 725 112 362 730 744 109 363 728 742 97 364 711 725 100 365 719 733 105 366 731 745 108 367 751 765 112 368 750 764 111 369 723 737 111 370 723 737 110 371 726 740 106 372 734 748 105 373 731 745 110 374 726 740 109 375 728 742 107 376 736 750 106 377 734 748 109 378 728 742 112 379 730 744 108 380 738 752 107 381 736 750 107 382 745 759 108 383 747 761 105 384 740 754 106 385 743 757</p>
+				</polylist>
+				
+      
+			</mesh>
+			
+    
+		</geometry>
+		
+  
+	</library_geometries>
+	
+  
+	<library_visual_scenes>
+		
+    
+		<visual_scene id="aws_AirconditionerA_01_visual" name="aws_AirconditionerA_01_visual">
+			
+      
+			<node id="aws_AirconditionerA_01_visual" name="aws_AirconditionerA_01_visual" sid="aws_AirconditionerA_01_visual">
+				<matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+				<instance_geometry url="#aws_AirconditionerA_01_visual-lib">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="MaterialFBXASC032FBXASC03525" target="#MaterialFBXASC032FBXASC03525"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+				<extra>
+					<technique profile="FCOLLADA">
+						<visibility>1.000000</visibility>
+					</technique>
+				</extra>
+			</node>
+			
+      
+			<extra>
+				<technique profile="MAX3D">
+					<frame_rate>30.000000</frame_rate>
+				</technique>
+				<technique profile="FCOLLADA">
+					<start_time>0.000000</start_time>
+					<end_time>3.333333</end_time>
+				</technique>
+			</extra>
+			
+    
+		</visual_scene>
+		
+  
+	</library_visual_scenes>
+	
+  
+	<scene>
+		
+    
+		<instance_visual_scene url="#aws_AirconditionerA_01_visual"/>
+		
+  
+	</scene>
+	
+
 </COLLADA>

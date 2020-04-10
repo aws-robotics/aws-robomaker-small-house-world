@@ -1,140 +1,426 @@
 <?xml version="1.0" encoding="utf-8"?>
-<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
-  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-24T09:53:51Z</created><keywords></keywords><modified>2018-10-24T09:53:51Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
-  <library_images>
-    <image id="Map #2-image" name="Map #2"><init_from>../materials/textures/aws_HouseWallB_01.png</init_from></image>
-  </library_images>
-  <library_materials>
-    <material id="Material #29" name="Material #29">
-      <instance_effect url="#Material #29-fx"/>
-    </material>
-    <material id="Material #28" name="Material #28">
-      <instance_effect url="#Material #28-fx"/>
-    </material>
-    <material id="_09 - Default" name="_09 - Default">
-      <instance_effect url="#_09 - Default-fx"/>
-    </material>
-  </library_materials>
-  <library_effects>
-    <effect id="Material #29-fx" name="Material #29">
-      <profile_COMMON>
-        <technique sid="standard">
-          <phong>
-            <emission>
-              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
-            </emission>
-            <ambient>
-              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
-            </ambient>
-            <diffuse>
-              <texture texture="Map #2-image" texcoord="CHANNEL0">
-                <extra>
-                  <technique profile="MAYA">
-                    <wrapU sid="wrapU0">TRUE</wrapU>
-                    <wrapV sid="wrapV0">TRUE</wrapV>
-                    <blend_mode>ADD</blend_mode>
-                  </technique>
-                </extra>
-              </texture>
-            </diffuse>
-            <specular>
-              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">2.000000</float>
-            </shininess>
-            <reflective>
-              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
-            </reflective>
-            <reflectivity>
-              <float sid="reflectivity">1.000000</float>
-            </reflectivity>
-            <transparent opaque="RGB_ZERO">
-              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
-            </transparent>
-            <transparency>
-              <float sid="transparency">0.000000</float>
-            </transparency>
-          </phong>
-        </technique>
-      </profile_COMMON>
-    </effect>
-    <effect id="Material #28-fx" name="Material #28">
-      <profile_COMMON>
-        <technique sid="standard">
-          <phong>
-            <emission>
-              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
-            </emission>
-            <ambient>
-              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
-            </ambient>
-            <diffuse>
-              <color sid="diffuse">0.800000  0.800000 0.800000 1.000000</color>
-            </diffuse>
-            <specular>
-              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">2.000000</float>
-            </shininess>
-            <reflective>
-              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
-            </reflective>
-            <reflectivity>
-              <float sid="reflectivity">1.000000</float>
-            </reflectivity>
-            <transparent opaque="RGB_ZERO">
-              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
-            </transparent>
-            <transparency>
-              <float sid="transparency">0.000000</float>
-            </transparency>
-          </phong>
-        </technique>
-      </profile_COMMON>
-    </effect>
-    <effect id="_09 - Default-fx" name="_09 - Default">
-      <profile_COMMON>
-        <technique sid="standard">
-          <phong>
-            <emission>
-              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
-            </emission>
-            <ambient>
-              <color sid="ambient">0.458824  0.921569 0.862745 1.000000</color>
-            </ambient>
-            <diffuse>
-              <color sid="diffuse">0.458824  0.921569 0.862745 1.000000</color>
-            </diffuse>
-            <specular>
-              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">2.000000</float>
-            </shininess>
-            <reflective>
-              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
-            </reflective>
-            <reflectivity>
-              <float sid="reflectivity">1.000000</float>
-            </reflectivity>
-            <transparent opaque="RGB_ZERO">
-              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
-            </transparent>
-            <transparency>
-              <float sid="transparency">0.800000</float>
-            </transparency>
-          </phong>
-        </technique>
-      </profile_COMMON>
-    </effect>
-  </library_effects>
-  <library_geometries>
-    <geometry id="aws_HouseWallB_01_visual-lib" name="aws_HouseWallB_01_visualMesh">
-      <mesh>
-        <source id="aws_HouseWallB_01_visual-POSITION">
-          <float_array id="aws_HouseWallB_01_visual-POSITION-array" count="444">
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	
+  
+	<asset>
+		<contributor>
+			<author/>
+			<authoring_tool>FBX COLLADA exporter</authoring_tool>
+			<comments/>
+		</contributor>
+		<created>2018-10-24T09:53:51Z</created>
+		<keywords/>
+		<modified>2018-10-24T09:53:51Z</modified>
+		<revision/>
+		<subject/>
+		<title/>
+		<unit meter="0.010000" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	
+  
+	<library_images>
+		
+    
+		<image id="Map #2-image" name="Map #2">
+			<init_from>../materials/textures/aws_HouseWallB_01.png</init_from>
+		</image>
+		
+  
+	</library_images>
+	
+  
+	<library_materials>
+		
+    
+		<material id="Material #29" name="Material #29">
+			
+      
+			<instance_effect url="#Material #29-fx"/>
+			
+    
+		</material>
+		
+    
+		<material id="Material #28" name="Material #28">
+			
+      
+			<instance_effect url="#Material #28-fx"/>
+			
+    
+		</material>
+		
+    
+		<material id="_09 - Default" name="_09 - Default">
+			
+      
+			<instance_effect url="#_09 - Default-fx"/>
+			
+    
+		</material>
+		
+  
+	</library_materials>
+	
+  
+	<library_effects>
+		
+    
+		<effect id="Material #29-fx" name="Material #29">
+			
+      
+			<profile_COMMON>
+				
+        
+				<technique sid="standard">
+					
+          
+					<phong>
+						
+            
+						<emission>
+							
+              
+							<color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</emission>
+						
+            
+						<ambient>
+							
+              
+							<color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+							
+            
+						</ambient>
+						
+            
+						<diffuse>
+							
+              
+							<texture texcoord="CHANNEL0" texture="Map #2-image">
+								
+                
+								<extra>
+									
+                  
+									<technique profile="MAYA">
+										
+                    
+										<wrapU sid="wrapU0">TRUE</wrapU>
+										
+                    
+										<wrapV sid="wrapV0">TRUE</wrapV>
+										
+                    
+										<blend_mode>ADD</blend_mode>
+										
+                  
+									</technique>
+									
+                
+								</extra>
+								
+              
+							</texture>
+							
+            
+						</diffuse>
+						
+            
+						<specular>
+							
+              
+							<color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</specular>
+						
+            
+						<shininess>
+							
+              
+							<float sid="shininess">2.000000</float>
+							
+            
+						</shininess>
+						
+            
+						<reflective>
+							
+              
+							<color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</reflective>
+						
+            
+						<reflectivity>
+							
+              
+							<float sid="reflectivity">1.000000</float>
+							
+            
+						</reflectivity>
+						
+            
+						<transparent opaque="RGB_ZERO">
+							
+              
+							<color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+							
+            
+						</transparent>
+						
+            
+						<transparency>
+							
+              
+							<float sid="transparency">0.000000</float>
+							
+            
+						</transparency>
+						
+          
+					</phong>
+					
+        
+				</technique>
+				
+      
+			</profile_COMMON>
+			
+    
+		</effect>
+		
+    
+		<effect id="Material #28-fx" name="Material #28">
+			
+      
+			<profile_COMMON>
+				
+        
+				<technique sid="standard">
+					
+          
+					<phong>
+						
+            
+						<emission>
+							
+              
+							<color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</emission>
+						
+            
+						<ambient>
+							
+              
+							<color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+							
+            
+						</ambient>
+						
+            
+						<diffuse>
+							
+              
+							<color sid="diffuse">0.800000  0.800000 0.800000 1.000000</color>
+							
+            
+						</diffuse>
+						
+            
+						<specular>
+							
+              
+							<color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</specular>
+						
+            
+						<shininess>
+							
+              
+							<float sid="shininess">2.000000</float>
+							
+            
+						</shininess>
+						
+            
+						<reflective>
+							
+              
+							<color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</reflective>
+						
+            
+						<reflectivity>
+							
+              
+							<float sid="reflectivity">1.000000</float>
+							
+            
+						</reflectivity>
+						
+            
+						<transparent opaque="RGB_ZERO">
+							
+              
+							<color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+							
+            
+						</transparent>
+						
+            
+						<transparency>
+							
+              
+							<float sid="transparency">0.000000</float>
+							
+            
+						</transparency>
+						
+          
+					</phong>
+					
+        
+				</technique>
+				
+      
+			</profile_COMMON>
+			
+    
+		</effect>
+		
+    
+		<effect id="_09 - Default-fx" name="_09 - Default">
+			
+      
+			<profile_COMMON>
+				
+        
+				<technique sid="standard">
+					
+          
+					<phong>
+						
+            
+						<emission>
+							
+              
+							<color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</emission>
+						
+            
+						<ambient>
+							
+              
+							<color sid="ambient">0.458824  0.921569 0.862745 1.000000</color>
+							
+            
+						</ambient>
+						
+            
+						<diffuse>
+							
+              
+							<color sid="diffuse">0.458824  0.921569 0.862745 1.000000</color>
+							
+            
+						</diffuse>
+						
+            
+						<specular>
+							
+              
+							<color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</specular>
+						
+            
+						<shininess>
+							
+              
+							<float sid="shininess">2.000000</float>
+							
+            
+						</shininess>
+						
+            
+						<reflective>
+							
+              
+							<color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+							
+            
+						</reflective>
+						
+            
+						<reflectivity>
+							
+              
+							<float sid="reflectivity">1.000000</float>
+							
+            
+						</reflectivity>
+						
+            
+						<transparent opaque="RGB_ZERO">
+							
+              
+							<color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+							
+            
+						</transparent>
+						
+            
+						<transparency>
+							
+              
+							<float sid="transparency">0.800000</float>
+							
+            
+						</transparency>
+						
+          
+					</phong>
+					
+        
+				</technique>
+				
+      
+			</profile_COMMON>
+			
+    
+		</effect>
+		
+  
+	</library_effects>
+	
+  
+	<library_geometries>
+		
+    
+		<geometry id="aws_HouseWallB_01_visual-lib" name="aws_HouseWallB_01_visualMesh">
+			
+      
+			<mesh>
+				
+        
+				<source id="aws_HouseWallB_01_visual-POSITION">
+					
+          
+					<float_array count="444" id="aws_HouseWallB_01_visual-POSITION-array">
 -2.327488 3.105680 0.000000
 -2.327492 5.499997 0.000000
 4.669573 5.500004 0.000000
@@ -284,16 +570,36 @@
 -2.500000 3.100001 2.200001
 -2.424799 3.300000 3.000000
 </float_array>
-          <technique_common>
-            <accessor source="#aws_HouseWallB_01_visual-POSITION-array" count="148" stride="3">
-              <param name="X" type="float"/>
-              <param name="Y" type="float"/>
-              <param name="Z" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="aws_HouseWallB_01_visual-Normal0">
-          <float_array id="aws_HouseWallB_01_visual-Normal0-array" count="2169">
+					
+          
+					<technique_common>
+						
+            
+						<accessor count="148" source="#aws_HouseWallB_01_visual-POSITION-array" stride="3">
+							
+              
+							<param name="X" type="float"/>
+							
+              
+							<param name="Y" type="float"/>
+							
+              
+							<param name="Z" type="float"/>
+							
+            
+						</accessor>
+						
+          
+					</technique_common>
+					
+        
+				</source>
+				
+        
+				<source id="aws_HouseWallB_01_visual-Normal0">
+					
+          
+					<float_array count="2169" id="aws_HouseWallB_01_visual-Normal0-array">
 1.000000 0.000002 0.000000
 1.000000 0.000002 0.000000
 1.000000 0.000002 0.000000
@@ -1018,16 +1324,36 @@
 0.000000 0.000000 1.000000
 0.000000 0.000000 1.000000
 </float_array>
-          <technique_common>
-            <accessor source="#aws_HouseWallB_01_visual-Normal0-array" count="723" stride="3">
-              <param name="X" type="float"/>
-              <param name="Y" type="float"/>
-              <param name="Z" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="aws_HouseWallB_01_visual-UV0">
-          <float_array id="aws_HouseWallB_01_visual-UV0-array" count="1446">
+					
+          
+					<technique_common>
+						
+            
+						<accessor count="723" source="#aws_HouseWallB_01_visual-Normal0-array" stride="3">
+							
+              
+							<param name="X" type="float"/>
+							
+              
+							<param name="Y" type="float"/>
+							
+              
+							<param name="Z" type="float"/>
+							
+            
+						</accessor>
+						
+          
+					</technique_common>
+					
+        
+				</source>
+				
+        
+				<source id="aws_HouseWallB_01_visual-UV0">
+					
+          
+					<float_array count="1446" id="aws_HouseWallB_01_visual-UV0-array">
 0.620440 0.872466
 0.618559 0.811271
 0.632467 0.810843
@@ -1752,15 +2078,33 @@
 15.926117 0.869944
 15.949413 0.931792
 </float_array>
-          <technique_common>
-            <accessor source="#aws_HouseWallB_01_visual-UV0-array" count="723" stride="2">
-              <param name="S" type="float"/>
-              <param name="T" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="aws_HouseWallB_01_visual-UV1">
-          <float_array id="aws_HouseWallB_01_visual-UV1-array" count="1446">
+					
+          
+					<technique_common>
+						
+            
+						<accessor count="723" source="#aws_HouseWallB_01_visual-UV0-array" stride="2">
+							
+              
+							<param name="S" type="float"/>
+							
+              
+							<param name="T" type="float"/>
+							
+            
+						</accessor>
+						
+          
+					</technique_common>
+					
+        
+				</source>
+				
+        
+				<source id="aws_HouseWallB_01_visual-UV1">
+					
+          
+					<float_array count="1446" id="aws_HouseWallB_01_visual-UV1-array">
 0.755963 0.369448
 0.755963 0.292937
 0.771941 0.292937
@@ -2485,29 +2829,123 @@
 0.231462 0.288096
 0.229059 0.281705
 </float_array>
-          <technique_common>
-            <accessor source="#aws_HouseWallB_01_visual-UV1-array" count="723" stride="2">
-              <param name="S" type="float"/>
-              <param name="T" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <vertices id="aws_HouseWallB_01_visual-VERTEX">
-          <input semantic="POSITION" source="#aws_HouseWallB_01_visual-POSITION"/>
-        </vertices>
-        <triangles count="241" material="Material #29"><input semantic="VERTEX" offset="0" source="#aws_HouseWallB_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_HouseWallB_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_HouseWallB_01_visual-UV0"/><input semantic="TEXCOORD" offset="3" set="1" source="#aws_HouseWallB_01_visual-UV1"/><p> 9 0 0 0 8 1 1 1 0 2 2 2 9 3 3 3 0 4 4 4 1 5 5 5 1 6 6 6 10 7 7 7 9 8 8 8 10 9 9 9 1 10 10 10 2 11 11 11 11 12 12 12 10 13 13 13 2 14 14 14 11 15 15 15 2 16 16 16 3 17 17 17 13 18 18 18 12 19 19 19 4 20 20 20 13 21 21 21 4 22 22 22 5 23 23 23 14 24 24 24 13 25 25 25 5 26 26 26 14 27 27 27 5 28 28 28 6 29 29 29 6 30 30 30 7 31 31 31 14 32 32 32 15 33 33 33 14 34 34 34 7 35 35 35 12 36 36 36 13 37 37 37 10 38 38 38 12 39 39 39 10 40 40 40 11 41 41 41 14 42 42 42 15 43 43 43 9 44 44 44 9 45 45 45 15 46 46 46 8 47 47 47 13 48 48 48 14 49 49 49 10 50 50 50 10 51 51 51 14 52 52 52 9 53 53 53 24 54 54 54 17 55 55 55 25 56 56 56 17 57 57 57 24 58 58 58 16 59 59 59 26 60 60 60 25 61 61 61 17 62 62 62 26 63 63 63 17 64 64 64 18 65 65 65 18 66 66 66 27 67 67 67 26 68 68 68 27 69 69 69 18 70 70 70 19 71 71 71 29 72 72 72 28 73 73 73 20 74 74 74 29 75 75 75 20 76 76 76 21 77 77 77 30 78 78 78 29 79 79 79 21 80 80 80 30 81 81 81 21 82 82 82 22 83 83 83 31 84 84 84 30 85 85 85 22 86 86 86 31 87 87 87 22 88 88 88 23 89 89 89 28 90 90 90 29 91 91 91 26 92 92 92 28 93 93 93 26 94 94 94 27 95 95 95 17 96 96 96 16 97 97 97 23 98 98 98 23 99 99 99 22 100 100 100 17 101 101 101 18 102 102 102 17 103 103 103 22 104 104 104 18 105 105 105 22 106 106 106 21 107 107 107 29 108 108 108 30 109 109 109 26 110 110 110 26 111 111 111 30 112 112 112 25 113 113 113 110 114 114 114 32 115 115 115 33 116 116 116 78 117 117 117 41 118 118 118 90 119 119 119 78 120 120 120 90 121 121 121 76 122 122 122 123 123 123 123 124 124 124 124 140 125 125 125 136 126 126 126 140 127 127 127 124 128 128 128 83 129 129 129 116 130 130 130 114 131 131 131 83 132 132 132 114 133 133 133 38 134 134 134 83 135 135 135 110 136 136 136 82 137 137 137 110 138 138 138 83 139 139 139 38 140 140 140 110 141 141 141 38 142 142 142 32 143 143 143 78 144 144 144 84 145 145 145 147 146 146 146 128 147 147 147 127 148 148 148 122 149 149 149 122 150 150 150 121 151 151 151 128 152 152 152 116 153 153 153 85 154 154 154 52 155 155 155 52 156 156 156 85 157 157 157 39 158 158 158 131 159 159 159 132 160 160 160 125 161 161 161 131 162 162 162 125 163 163 163 126 164 164 164 87 165 165 165 89 166 166 166 44 167 167 167 87 168 168 168 44 169 169 169 36 170 170 170 41 171 171 171 43 172 172 172 40 173 173 173 43 174 174 174 41 175 175 175 42 176 176 176 112 177 177 177 60 178 178 178 47 179 179 179 60 180 180 180 112 181 181 181 53 182 182 182 111 183 183 183 49 184 184 184 37 185 185 185 112 186 186 186 47 187 187 187 61 188 188 188 112 189 189 189 61 190 190 190 54 191 191 191 66 192 192 192 71 193 193 193 56 194 194 194 60 195 195 195 111 196 196 196 58 197 197 197 111 198 198 198 60 199 199 199 45 200 200 200 111 201 201 201 45 202 202 202 49 203 203 203 71 204 204 204 86 205 205 205 40 206 206 206 86 207 207 207 71 208 208 208 62 209 209 209 66 210 210 210 47 211 211 211 59 212 212 212 66 213 213 213 59 214 214 214 67 215 215 215 51 216 216 216 57 217 217 217 56 218 218 218 57 219 219 219 51 220 220 220 48 221 221 221 56 222 222 222 40 223 223 223 43 224 224 224 40 225 225 225 56 226 226 226 71 227 227 227 56 228 228 228 47 229 229 229 66 230 230 230 47 231 231 231 56 232 232 232 61 233 233 233 39 234 234 234 82 235 235 235 52 236 236 236 41 237 237 237 40 238 238 238 79 239 239 239 41 240 240 240 79 241 241 241 81 242 242 242 128 243 243 243 135 244 244 244 127 245 245 245 135 246 246 246 128 247 247 247 139 248 248 248 122 249 249 249 129 250 250 250 121 251 251 251 129 252 252 252 122 253 253 253 130 254 254 254 80 255 255 255 88 256 256 256 81 257 257 257 81 258 258 258 88 259 259 259 92 260 260 260 109 261 261 261 60 262 262 262 53 263 263 263 60 264 264 264 109 265 265 265 45 266 266 266 61 267 267 267 58 268 268 268 54 269 269 269 56 270 270 270 50 271 271 271 51 272 272 272 57 273 273 273 48 274 274 274 59 275 275 275 59 276 276 276 48 277 277 277 46 278 278 278 67 279 279 279 59 280 280 280 46 281 281 281 67 282 282 282 46 283 283 283 63 284 284 284 56 285 285 285 43 286 286 286 87 287 287 287 56 288 288 288 87 289 289 289 50 290 290 290 50 291 291 291 87 292 292 292 36 293 293 293 56 294 294 294 57 295 295 295 61 296 296 296 57 297 297 297 60 298 298 298 58 299 299 299 60 300 300 300 57 301 301 301 59 302 302 302 61 303 303 303 57 304 304 304 58 305 305 305 47 306 306 306 60 307 307 307 59 308 308 308 67 309 309 309 63 310 310 310 69 311 311 311 69 312 312 312 63 313 313 313 65 314 314 314 66 315 315 315 67 316 316 316 69 317 317 317 69 318 318 318 65 319 319 319 68 320 320 320 68 321 321 321 65 322 322 322 64 323 323 323 68 324 324 324 62 325 325 325 71 326 326 326 62 327 327 327 68 328 328 328 64 329 329 329 68 330 330 330 77 331 331 331 69 332 332 332 77 333 333 333 68 334 334 334 70 335 335 335 72 336 336 336 71 337 337 337 73 338 338 338 73 339 339 339 71 340 340 340 66 341 341 341 73 342 342 342 66 343 343 343 69 344 344 344 73 345 345 345 69 346 346 346 77 347 347 347 72 348 348 348 68 349 349 349 71 350 350 350 68 351 351 351 72 352 352 352 70 353 353 353 73 354 354 354 84 355 355 355 78 356 356 356 78 357 357 357 72 358 358 358 73 359 359 359 70 360 360 360 74 361 361 361 77 362 362 362 77 363 363 363 74 364 364 364 75 365 365 365 77 366 366 366 75 367 367 367 146 368 368 368 146 369 369 369 75 370 370 370 143 371 371 371 77 372 372 372 84 373 373 373 73 374 374 374 84 375 375 375 77 376 376 376 146 377 377 377 70 378 378 378 76 379 379 379 74 380 380 380 76 381 381 381 70 382 382 382 78 383 383 383 78 384 384 384 70 385 385 385 72 386 386 386 55 387 387 387 80 388 388 388 79 389 389 389 79 390 390 390 80 391 391 391 81 392 392 392 39 393 393 393 84 394 394 394 142 395 395 395 39 396 396 396 142 397 397 397 82 398 398 398 142 399 399 399 84 400 400 400 146 401 401 401 83 402 402 402 141 403 403 403 85 404 404 404 147 405 405 405 85 406 406 406 141 407 407 407 79 408 408 408 86 409 409 409 91 410 410 410 86 411 411 411 79 412 412 412 40 413 413 413 41 414 414 414 81 415 415 415 90 416 416 416 81 417 417 417 92 418 418 418 90 419 419 419 43 420 420 420 55 421 421 421 87 422 422 422 55 423 423 423 89 424 424 424 87 425 425 425 79 426 426 426 91 427 427 427 55 428 428 428 55 429 429 429 91 430 430 430 89 431 431 431 91 432 432 432 92 433 433 433 88 434 434 434 88 435 435 435 89 436 436 436 91 437 437 437 90 438 438 438 91 439 439 439 86 440 440 440 91 441 441 441 90 442 442 442 92 443 443 443 97 444 444 444 93 445 445 445 98 446 446 446 98 447 447 447 93 448 448 448 94 449 449 449 98 450 450 450 94 451 451 451 100 452 452 452 96 453 453 453 100 454 454 454 94 455 455 455 95 456 456 456 97 457 457 457 99 458 458 458 97 459 459 459 95 460 460 460 93 461 461 461 105 462 462 462 101 463 463 463 106 464 464 464 106 465 465 465 101 466 466 466 102 467 467 467 106 468 468 468 102 469 469 469 108 470 470 470 104 471 471 471 108 472 472 472 102 473 473 473 103 474 474 474 105 475 475 475 107 476 476 476 105 477 477 477 103 478 478 478 101 479 479 479 135 480 480 480 139 481 481 481 136 482 482 482 139 483 483 483 140 484 484 484 136 485 485 485 130 486 486 486 132 487 487 487 129 488 488 488 129 489 489 489 132 490 490 490 131 491 491 491 110 492 492 492 33 493 493 493 82 494 494 494 52 495 495 495 82 496 496 496 33 497 497 497 54 498 498 498 58 499 499 499 37 500 500 500 58 501 501 501 111 502 502 502 37 503 503 503 109 504 504 504 34 505 505 505 45 506 506 506 37 507 507 507 113 508 508 508 138 509 509 509 115 510 510 510 34 511 511 511 119 512 512 512 109 513 513 513 119 514 514 514 34 515 515 515 112 516 516 516 117 517 517 517 53 518 518 518 137 519 519 519 37 520 520 520 138 521 521 521 37 522 522 522 137 523 523 523 54 524 524 524 114 525 525 525 116 526 526 526 133 527 527 527 114 528 528 528 133 529 529 529 134 530 530 530 52 531 531 531 33 532 532 532 118 533 533 533 118 534 534 534 33 535 535 535 120 536 536 536 109 537 537 537 53 538 538 538 117 539 539 539 117 540 540 540 119 541 541 541 109 542 542 542 124 543 543 543 114 544 544 544 134 545 545 545 134 546 546 546 136 547 547 547 124 548 548 548 140 549 549 549 138 550 550 550 113 551 551 551 140 552 552 552 113 553 553 553 123 554 554 554 127 555 555 555 116 556 556 556 52 557 557 557 52 558 558 558 122 559 559 559 127 560 560 560 128 561 561 561 112 562 562 562 54 563 563 563 112 564 564 564 128 565 565 565 121 566 566 566 120 567 567 567 125 568 568 568 132 569 569 569 33 570 570 570 125 571 571 571 120 572 572 572 126 573 573 573 115 574 574 574 131 575 575 575 119 576 576 576 131 577 577 577 115 578 578 578 128 579 579 579 137 580 580 580 139 581 581 581 137 582 582 582 128 583 583 583 54 584 584 584 135 585 585 585 133 586 586 586 127 587 587 587 116 588 588 588 127 589 589 589 133 590 590 590 122 591 591 591 118 592 592 592 130 593 593 593 118 594 594 594 122 595 595 595 52 596 596 596 129 597 597 597 117 598 598 598 121 599 599 599 112 600 600 600 121 601 601 601 117 602 602 602 118 603 603 603 134 604 604 604 133 605 605 605 134 606 606 606 118 607 607 607 120 608 608 608 130 609 609 609 118 610 610 610 135 611 611 611 135 612 612 612 118 613 613 613 133 614 614 614 120 615 615 615 136 616 616 616 134 617 617 617 136 618 618 618 120 619 619 619 132 620 620 620 132 621 621 621 130 622 622 622 135 623 623 623 135 624 624 624 136 625 625 625 132 626 626 626 117 627 627 627 129 628 628 628 137 629 629 629 137 630 630 630 129 631 631 631 139 632 632 632 131 633 633 633 138 634 634 634 140 635 635 635 138 636 636 636 131 637 637 637 119 638 638 638 119 639 639 639 117 640 640 640 137 641 641 641 137 642 642 642 138 643 643 643 119 644 644 644 129 645 645 645 140 646 646 646 139 647 647 647 140 648 648 648 129 649 649 649 131 650 650 650 141 651 651 651 83 652 652 652 142 653 653 653 82 654 654 654 142 655 655 655 83 656 656 656 146 657 657 657 143 658 658 658 142 659 659 659 142 660 660 660 143 661 661 661 144 662 662 662 142 663 663 663 144 664 664 664 141 665 665 665 141 666 666 666 144 667 667 667 145 668 668 668 116 669 669 669 83 670 670 670 85 671 671 671 18 672 672 672 20 673 673 673 19 674 674 674 21 675 675 675 20 676 676 676 18 677 677 677 30 678 678 678 31 679 679 679 25 680 680 680 25 681 681 681 31 682 682 682 24 683 683 683 35 684 684 684 80 685 685 685 42 686 686 686 80 687 687 687 35 688 688 688 88 689 689 689 35 690 690 690 44 691 691 691 88 692 692 692 89 693 693 693 88 694 694 694 44 695 695 695 42 696 696 696 55 697 697 697 43 698 698 698 55 699 699 699 42 700 700 700 80 701 701 701 145 702 702 702 35 703 703 703 141 704 704 704 42 705 705 705 141 706 706 706 35 707 707 707 141 708 708 708 42 709 709 709 147 710 710 710 78 711 711 711 42 712 712 712 41 713 713 713 147 714 714 714 42 715 715 715 78 716 716 716 147 717 717 717 39 718 718 718 85 719 719 719 39 720 720 720 147 721 721 721 84 722 722 722</p></triangles>
-        <triangles count="0" material="Material #28"><input semantic="VERTEX" offset="0" source="#aws_HouseWallB_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_HouseWallB_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_HouseWallB_01_visual-UV0"/><input semantic="TEXCOORD" offset="3" set="1" source="#aws_HouseWallB_01_visual-UV1"/><p></p></triangles>
-        <triangles count="0" material="_09 - Default"><input semantic="VERTEX" offset="0" source="#aws_HouseWallB_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_HouseWallB_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_HouseWallB_01_visual-UV0"/><input semantic="TEXCOORD" offset="3" set="1" source="#aws_HouseWallB_01_visual-UV1"/><p></p></triangles>
-      </mesh>
-    </geometry>
-  </library_geometries>
-  <library_visual_scenes>
-    <visual_scene id="aws_HouseWallB_01_visual" name="aws_HouseWallB_01_visual">
-      <node name="aws_HouseWallB_01_visual" id="aws_HouseWallB_01_visual" sid="aws_HouseWallB_01_visual"><matrix sid="matrix">100.000000 0.000000 0.000000 0.000000 0.000000 100.000000 0.000000 0.000000 0.000000 0.000000 100.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_HouseWallB_01_visual-lib"><bind_material><technique_common><instance_material symbol="Material #29" target="#Material #29"/><instance_material symbol="Material #28" target="#Material #28"/><instance_material symbol="_09 - Default" target="#_09 - Default"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
-      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
-    </visual_scene>
-  </library_visual_scenes>
-  <scene>
-    <instance_visual_scene url="#aws_HouseWallB_01_visual"></instance_visual_scene>
-  </scene>
+					
+          
+					<technique_common>
+						
+            
+						<accessor count="723" source="#aws_HouseWallB_01_visual-UV1-array" stride="2">
+							
+              
+							<param name="S" type="float"/>
+							
+              
+							<param name="T" type="float"/>
+							
+            
+						</accessor>
+						
+          
+					</technique_common>
+					
+        
+				</source>
+				
+        
+				<vertices id="aws_HouseWallB_01_visual-VERTEX">
+					
+          
+					<input semantic="POSITION" source="#aws_HouseWallB_01_visual-POSITION"/>
+					
+        
+				</vertices>
+				
+        
+				<triangles count="241" material="Material #29">
+					<input offset="0" semantic="VERTEX" source="#aws_HouseWallB_01_visual-VERTEX"/>
+					<input offset="1" semantic="NORMAL" source="#aws_HouseWallB_01_visual-Normal0"/>
+					<input offset="2" semantic="TEXCOORD" set="0" source="#aws_HouseWallB_01_visual-UV0"/>
+					<input offset="3" semantic="TEXCOORD" set="1" source="#aws_HouseWallB_01_visual-UV1"/>
+					<p> 9 0 0 0 8 1 1 1 0 2 2 2 9 3 3 3 0 4 4 4 1 5 5 5 1 6 6 6 10 7 7 7 9 8 8 8 10 9 9 9 1 10 10 10 2 11 11 11 11 12 12 12 10 13 13 13 2 14 14 14 11 15 15 15 2 16 16 16 3 17 17 17 13 18 18 18 12 19 19 19 4 20 20 20 13 21 21 21 4 22 22 22 5 23 23 23 14 24 24 24 13 25 25 25 5 26 26 26 14 27 27 27 5 28 28 28 6 29 29 29 6 30 30 30 7 31 31 31 14 32 32 32 15 33 33 33 14 34 34 34 7 35 35 35 12 36 36 36 13 37 37 37 10 38 38 38 12 39 39 39 10 40 40 40 11 41 41 41 14 42 42 42 15 43 43 43 9 44 44 44 9 45 45 45 15 46 46 46 8 47 47 47 13 48 48 48 14 49 49 49 10 50 50 50 10 51 51 51 14 52 52 52 9 53 53 53 24 54 54 54 17 55 55 55 25 56 56 56 17 57 57 57 24 58 58 58 16 59 59 59 26 60 60 60 25 61 61 61 17 62 62 62 26 63 63 63 17 64 64 64 18 65 65 65 18 66 66 66 27 67 67 67 26 68 68 68 27 69 69 69 18 70 70 70 19 71 71 71 29 72 72 72 28 73 73 73 20 74 74 74 29 75 75 75 20 76 76 76 21 77 77 77 30 78 78 78 29 79 79 79 21 80 80 80 30 81 81 81 21 82 82 82 22 83 83 83 31 84 84 84 30 85 85 85 22 86 86 86 31 87 87 87 22 88 88 88 23 89 89 89 28 90 90 90 29 91 91 91 26 92 92 92 28 93 93 93 26 94 94 94 27 95 95 95 17 96 96 96 16 97 97 97 23 98 98 98 23 99 99 99 22 100 100 100 17 101 101 101 18 102 102 102 17 103 103 103 22 104 104 104 18 105 105 105 22 106 106 106 21 107 107 107 29 108 108 108 30 109 109 109 26 110 110 110 26 111 111 111 30 112 112 112 25 113 113 113 110 114 114 114 32 115 115 115 33 116 116 116 78 117 117 117 41 118 118 118 90 119 119 119 78 120 120 120 90 121 121 121 76 122 122 122 123 123 123 123 124 124 124 124 140 125 125 125 136 126 126 126 140 127 127 127 124 128 128 128 83 129 129 129 116 130 130 130 114 131 131 131 83 132 132 132 114 133 133 133 38 134 134 134 83 135 135 135 110 136 136 136 82 137 137 137 110 138 138 138 83 139 139 139 38 140 140 140 110 141 141 141 38 142 142 142 32 143 143 143 78 144 144 144 84 145 145 145 147 146 146 146 128 147 147 147 127 148 148 148 122 149 149 149 122 150 150 150 121 151 151 151 128 152 152 152 116 153 153 153 85 154 154 154 52 155 155 155 52 156 156 156 85 157 157 157 39 158 158 158 131 159 159 159 132 160 160 160 125 161 161 161 131 162 162 162 125 163 163 163 126 164 164 164 87 165 165 165 89 166 166 166 44 167 167 167 87 168 168 168 44 169 169 169 36 170 170 170 41 171 171 171 43 172 172 172 40 173 173 173 43 174 174 174 41 175 175 175 42 176 176 176 112 177 177 177 60 178 178 178 47 179 179 179 60 180 180 180 112 181 181 181 53 182 182 182 111 183 183 183 49 184 184 184 37 185 185 185 112 186 186 186 47 187 187 187 61 188 188 188 112 189 189 189 61 190 190 190 54 191 191 191 66 192 192 192 71 193 193 193 56 194 194 194 60 195 195 195 111 196 196 196 58 197 197 197 111 198 198 198 60 199 199 199 45 200 200 200 111 201 201 201 45 202 202 202 49 203 203 203 71 204 204 204 86 205 205 205 40 206 206 206 86 207 207 207 71 208 208 208 62 209 209 209 66 210 210 210 47 211 211 211 59 212 212 212 66 213 213 213 59 214 214 214 67 215 215 215 51 216 216 216 57 217 217 217 56 218 218 218 57 219 219 219 51 220 220 220 48 221 221 221 56 222 222 222 40 223 223 223 43 224 224 224 40 225 225 225 56 226 226 226 71 227 227 227 56 228 228 228 47 229 229 229 66 230 230 230 47 231 231 231 56 232 232 232 61 233 233 233 39 234 234 234 82 235 235 235 52 236 236 236 41 237 237 237 40 238 238 238 79 239 239 239 41 240 240 240 79 241 241 241 81 242 242 242 128 243 243 243 135 244 244 244 127 245 245 245 135 246 246 246 128 247 247 247 139 248 248 248 122 249 249 249 129 250 250 250 121 251 251 251 129 252 252 252 122 253 253 253 130 254 254 254 80 255 255 255 88 256 256 256 81 257 257 257 81 258 258 258 88 259 259 259 92 260 260 260 109 261 261 261 60 262 262 262 53 263 263 263 60 264 264 264 109 265 265 265 45 266 266 266 61 267 267 267 58 268 268 268 54 269 269 269 56 270 270 270 50 271 271 271 51 272 272 272 57 273 273 273 48 274 274 274 59 275 275 275 59 276 276 276 48 277 277 277 46 278 278 278 67 279 279 279 59 280 280 280 46 281 281 281 67 282 282 282 46 283 283 283 63 284 284 284 56 285 285 285 43 286 286 286 87 287 287 287 56 288 288 288 87 289 289 289 50 290 290 290 50 291 291 291 87 292 292 292 36 293 293 293 56 294 294 294 57 295 295 295 61 296 296 296 57 297 297 297 60 298 298 298 58 299 299 299 60 300 300 300 57 301 301 301 59 302 302 302 61 303 303 303 57 304 304 304 58 305 305 305 47 306 306 306 60 307 307 307 59 308 308 308 67 309 309 309 63 310 310 310 69 311 311 311 69 312 312 312 63 313 313 313 65 314 314 314 66 315 315 315 67 316 316 316 69 317 317 317 69 318 318 318 65 319 319 319 68 320 320 320 68 321 321 321 65 322 322 322 64 323 323 323 68 324 324 324 62 325 325 325 71 326 326 326 62 327 327 327 68 328 328 328 64 329 329 329 68 330 330 330 77 331 331 331 69 332 332 332 77 333 333 333 68 334 334 334 70 335 335 335 72 336 336 336 71 337 337 337 73 338 338 338 73 339 339 339 71 340 340 340 66 341 341 341 73 342 342 342 66 343 343 343 69 344 344 344 73 345 345 345 69 346 346 346 77 347 347 347 72 348 348 348 68 349 349 349 71 350 350 350 68 351 351 351 72 352 352 352 70 353 353 353 73 354 354 354 84 355 355 355 78 356 356 356 78 357 357 357 72 358 358 358 73 359 359 359 70 360 360 360 74 361 361 361 77 362 362 362 77 363 363 363 74 364 364 364 75 365 365 365 77 366 366 366 75 367 367 367 146 368 368 368 146 369 369 369 75 370 370 370 143 371 371 371 77 372 372 372 84 373 373 373 73 374 374 374 84 375 375 375 77 376 376 376 146 377 377 377 70 378 378 378 76 379 379 379 74 380 380 380 76 381 381 381 70 382 382 382 78 383 383 383 78 384 384 384 70 385 385 385 72 386 386 386 55 387 387 387 80 388 388 388 79 389 389 389 79 390 390 390 80 391 391 391 81 392 392 392 39 393 393 393 84 394 394 394 142 395 395 395 39 396 396 396 142 397 397 397 82 398 398 398 142 399 399 399 84 400 400 400 146 401 401 401 83 402 402 402 141 403 403 403 85 404 404 404 147 405 405 405 85 406 406 406 141 407 407 407 79 408 408 408 86 409 409 409 91 410 410 410 86 411 411 411 79 412 412 412 40 413 413 413 41 414 414 414 81 415 415 415 90 416 416 416 81 417 417 417 92 418 418 418 90 419 419 419 43 420 420 420 55 421 421 421 87 422 422 422 55 423 423 423 89 424 424 424 87 425 425 425 79 426 426 426 91 427 427 427 55 428 428 428 55 429 429 429 91 430 430 430 89 431 431 431 91 432 432 432 92 433 433 433 88 434 434 434 88 435 435 435 89 436 436 436 91 437 437 437 90 438 438 438 91 439 439 439 86 440 440 440 91 441 441 441 90 442 442 442 92 443 443 443 97 444 444 444 93 445 445 445 98 446 446 446 98 447 447 447 93 448 448 448 94 449 449 449 98 450 450 450 94 451 451 451 100 452 452 452 96 453 453 453 100 454 454 454 94 455 455 455 95 456 456 456 97 457 457 457 99 458 458 458 97 459 459 459 95 460 460 460 93 461 461 461 105 462 462 462 101 463 463 463 106 464 464 464 106 465 465 465 101 466 466 466 102 467 467 467 106 468 468 468 102 469 469 469 108 470 470 470 104 471 471 471 108 472 472 472 102 473 473 473 103 474 474 474 105 475 475 475 107 476 476 476 105 477 477 477 103 478 478 478 101 479 479 479 135 480 480 480 139 481 481 481 136 482 482 482 139 483 483 483 140 484 484 484 136 485 485 485 130 486 486 486 132 487 487 487 129 488 488 488 129 489 489 489 132 490 490 490 131 491 491 491 110 492 492 492 33 493 493 493 82 494 494 494 52 495 495 495 82 496 496 496 33 497 497 497 54 498 498 498 58 499 499 499 37 500 500 500 58 501 501 501 111 502 502 502 37 503 503 503 109 504 504 504 34 505 505 505 45 506 506 506 37 507 507 507 113 508 508 508 138 509 509 509 115 510 510 510 34 511 511 511 119 512 512 512 109 513 513 513 119 514 514 514 34 515 515 515 112 516 516 516 117 517 517 517 53 518 518 518 137 519 519 519 37 520 520 520 138 521 521 521 37 522 522 522 137 523 523 523 54 524 524 524 114 525 525 525 116 526 526 526 133 527 527 527 114 528 528 528 133 529 529 529 134 530 530 530 52 531 531 531 33 532 532 532 118 533 533 533 118 534 534 534 33 535 535 535 120 536 536 536 109 537 537 537 53 538 538 538 117 539 539 539 117 540 540 540 119 541 541 541 109 542 542 542 124 543 543 543 114 544 544 544 134 545 545 545 134 546 546 546 136 547 547 547 124 548 548 548 140 549 549 549 138 550 550 550 113 551 551 551 140 552 552 552 113 553 553 553 123 554 554 554 127 555 555 555 116 556 556 556 52 557 557 557 52 558 558 558 122 559 559 559 127 560 560 560 128 561 561 561 112 562 562 562 54 563 563 563 112 564 564 564 128 565 565 565 121 566 566 566 120 567 567 567 125 568 568 568 132 569 569 569 33 570 570 570 125 571 571 571 120 572 572 572 126 573 573 573 115 574 574 574 131 575 575 575 119 576 576 576 131 577 577 577 115 578 578 578 128 579 579 579 137 580 580 580 139 581 581 581 137 582 582 582 128 583 583 583 54 584 584 584 135 585 585 585 133 586 586 586 127 587 587 587 116 588 588 588 127 589 589 589 133 590 590 590 122 591 591 591 118 592 592 592 130 593 593 593 118 594 594 594 122 595 595 595 52 596 596 596 129 597 597 597 117 598 598 598 121 599 599 599 112 600 600 600 121 601 601 601 117 602 602 602 118 603 603 603 134 604 604 604 133 605 605 605 134 606 606 606 118 607 607 607 120 608 608 608 130 609 609 609 118 610 610 610 135 611 611 611 135 612 612 612 118 613 613 613 133 614 614 614 120 615 615 615 136 616 616 616 134 617 617 617 136 618 618 618 120 619 619 619 132 620 620 620 132 621 621 621 130 622 622 622 135 623 623 623 135 624 624 624 136 625 625 625 132 626 626 626 117 627 627 627 129 628 628 628 137 629 629 629 137 630 630 630 129 631 631 631 139 632 632 632 131 633 633 633 138 634 634 634 140 635 635 635 138 636 636 636 131 637 637 637 119 638 638 638 119 639 639 639 117 640 640 640 137 641 641 641 137 642 642 642 138 643 643 643 119 644 644 644 129 645 645 645 140 646 646 646 139 647 647 647 140 648 648 648 129 649 649 649 131 650 650 650 141 651 651 651 83 652 652 652 142 653 653 653 82 654 654 654 142 655 655 655 83 656 656 656 146 657 657 657 143 658 658 658 142 659 659 659 142 660 660 660 143 661 661 661 144 662 662 662 142 663 663 663 144 664 664 664 141 665 665 665 141 666 666 666 144 667 667 667 145 668 668 668 116 669 669 669 83 670 670 670 85 671 671 671 18 672 672 672 20 673 673 673 19 674 674 674 21 675 675 675 20 676 676 676 18 677 677 677 30 678 678 678 31 679 679 679 25 680 680 680 25 681 681 681 31 682 682 682 24 683 683 683 35 684 684 684 80 685 685 685 42 686 686 686 80 687 687 687 35 688 688 688 88 689 689 689 35 690 690 690 44 691 691 691 88 692 692 692 89 693 693 693 88 694 694 694 44 695 695 695 42 696 696 696 55 697 697 697 43 698 698 698 55 699 699 699 42 700 700 700 80 701 701 701 145 702 702 702 35 703 703 703 141 704 704 704 42 705 705 705 141 706 706 706 35 707 707 707 141 708 708 708 42 709 709 709 147 710 710 710 78 711 711 711 42 712 712 712 41 713 713 713 147 714 714 714 42 715 715 715 78 716 716 716 147 717 717 717 39 718 718 718 85 719 719 719 39 720 720 720 147 721 721 721 84 722 722 722</p>
+				</triangles>
+				
+        
+				<triangles count="0" material="Material #28">
+					<input offset="0" semantic="VERTEX" source="#aws_HouseWallB_01_visual-VERTEX"/>
+					<input offset="1" semantic="NORMAL" source="#aws_HouseWallB_01_visual-Normal0"/>
+					<input offset="2" semantic="TEXCOORD" set="0" source="#aws_HouseWallB_01_visual-UV0"/>
+					<input offset="3" semantic="TEXCOORD" set="1" source="#aws_HouseWallB_01_visual-UV1"/>
+					<p/>
+				</triangles>
+				
+        
+				<triangles count="0" material="_09 - Default">
+					<input offset="0" semantic="VERTEX" source="#aws_HouseWallB_01_visual-VERTEX"/>
+					<input offset="1" semantic="NORMAL" source="#aws_HouseWallB_01_visual-Normal0"/>
+					<input offset="2" semantic="TEXCOORD" set="0" source="#aws_HouseWallB_01_visual-UV0"/>
+					<input offset="3" semantic="TEXCOORD" set="1" source="#aws_HouseWallB_01_visual-UV1"/>
+					<p/>
+				</triangles>
+				
+      
+			</mesh>
+			
+    
+		</geometry>
+		
+  
+	</library_geometries>
+	
+  
+	<library_visual_scenes>
+		
+    
+		<visual_scene id="aws_HouseWallB_01_visual" name="aws_HouseWallB_01_visual">
+			
+      
+			<node id="aws_HouseWallB_01_visual" name="aws_HouseWallB_01_visual" sid="aws_HouseWallB_01_visual">
+				<matrix sid="matrix">100.000000 0.000000 0.000000 0.000000 0.000000 100.000000 0.000000 0.000000 0.000000 0.000000 100.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+				<instance_geometry url="#aws_HouseWallB_01_visual-lib">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Material #29" target="#Material #29"/>
+							<instance_material symbol="Material #28" target="#Material #28"/>
+							<instance_material symbol="_09 - Default" target="#_09 - Default"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+				<extra>
+					<technique profile="FCOLLADA">
+						<visibility>1.000000</visibility>
+					</technique>
+				</extra>
+			</node>
+			
+      
+			<extra>
+				<technique profile="MAX3D">
+					<frame_rate>30.000000</frame_rate>
+				</technique>
+				<technique profile="FCOLLADA">
+					<start_time>0.000000</start_time>
+					<end_time>3.333333</end_time>
+				</technique>
+			</extra>
+			
+    
+		</visual_scene>
+		
+  
+	</library_visual_scenes>
+	
+  
+	<scene>
+		
+    
+		<instance_visual_scene url="#aws_HouseWallB_01_visual"/>
+		
+  
+	</scene>
+	
+
 </COLLADA>
