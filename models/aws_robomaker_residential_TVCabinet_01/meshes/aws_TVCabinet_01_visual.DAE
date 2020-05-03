@@ -1,198 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
-	
-  
-	<asset>
-		<contributor>
-			<author/>
-			<authoring_tool>FBX COLLADA exporter</authoring_tool>
-			<comments/>
-		</contributor>
-		<created>2018-10-10T02:08:21Z</created>
-		<keywords/>
-		<modified>2018-10-10T02:08:21Z</modified>
-		<revision/>
-		<subject/>
-		<title/>
-		<unit meter="0.010000" name="centimeter"/>
-		<up_axis>Z_UP</up_axis>
-	</asset>
-	
-  
-	<library_images>
-		
-    
-		<image id="Map #16-image" name="Map #16">
-			<init_from>../materials/textures/aws_TVCabinet_01.png</init_from>
-		</image>
-		
-  
-	</library_images>
-	
-  
-	<library_materials>
-		
-    
-		<material id="Material #27" name="Material #27">
-			
-      
-			<instance_effect url="#Material #27-fx"/>
-			
-    
-		</material>
-		
-  
-	</library_materials>
-	
-  
-	<library_effects>
-		
-    
-		<effect id="Material #27-fx" name="Material #27">
-			
-      
-			<profile_COMMON>
-				
-        
-				<technique sid="standard">
-					
-          
-					<phong>
-						
-            
-						<emission>
-							
-              
-							<color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
-							
-            
-						</emission>
-						
-            
-						<ambient>
-							
-              
-							<color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
-							
-            
-						</ambient>
-						
-            
-						<diffuse>
-							
-              
-							<texture texcoord="CHANNEL0" texture="Map #16-image">
-								
-                
-								<extra>
-									
-                  
-									<technique profile="MAYA">
-										
-                    
-										<wrapU sid="wrapU0">TRUE</wrapU>
-										
-                    
-										<wrapV sid="wrapV0">TRUE</wrapV>
-										
-                    
-										<blend_mode>ADD</blend_mode>
-										
-                  
-									</technique>
-									
-                
-								</extra>
-								
-              
-							</texture>
-							
-            
-						</diffuse>
-						
-            
-						<specular>
-							
-              
-							<color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
-							
-            
-						</specular>
-						
-            
-						<shininess>
-							
-              
-							<float sid="shininess">2.000000</float>
-							
-            
-						</shininess>
-						
-            
-						<reflective>
-							
-              
-							<color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
-							
-            
-						</reflective>
-						
-            
-						<reflectivity>
-							
-              
-							<float sid="reflectivity">1.000000</float>
-							
-            
-						</reflectivity>
-						
-            
-						<transparent opaque="RGB_ZERO">
-							
-              
-							<color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
-							
-            
-						</transparent>
-						
-            
-						<transparency>
-							
-              
-							<float sid="transparency">0.000000</float>
-							
-            
-						</transparency>
-						
-          
-					</phong>
-					
-        
-				</technique>
-				
-      
-			</profile_COMMON>
-			
-    
-		</effect>
-		
-  
-	</library_effects>
-	
-  
-	<library_geometries>
-		
-    
-		<geometry id="aws_TVCabinet_01_visual-lib" name="aws_TVCabinet_01_visualMesh">
-			
-      
-			<mesh>
-				
-        
-				<source id="aws_TVCabinet_01_visual-POSITION">
-					
-          
-					<float_array count="288" id="aws_TVCabinet_01_visual-POSITION-array">
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-10T02:08:21Z</created><keywords></keywords><modified>2018-10-10T02:08:21Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_images>
+    <image id="Map #16-image" name="Map #16"><init_from>../materials/textures/aws_TVCabinet_01.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="Material #27" name="Material #27">
+      <instance_effect url="#Material #27-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Material #27-fx" name="Material #27">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #16-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_TVCabinet_01_visual-lib" name="aws_TVCabinet_01_visualMesh">
+      <mesh>
+        <source id="aws_TVCabinet_01_visual-POSITION">
+          <float_array id="aws_TVCabinet_01_visual-POSITION-array" count="288">
 30.734200 -139.572891 45.455784
 29.701988 -139.572891 41.667774
 27.210121 -139.572891 40.098728
@@ -290,36 +156,16 @@
 25.594406 129.759262 2.081448
 25.971794 135.756577 2.113476
 </float_array>
-					
-          
-					<technique_common>
-						
-            
-						<accessor count="96" source="#aws_TVCabinet_01_visual-POSITION-array" stride="3">
-							
-              
-							<param name="X" type="float"/>
-							
-              
-							<param name="Y" type="float"/>
-							
-              
-							<param name="Z" type="float"/>
-							
-            
-						</accessor>
-						
-          
-					</technique_common>
-					
-        
-				</source>
-				
-        
-				<source id="aws_TVCabinet_01_visual-Normal0">
-					
-          
-					<float_array count="654" id="aws_TVCabinet_01_visual-Normal0-array">
+          <technique_common>
+            <accessor source="#aws_TVCabinet_01_visual-POSITION-array" count="96" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_TVCabinet_01_visual-Normal0">
+          <float_array id="aws_TVCabinet_01_visual-Normal0-array" count="654">
 0.964821 0.000000 -0.262907
 0.964821 0.000000 -0.262907
 0.964821 0.000000 -0.262907
@@ -539,36 +385,16 @@
 1.000000 0.000009 0.000000
 1.000000 0.000009 0.000000
 </float_array>
-					
-          
-					<technique_common>
-						
-            
-						<accessor count="218" source="#aws_TVCabinet_01_visual-Normal0-array" stride="3">
-							
-              
-							<param name="X" type="float"/>
-							
-              
-							<param name="Y" type="float"/>
-							
-              
-							<param name="Z" type="float"/>
-							
-            
-						</accessor>
-						
-          
-					</technique_common>
-					
-        
-				</source>
-				
-        
-				<source id="aws_TVCabinet_01_visual-UV0">
-					
-          
-					<float_array count="408" id="aws_TVCabinet_01_visual-UV0-array">
+          <technique_common>
+            <accessor source="#aws_TVCabinet_01_visual-Normal0-array" count="218" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_TVCabinet_01_visual-UV0">
+          <float_array id="aws_TVCabinet_01_visual-UV0-array" count="408">
 1.054513 0.640259
 0.232818 0.640259
 0.232818 0.627207
@@ -774,33 +600,15 @@
 0.727961 0.964801
 0.727854 0.944824
 </float_array>
-					
-          
-					<technique_common>
-						
-            
-						<accessor count="204" source="#aws_TVCabinet_01_visual-UV0-array" stride="2">
-							
-              
-							<param name="S" type="float"/>
-							
-              
-							<param name="T" type="float"/>
-							
-            
-						</accessor>
-						
-          
-					</technique_common>
-					
-        
-				</source>
-				
-        
-				<source id="aws_TVCabinet_01_visual-UV1">
-					
-          
-					<float_array count="408" id="aws_TVCabinet_01_visual-UV1-array">
+          <technique_common>
+            <accessor source="#aws_TVCabinet_01_visual-UV0-array" count="204" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_TVCabinet_01_visual-UV1">
+          <float_array id="aws_TVCabinet_01_visual-UV1-array" count="408">
 0.438219 0.000500
 0.438219 0.821227
 0.425183 0.821227
@@ -1006,104 +814,27 @@
 0.938078 0.910036
 0.937972 0.890105
 </float_array>
-					
-          
-					<technique_common>
-						
-            
-						<accessor count="204" source="#aws_TVCabinet_01_visual-UV1-array" stride="2">
-							
-              
-							<param name="S" type="float"/>
-							
-              
-							<param name="T" type="float"/>
-							
-            
-						</accessor>
-						
-          
-					</technique_common>
-					
-        
-				</source>
-				
-        
-				<vertices id="aws_TVCabinet_01_visual-VERTEX">
-					
-          
-					<input semantic="POSITION" source="#aws_TVCabinet_01_visual-POSITION"/>
-					
-        
-				</vertices>
-				
-        
-				<polylist count="55" material="Material #27">
-					<input offset="0" semantic="VERTEX" source="#aws_TVCabinet_01_visual-VERTEX"/>
-					<input offset="1" semantic="NORMAL" source="#aws_TVCabinet_01_visual-Normal0"/>
-					<input offset="2" semantic="TEXCOORD" set="0" source="#aws_TVCabinet_01_visual-UV0"/>
-					<input offset="3" semantic="TEXCOORD" set="1" source="#aws_TVCabinet_01_visual-UV1"/>
-					<vcount>4 4 4 4 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
-					<p> 1 0 0 0 6 1 1 1 5 2 2 2 0 3 3 3 2 4 4 4 7 5 5 5 6 6 10 10 1 7 11 11 3 8 6 6 4 9 7 7 9 10 12 12 8 11 13 13 9 12 8 8 4 13 9 9 0 14 3 3 5 15 2 2 4 16 20 20 1 17 21 21 0 18 24 24 6 19 18 18 9 20 19 19 5 21 23 23 10 22 161 161 12 23 162 162 7 24 5 5 2 25 4 4 11 26 159 159 3 27 6 6 8 28 13 13 13 29 160 160 12 30 26 26 13 31 153 153 8 32 154 154 7 33 155 155 3 34 27 27 11 35 156 156 10 36 157 157 2 37 158 158 11 38 14 14 13 39 15 15 12 40 16 16 10 41 17 17 16 42 34 34 17 43 165 165 15 44 166 166 14 45 167 167 19 46 40 40 21 47 168 168 20 48 169 169 18 49 170 170 15 50 36 36 19 51 37 37 18 52 38 38 14 53 39 39 16 54 28 28 20 55 31 31 21 56 32 32 17 57 33 33 14 58 174 174 18 59 175 175 20 60 176 176 16 61 177 177 19 62 30 30 15 63 171 171 17 64 172 172 21 65 173 173 22 66 44 44 24 67 46 46 26 68 47 47 25 69 48 48 27 70 42 42 26 71 43 43 24 72 45 45 23 73 150 150 28 74 51 51 31 75 53 53 33 76 57 57 32 77 58 58 30 78 52 52 29 79 54 54 35 80 55 55 34 81 56 56 34 82 49 49 33 83 50 50 31 84 163 163 30 85 164 164 37 86 62 62 36 87 63 63 41 88 64 64 40 89 65 65 40 90 59 59 39 91 60 60 38 92 61 61 37 93 178 178 43 94 68 68 46 95 70 70 45 96 151 151 42 97 152 152 46 98 66 66 43 99 67 67 44 100 69 69 47 101 71 71 50 102 72 72 48 103 73 73 49 104 74 74 51 105 75 75 53 106 80 80 57 107 82 82 56 108 83 83 52 109 84 84 54 110 81 81 58 111 85 85 59 112 86 86 55 113 87 87 52 114 76 76 56 115 77 77 58 116 78 78 54 117 79 79 65 118 98 98 60 119 99 99 66 120 100 100 62 121 101 101 65 122 88 88 63 123 93 93 61 124 94 94 60 125 95 95 63 126 96 96 64 127 97 97 67 128 200 200 61 129 201 201 62 130 89 89 66 131 90 90 67 132 91 91 64 133 92 92 60 134 148 148 61 135 149 149 67 136 179 179 66 137 180 180 75 138 116 116 69 139 117 117 76 140 118 118 72 141 119 119 75 142 102 102 73 143 111 111 71 144 112 112 69 145 113 113 73 146 114 114 74 147 115 115 77 148 194 194 71 149 195 195 72 150 103 103 76 151 104 104 77 152 105 105 74 153 106 106 78 154 107 107 68 155 108 108 70 156 109 109 79 157 110 110 85 158 130 130 80 159 131 131 86 160 132 132 82 161 133 133 85 162 125 125 83 163 126 126 81 164 192 192 80 165 193 193 83 166 120 120 84 167 127 127 87 168 128 128 81 169 129 129 82 170 121 121 86 171 122 122 87 172 123 123 84 173 124 124 93 174 144 144 88 175 145 145 94 176 146 146 90 177 147 147 93 178 139 139 91 179 140 140 89 180 202 202 88 181 203 203 91 182 134 134 92 183 141 141 95 184 142 142 89 185 143 143 90 186 135 135 94 187 136 136 95 188 137 137 92 189 138 138 69 190 181 181 71 191 182 182 77 192 183 183 76 193 184 184 88 194 196 196 89 195 197 197 95 196 198 198 94 197 199 199 80 198 188 188 81 199 189 189 87 200 190 190 86 201 191 191 7 202 155 155 8 203 154 154 9 204 19 19 6 205 18 18 3 206 27 27 2 207 158 158 1 208 21 21 4 209 20 20 36 210 41 41 28 211 185 185 32 212 186 186 41 213 187 187 29 214 22 22 22 215 25 25 25 216 29 29 35 217 35 35</p>
-				</polylist>
-				
-      
-			</mesh>
-			
-    
-		</geometry>
-		
-  
-	</library_geometries>
-	
-  
-	<library_visual_scenes>
-		
-    
-		<visual_scene id="aws_TVcabinet_01_visual" name="aws_TVcabinet_01_visual">
-			
-      
-			<node id="aws_TVCabinet_01_visual" name="aws_TVCabinet_01_visual" sid="aws_TVCabinet_01_visual">
-				<matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 -0.000001 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
-				<instance_geometry url="#aws_TVCabinet_01_visual-lib">
-					<bind_material>
-						<technique_common>
-							<instance_material symbol="Material #27" target="#Material #27"/>
-						</technique_common>
-					</bind_material>
-				</instance_geometry>
-				<extra>
-					<technique profile="FCOLLADA">
-						<visibility>1.000000</visibility>
-					</technique>
-				</extra>
-			</node>
-			
-      
-			<extra>
-				<technique profile="MAX3D">
-					<frame_rate>30.000000</frame_rate>
-				</technique>
-				<technique profile="FCOLLADA">
-					<start_time>0.000000</start_time>
-					<end_time>3.333333</end_time>
-				</technique>
-			</extra>
-			
-    
-		</visual_scene>
-		
-  
-	</library_visual_scenes>
-	
-  
-	<scene>
-		
-    
-		<instance_visual_scene url="#aws_TVcabinet_01_visual"/>
-		
-  
-	</scene>
-	
-
+          <technique_common>
+            <accessor source="#aws_TVCabinet_01_visual-UV1-array" count="204" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_TVCabinet_01_visual-VERTEX">
+          <input semantic="POSITION" source="#aws_TVCabinet_01_visual-POSITION"/>
+        </vertices>
+        <polylist count="55" material="Material #27"><input semantic="VERTEX" offset="0" source="#aws_TVCabinet_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_TVCabinet_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_TVCabinet_01_visual-UV0"/><input semantic="TEXCOORD" offset="3" set="1" source="#aws_TVCabinet_01_visual-UV1"/><vcount>4 4 4 4 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount><p> 1 0 0 0 6 1 1 1 5 2 2 2 0 3 3 3 2 4 4 4 7 5 5 5 6 6 10 10 1 7 11 11 3 8 6 6 4 9 7 7 9 10 12 12 8 11 13 13 9 12 8 8 4 13 9 9 0 14 3 3 5 15 2 2 4 16 20 20 1 17 21 21 0 18 24 24 6 19 18 18 9 20 19 19 5 21 23 23 10 22 161 161 12 23 162 162 7 24 5 5 2 25 4 4 11 26 159 159 3 27 6 6 8 28 13 13 13 29 160 160 12 30 26 26 13 31 153 153 8 32 154 154 7 33 155 155 3 34 27 27 11 35 156 156 10 36 157 157 2 37 158 158 11 38 14 14 13 39 15 15 12 40 16 16 10 41 17 17 16 42 34 34 17 43 165 165 15 44 166 166 14 45 167 167 19 46 40 40 21 47 168 168 20 48 169 169 18 49 170 170 15 50 36 36 19 51 37 37 18 52 38 38 14 53 39 39 16 54 28 28 20 55 31 31 21 56 32 32 17 57 33 33 14 58 174 174 18 59 175 175 20 60 176 176 16 61 177 177 19 62 30 30 15 63 171 171 17 64 172 172 21 65 173 173 22 66 44 44 24 67 46 46 26 68 47 47 25 69 48 48 27 70 42 42 26 71 43 43 24 72 45 45 23 73 150 150 28 74 51 51 31 75 53 53 33 76 57 57 32 77 58 58 30 78 52 52 29 79 54 54 35 80 55 55 34 81 56 56 34 82 49 49 33 83 50 50 31 84 163 163 30 85 164 164 37 86 62 62 36 87 63 63 41 88 64 64 40 89 65 65 40 90 59 59 39 91 60 60 38 92 61 61 37 93 178 178 43 94 68 68 46 95 70 70 45 96 151 151 42 97 152 152 46 98 66 66 43 99 67 67 44 100 69 69 47 101 71 71 50 102 72 72 48 103 73 73 49 104 74 74 51 105 75 75 53 106 80 80 57 107 82 82 56 108 83 83 52 109 84 84 54 110 81 81 58 111 85 85 59 112 86 86 55 113 87 87 52 114 76 76 56 115 77 77 58 116 78 78 54 117 79 79 65 118 98 98 60 119 99 99 66 120 100 100 62 121 101 101 65 122 88 88 63 123 93 93 61 124 94 94 60 125 95 95 63 126 96 96 64 127 97 97 67 128 200 200 61 129 201 201 62 130 89 89 66 131 90 90 67 132 91 91 64 133 92 92 60 134 148 148 61 135 149 149 67 136 179 179 66 137 180 180 75 138 116 116 69 139 117 117 76 140 118 118 72 141 119 119 75 142 102 102 73 143 111 111 71 144 112 112 69 145 113 113 73 146 114 114 74 147 115 115 77 148 194 194 71 149 195 195 72 150 103 103 76 151 104 104 77 152 105 105 74 153 106 106 78 154 107 107 68 155 108 108 70 156 109 109 79 157 110 110 85 158 130 130 80 159 131 131 86 160 132 132 82 161 133 133 85 162 125 125 83 163 126 126 81 164 192 192 80 165 193 193 83 166 120 120 84 167 127 127 87 168 128 128 81 169 129 129 82 170 121 121 86 171 122 122 87 172 123 123 84 173 124 124 93 174 144 144 88 175 145 145 94 176 146 146 90 177 147 147 93 178 139 139 91 179 140 140 89 180 202 202 88 181 203 203 91 182 134 134 92 183 141 141 95 184 142 142 89 185 143 143 90 186 135 135 94 187 136 136 95 188 137 137 92 189 138 138 69 190 181 181 71 191 182 182 77 192 183 183 76 193 184 184 88 194 196 196 89 195 197 197 95 196 198 198 94 197 199 199 80 198 188 188 81 199 189 189 87 200 190 190 86 201 191 191 7 202 155 155 8 203 154 154 9 204 19 19 6 205 18 18 3 206 27 27 2 207 158 158 1 208 21 21 4 209 20 20 36 210 41 41 28 211 185 185 32 212 186 186 41 213 187 187 29 214 22 22 22 215 25 25 25 216 29 29 35 217 35 35</p></polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_TVcabinet_01_visual" name="aws_TVcabinet_01_visual">
+      <node name="aws_TVCabinet_01_visual" id="aws_TVCabinet_01_visual" sid="aws_TVCabinet_01_visual"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 -0.000001 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_TVCabinet_01_visual-lib"><bind_material><technique_common><instance_material symbol="Material #27" target="#Material #27"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_TVcabinet_01_visual"></instance_visual_scene>
+  </scene>
 </COLLADA>

@@ -22,7 +22,7 @@
         <geometry>
         <!-- 
           <mesh>
-            <uri>file://aws_robomaker_residential_Ball_01/meshes/aws_Ball_01_collision.DAE</uri>
+            <uri>file://models/aws_robomaker_residential_Ball_01/meshes/aws_Ball_01_collision.DAE</uri>
             <scale>1 1 1</scale>
           </mesh>
         -->
@@ -60,7 +60,7 @@
 	    <geometry>
       <!--
           <mesh>
-            <uri>file://aws_robomaker_residential_Ball_01/meshes/aws_Ball_01_visual.DAE</uri>
+            <uri>file://models/aws_robomaker_residential_Ball_01/meshes/aws_Ball_01_visual.DAE</uri>
           </mesh>
       -->
           <sphere>
