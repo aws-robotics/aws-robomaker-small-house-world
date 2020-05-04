@@ -1,198 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
-	
-  
-	<asset>
-		<contributor>
-			<author/>
-			<authoring_tool>FBX COLLADA exporter</authoring_tool>
-			<comments/>
-		</contributor>
-		<created>2018-10-06T14:41:15Z</created>
-		<keywords/>
-		<modified>2018-10-06T14:41:15Z</modified>
-		<revision/>
-		<subject/>
-		<title/>
-		<unit meter="0.010000" name="centimeter"/>
-		<up_axis>Z_UP</up_axis>
-	</asset>
-	
-  
-	<library_images>
-		
-    
-		<image id="MapFBXASC032FBXASC0352-image" name="MapFBXASC032FBXASC0352">
-			<init_from>../materials/textures/aws_TV_01.png</init_from>
-		</image>
-		
-  
-	</library_images>
-	
-  
-	<library_materials>
-		
-    
-		<material id="MaterialFBXASC032FBXASC03529" name="MaterialFBXASC032FBXASC03529">
-			
-      
-			<instance_effect url="#MaterialFBXASC032FBXASC03529-fx"/>
-			
-    
-		</material>
-		
-  
-	</library_materials>
-	
-  
-	<library_effects>
-		
-    
-		<effect id="MaterialFBXASC032FBXASC03529-fx" name="MaterialFBXASC032FBXASC03529">
-			
-      
-			<profile_COMMON>
-				
-        
-				<technique sid="standard">
-					
-          
-					<phong>
-						
-            
-						<emission>
-							
-              
-							<color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
-							
-            
-						</emission>
-						
-            
-						<ambient>
-							
-              
-							<color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
-							
-            
-						</ambient>
-						
-            
-						<diffuse>
-							
-              
-							<texture texcoord="CHANNEL0" texture="MapFBXASC032FBXASC0352-image">
-								
-                
-								<extra>
-									
-                  
-									<technique profile="MAYA">
-										
-                    
-										<wrapU sid="wrapU0">TRUE</wrapU>
-										
-                    
-										<wrapV sid="wrapV0">TRUE</wrapV>
-										
-                    
-										<blend_mode>ADD</blend_mode>
-										
-                  
-									</technique>
-									
-                
-								</extra>
-								
-              
-							</texture>
-							
-            
-						</diffuse>
-						
-            
-						<specular>
-							
-              
-							<color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
-							
-            
-						</specular>
-						
-            
-						<shininess>
-							
-              
-							<float sid="shininess">2.000000</float>
-							
-            
-						</shininess>
-						
-            
-						<reflective>
-							
-              
-							<color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
-							
-            
-						</reflective>
-						
-            
-						<reflectivity>
-							
-              
-							<float sid="reflectivity">1.000000</float>
-							
-            
-						</reflectivity>
-						
-            
-						<transparent opaque="RGB_ZERO">
-							
-              
-							<color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
-							
-            
-						</transparent>
-						
-            
-						<transparency>
-							
-              
-							<float sid="transparency">0.000000</float>
-							
-            
-						</transparency>
-						
-          
-					</phong>
-					
-        
-				</technique>
-				
-      
-			</profile_COMMON>
-			
-    
-		</effect>
-		
-  
-	</library_effects>
-	
-  
-	<library_geometries>
-		
-    
-		<geometry id="aws_TV_01_visual-lib" name="aws_TV_01_visualMesh">
-			
-      
-			<mesh>
-				
-        
-				<source id="aws_TV_01_visual-POSITION">
-					
-          
-					<float_array count="288" id="aws_TV_01_visual-POSITION-array">
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-06T14:41:15Z</created><keywords></keywords><modified>2018-10-06T14:41:15Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_images>
+    <image id="MapFBXASC032FBXASC0352-image" name="MapFBXASC032FBXASC0352"><init_from>../materials/textures/aws_TV_01.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="MaterialFBXASC032FBXASC03529" name="MaterialFBXASC032FBXASC03529">
+      <instance_effect url="#MaterialFBXASC032FBXASC03529-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="MaterialFBXASC032FBXASC03529-fx" name="MaterialFBXASC032FBXASC03529">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="MapFBXASC032FBXASC0352-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_TV_01_visual-lib" name="aws_TV_01_visualMesh">
+      <mesh>
+        <source id="aws_TV_01_visual-POSITION">
+          <float_array id="aws_TV_01_visual-POSITION-array" count="288">
 -0.591624 -64.869858 0.229618
 0.926339 -64.869858 0.229618
 -0.591624 64.903313 0.229618
@@ -290,36 +156,16 @@
 -0.591624 64.903313 79.767632
 -0.889278 64.542709 0.229618
 </float_array>
-					
-          
-					<technique_common>
-						
-            
-						<accessor count="96" source="#aws_TV_01_visual-POSITION-array" stride="3">
-							
-              
-							<param name="X" type="float"/>
-							
-              
-							<param name="Y" type="float"/>
-							
-              
-							<param name="Z" type="float"/>
-							
-            
-						</accessor>
-						
-          
-					</technique_common>
-					
-        
-				</source>
-				
-        
-				<source id="aws_TV_01_visual-Normal0">
-					
-          
-					<float_array count="1566" id="aws_TV_01_visual-Normal0-array">
+          <technique_common>
+            <accessor source="#aws_TV_01_visual-POSITION-array" count="96" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_TV_01_visual-Normal0">
+          <float_array id="aws_TV_01_visual-Normal0-array" count="1566">
 0.000000 0.000000 -1.000000
 0.000000 0.000000 -1.000000
 0.000000 0.000000 -1.000000
@@ -843,36 +689,16 @@
 -0.627418 0.778682 0.000000
 -0.662219 0.739020 -0.123753
 </float_array>
-					
-          
-					<technique_common>
-						
-            
-						<accessor count="522" source="#aws_TV_01_visual-Normal0-array" stride="3">
-							
-              
-							<param name="X" type="float"/>
-							
-              
-							<param name="Y" type="float"/>
-							
-              
-							<param name="Z" type="float"/>
-							
-            
-						</accessor>
-						
-          
-					</technique_common>
-					
-        
-				</source>
-				
-        
-				<source id="aws_TV_01_visual-UV0">
-					
-          
-					<float_array count="414" id="aws_TV_01_visual-UV0-array">
+          <technique_common>
+            <accessor source="#aws_TV_01_visual-Normal0-array" count="522" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_TV_01_visual-UV0">
+          <float_array id="aws_TV_01_visual-UV0-array" count="414">
 0.842997 0.887351
 0.003033 0.907189
 0.003033 0.914993
@@ -1081,103 +907,27 @@
 0.846384 0.888775
 0.846378 0.381393
 </float_array>
-					
-          
-					<technique_common>
-						
-            
-						<accessor count="207" source="#aws_TV_01_visual-UV0-array" stride="2">
-							
-              
-							<param name="S" type="float"/>
-							
-              
-							<param name="T" type="float"/>
-							
-            
-						</accessor>
-						
-          
-					</technique_common>
-					
-        
-				</source>
-				
-        
-				<vertices id="aws_TV_01_visual-VERTEX">
-					
-          
-					<input semantic="POSITION" source="#aws_TV_01_visual-POSITION"/>
-					
-        
-				</vertices>
-				
-        
-				<polylist count="174" material="MaterialFBXASC032FBXASC03529">
-					<input offset="0" semantic="VERTEX" source="#aws_TV_01_visual-VERTEX"/>
-					<input offset="1" semantic="NORMAL" source="#aws_TV_01_visual-Normal0"/>
-					<input offset="2" semantic="TEXCOORD" set="0" source="#aws_TV_01_visual-UV0"/>
-					<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
-					<p> 2 0 1 3 1 2 63 2 9 63 3 9 95 4 198 2 5 1 4 6 115 5 7 116 15 8 5 15 9 5 94 10 6 4 11 115 7 12 97 5 13 98 4 14 99 4 15 99 0 16 8 1 17 16 7 18 97 4 19 99 1 20 16 21 21 14 18 22 11 19 23 12 19 24 12 20 25 13 21 26 14 94 27 103 15 28 105 8 29 106 8 30 106 3 31 100 2 32 102 94 33 103 8 34 106 2 35 102 42 36 96 43 37 93 44 38 94 44 39 94 45 40 95 42 41 96 16 42 17 15 43 4 5 44 7 5 45 7 17 46 10 16 47 17 63 48 9 3 49 2 29 50 24 29 51 24 19 52 25 63 53 9 20 54 31 16 55 28 17 56 29 17 57 29 21 58 30 20 59 31 13 60 37 48 61 32 23 62 33 23 63 33 24 64 36 13 65 37 11 66 59 50 67 38 25 68 39 25 69 39 22 70 47 11 71 59 5 72 7 7 73 18 10 74 19 9 75 34 8 76 35 15 77 4 20 78 13 19 79 12 12 80 67 12 81 67 49 82 69 20 83 13 18 84 11 21 85 14 14 86 77 14 87 77 47 88 78 18 89 11 5 90 7 10 91 19 17 92 10 16 93 17 9 94 34 15 95 4 21 96 30 17 97 29 10 98 45 10 99 45 14 100 46 21 101 30 16 102 28 20 103 31 49 104 49 49 105 49 9 106 50 16 107 28 23 108 33 31 109 79 32 110 80 32 111 80 24 112 36 23 113 33 25 114 39 37 115 81 26 116 82 26 117 82 22 118 47 25 119 39 31 120 79 30 121 83 33 122 84 33 123 84 32 124 80 31 125 79 30 126 83 29 127 85 34 128 86 34 129 86 33 130 84 30 131 83 29 132 107 3 133 100 8 134 106 8 135 106 34 136 108 29 137 107 37 138 81 36 139 87 27 140 88 27 141 88 26 142 82 37 143 81 36 144 87 35 145 89 28 146 90 28 147 90 27 148 88 36 149 87 35 150 113 7 151 97 1 152 16 1 153 16 28 154 114 35 155 113 64 156 3 90 157 194 89 158 40 64 159 3 89 160 40 39 161 43 39 162 43 38 163 62 92 164 0 64 165 3 39 166 43 92 167 0 40 168 127 39 169 43 89 170 40 89 171 40 93 172 126 40 173 127 41 174 129 40 175 127 93 176 126 93 177 126 6 178 128 41 179 129 38 180 149 41 181 129 6 182 128 6 183 128 92 184 148 38 185 149 43 186 22 42 187 23 38 188 20 38 189 20 39 190 21 43 191 22 44 192 132 43 193 133 39 194 130 39 195 130 40 196 131 44 197 132 45 198 61 44 199 70 40 200 41 40 201 41 41 202 42 45 203 61 42 204 136 45 205 137 41 206 134 41 207 134 38 208 135 42 209 136 46 210 48 18 211 26 28 212 27 28 213 27 1 214 44 46 215 48 12 216 67 56 217 91 57 218 92 57 219 92 49 220 69 12 221 67 14 222 77 62 223 101 51 224 104 51 225 104 47 226 78 14 227 77 56 228 91 55 229 109 58 230 110 58 231 110 57 232 92 56 233 91 55 234 109 54 235 111 59 236 112 59 237 112 58 238 110 55 239 109 54 240 111 48 241 32 13 242 37 13 243 37 59 244 112 54 245 111 62 246 101 61 247 122 52 248 123 52 249 123 51 250 104 62 251 101 61 252 122 60 253 124 53 254 125 53 255 125 52 256 123 61 257 122 60 258 124 50 259 38 11 260 59 11 261 59 53 262 125 60 263 124 34 264 53 8 265 57 9 266 50 9 267 50 49 268 49 57 269 51 34 270 53 9 271 50 57 272 51 34 273 53 57 274 51 58 275 58 58 276 58 33 277 63 34 278 53 33 279 63 58 280 58 59 281 65 59 282 65 32 283 66 33 284 63 32 285 66 59 286 65 13 287 68 13 288 68 24 289 138 32 290 66 19 291 25 29 292 24 30 293 52 30 294 52 12 295 54 19 296 25 12 297 54 30 298 52 31 299 55 31 300 55 56 301 56 12 302 54 56 303 56 31 304 55 23 305 60 23 306 60 55 307 64 56 308 56 55 309 64 23 310 60 48 311 71 48 312 71 54 313 72 55 314 64 28 315 27 18 316 26 47 317 73 47 318 73 27 319 74 28 320 27 27 321 74 47 322 73 51 323 75 51 324 75 26 325 76 27 326 74 22 327 118 26 328 76 51 329 75 51 330 75 52 331 117 22 332 118 11 333 120 22 334 118 52 335 117 52 336 117 53 337 119 11 338 120 35 339 140 14 340 46 10 341 45 10 342 45 7 343 139 35 344 140 14 345 46 35 346 140 36 347 141 36 348 141 62 349 142 14 350 46 61 351 144 62 352 142 36 353 141 36 354 141 37 355 143 61 356 144 50 357 146 60 358 147 61 359 144 61 360 144 37 361 143 25 362 145 50 363 146 61 364 144 25 365 145 1 366 44 0 367 121 91 368 196 91 369 196 46 370 48 1 371 44 63 372 9 19 373 25 18 374 26 18 375 26 46 376 48 63 377 9 46 378 48 91 379 196 90 380 195 90 381 195 64 382 15 95 383 198 46 384 48 90 385 195 95 386 198 46 387 48 95 388 198 63 389 9 65 390 150 75 391 151 68 392 152 68 393 152 66 394 153 65 395 150 77 396 154 78 397 155 80 398 156 80 399 156 71 400 157 77 401 154 73 402 158 74 403 159 70 404 160 70 405 160 69 406 161 73 407 158 76 408 171 72 409 164 70 410 165 70 411 165 74 412 170 76 413 171 76 414 166 67 415 167 79 416 168 79 417 168 72 418 169 76 419 166 84 420 186 68 421 175 75 422 174 75 423 174 83 424 185 84 425 186 81 426 182 65 427 177 66 428 176 66 429 176 82 430 183 81 431 182 86 432 189 78 433 179 77 434 178 77 435 178 85 436 188 86 437 189 87 438 191 71 439 181 80 440 180 80 441 180 88 442 192 87 443 191 76 444 166 84 445 186 83 446 185 83 447 185 67 448 167 76 449 166 73 450 158 81 451 182 82 452 183 82 453 183 74 454 159 73 455 158 70 456 160 86 457 189 85 458 188 85 459 188 69 460 161 70 461 160 79 462 168 87 463 191 88 464 192 88 465 192 72 466 169 79 467 168 78 468 172 86 469 190 70 470 165 72 471 164 88 472 193 80 473 173 68 474 163 84 475 187 76 476 171 74 477 170 82 478 184 66 479 162 80 480 173 78 481 172 70 482 165 70 483 165 72 484 164 80 485 173 66 486 162 68 487 163 76 488 171 76 489 171 74 490 170 66 491 162 0 492 121 89 493 197 90 494 195 90 495 195 91 496 196 0 497 121 95 498 199 64 499 3 92 500 0 92 501 0 2 502 200 95 503 199 94 504 201 6 505 128 93 506 126 93 507 126 4 508 202 94 509 201 4 510 203 93 511 126 89 512 40 89 513 40 0 514 204 4 515 203 2 516 205 92 517 148 6 518 128 6 519 128 94 520 206 2 521 205</p>
-				</polylist>
-				
-      
-			</mesh>
-			
-    
-		</geometry>
-		
-  
-	</library_geometries>
-	
-  
-	<library_visual_scenes>
-		
-    
-		<visual_scene id="aws_TV_01_visual" name="aws_TV_01_visual">
-			
-      
-			<node id="aws_TV_01_visual" name="aws_TV_01_visual" sid="aws_TV_01_visual">
-				<matrix sid="matrix">1.000000 0.000000 0.000000 2.050247 0.000000 1.000000 0.000000 -2.684723 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
-				<instance_geometry url="#aws_TV_01_visual-lib">
-					<bind_material>
-						<technique_common>
-							<instance_material symbol="MaterialFBXASC032FBXASC03529" target="#MaterialFBXASC032FBXASC03529"/>
-						</technique_common>
-					</bind_material>
-				</instance_geometry>
-				<extra>
-					<technique profile="FCOLLADA">
-						<visibility>1.000000</visibility>
-					</technique>
-				</extra>
-			</node>
-			
-      
-			<extra>
-				<technique profile="MAX3D">
-					<frame_rate>30.000000</frame_rate>
-				</technique>
-				<technique profile="FCOLLADA">
-					<start_time>0.000000</start_time>
-					<end_time>3.333333</end_time>
-				</technique>
-			</extra>
-			
-    
-		</visual_scene>
-		
-  
-	</library_visual_scenes>
-	
-  
-	<scene>
-		
-    
-		<instance_visual_scene url="#aws_TV_01_visual"/>
-		
-  
-	</scene>
-	
-
+          <technique_common>
+            <accessor source="#aws_TV_01_visual-UV0-array" count="207" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_TV_01_visual-VERTEX">
+          <input semantic="POSITION" source="#aws_TV_01_visual-POSITION"/>
+        </vertices>
+        <polylist count="174" material="MaterialFBXASC032FBXASC03529"><input semantic="VERTEX" offset="0" source="#aws_TV_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_TV_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_TV_01_visual-UV0"/><vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount><p> 2 0 1 3 1 2 63 2 9 63 3 9 95 4 198 2 5 1 4 6 115 5 7 116 15 8 5 15 9 5 94 10 6 4 11 115 7 12 97 5 13 98 4 14 99 4 15 99 0 16 8 1 17 16 7 18 97 4 19 99 1 20 16 21 21 14 18 22 11 19 23 12 19 24 12 20 25 13 21 26 14 94 27 103 15 28 105 8 29 106 8 30 106 3 31 100 2 32 102 94 33 103 8 34 106 2 35 102 42 36 96 43 37 93 44 38 94 44 39 94 45 40 95 42 41 96 16 42 17 15 43 4 5 44 7 5 45 7 17 46 10 16 47 17 63 48 9 3 49 2 29 50 24 29 51 24 19 52 25 63 53 9 20 54 31 16 55 28 17 56 29 17 57 29 21 58 30 20 59 31 13 60 37 48 61 32 23 62 33 23 63 33 24 64 36 13 65 37 11 66 59 50 67 38 25 68 39 25 69 39 22 70 47 11 71 59 5 72 7 7 73 18 10 74 19 9 75 34 8 76 35 15 77 4 20 78 13 19 79 12 12 80 67 12 81 67 49 82 69 20 83 13 18 84 11 21 85 14 14 86 77 14 87 77 47 88 78 18 89 11 5 90 7 10 91 19 17 92 10 16 93 17 9 94 34 15 95 4 21 96 30 17 97 29 10 98 45 10 99 45 14 100 46 21 101 30 16 102 28 20 103 31 49 104 49 49 105 49 9 106 50 16 107 28 23 108 33 31 109 79 32 110 80 32 111 80 24 112 36 23 113 33 25 114 39 37 115 81 26 116 82 26 117 82 22 118 47 25 119 39 31 120 79 30 121 83 33 122 84 33 123 84 32 124 80 31 125 79 30 126 83 29 127 85 34 128 86 34 129 86 33 130 84 30 131 83 29 132 107 3 133 100 8 134 106 8 135 106 34 136 108 29 137 107 37 138 81 36 139 87 27 140 88 27 141 88 26 142 82 37 143 81 36 144 87 35 145 89 28 146 90 28 147 90 27 148 88 36 149 87 35 150 113 7 151 97 1 152 16 1 153 16 28 154 114 35 155 113 64 156 3 90 157 194 89 158 40 64 159 3 89 160 40 39 161 43 39 162 43 38 163 62 92 164 0 64 165 3 39 166 43 92 167 0 40 168 127 39 169 43 89 170 40 89 171 40 93 172 126 40 173 127 41 174 129 40 175 127 93 176 126 93 177 126 6 178 128 41 179 129 38 180 149 41 181 129 6 182 128 6 183 128 92 184 148 38 185 149 43 186 22 42 187 23 38 188 20 38 189 20 39 190 21 43 191 22 44 192 132 43 193 133 39 194 130 39 195 130 40 196 131 44 197 132 45 198 61 44 199 70 40 200 41 40 201 41 41 202 42 45 203 61 42 204 136 45 205 137 41 206 134 41 207 134 38 208 135 42 209 136 46 210 48 18 211 26 28 212 27 28 213 27 1 214 44 46 215 48 12 216 67 56 217 91 57 218 92 57 219 92 49 220 69 12 221 67 14 222 77 62 223 101 51 224 104 51 225 104 47 226 78 14 227 77 56 228 91 55 229 109 58 230 110 58 231 110 57 232 92 56 233 91 55 234 109 54 235 111 59 236 112 59 237 112 58 238 110 55 239 109 54 240 111 48 241 32 13 242 37 13 243 37 59 244 112 54 245 111 62 246 101 61 247 122 52 248 123 52 249 123 51 250 104 62 251 101 61 252 122 60 253 124 53 254 125 53 255 125 52 256 123 61 257 122 60 258 124 50 259 38 11 260 59 11 261 59 53 262 125 60 263 124 34 264 53 8 265 57 9 266 50 9 267 50 49 268 49 57 269 51 34 270 53 9 271 50 57 272 51 34 273 53 57 274 51 58 275 58 58 276 58 33 277 63 34 278 53 33 279 63 58 280 58 59 281 65 59 282 65 32 283 66 33 284 63 32 285 66 59 286 65 13 287 68 13 288 68 24 289 138 32 290 66 19 291 25 29 292 24 30 293 52 30 294 52 12 295 54 19 296 25 12 297 54 30 298 52 31 299 55 31 300 55 56 301 56 12 302 54 56 303 56 31 304 55 23 305 60 23 306 60 55 307 64 56 308 56 55 309 64 23 310 60 48 311 71 48 312 71 54 313 72 55 314 64 28 315 27 18 316 26 47 317 73 47 318 73 27 319 74 28 320 27 27 321 74 47 322 73 51 323 75 51 324 75 26 325 76 27 326 74 22 327 118 26 328 76 51 329 75 51 330 75 52 331 117 22 332 118 11 333 120 22 334 118 52 335 117 52 336 117 53 337 119 11 338 120 35 339 140 14 340 46 10 341 45 10 342 45 7 343 139 35 344 140 14 345 46 35 346 140 36 347 141 36 348 141 62 349 142 14 350 46 61 351 144 62 352 142 36 353 141 36 354 141 37 355 143 61 356 144 50 357 146 60 358 147 61 359 144 61 360 144 37 361 143 25 362 145 50 363 146 61 364 144 25 365 145 1 366 44 0 367 121 91 368 196 91 369 196 46 370 48 1 371 44 63 372 9 19 373 25 18 374 26 18 375 26 46 376 48 63 377 9 46 378 48 91 379 196 90 380 195 90 381 195 64 382 15 95 383 198 46 384 48 90 385 195 95 386 198 46 387 48 95 388 198 63 389 9 65 390 150 75 391 151 68 392 152 68 393 152 66 394 153 65 395 150 77 396 154 78 397 155 80 398 156 80 399 156 71 400 157 77 401 154 73 402 158 74 403 159 70 404 160 70 405 160 69 406 161 73 407 158 76 408 171 72 409 164 70 410 165 70 411 165 74 412 170 76 413 171 76 414 166 67 415 167 79 416 168 79 417 168 72 418 169 76 419 166 84 420 186 68 421 175 75 422 174 75 423 174 83 424 185 84 425 186 81 426 182 65 427 177 66 428 176 66 429 176 82 430 183 81 431 182 86 432 189 78 433 179 77 434 178 77 435 178 85 436 188 86 437 189 87 438 191 71 439 181 80 440 180 80 441 180 88 442 192 87 443 191 76 444 166 84 445 186 83 446 185 83 447 185 67 448 167 76 449 166 73 450 158 81 451 182 82 452 183 82 453 183 74 454 159 73 455 158 70 456 160 86 457 189 85 458 188 85 459 188 69 460 161 70 461 160 79 462 168 87 463 191 88 464 192 88 465 192 72 466 169 79 467 168 78 468 172 86 469 190 70 470 165 72 471 164 88 472 193 80 473 173 68 474 163 84 475 187 76 476 171 74 477 170 82 478 184 66 479 162 80 480 173 78 481 172 70 482 165 70 483 165 72 484 164 80 485 173 66 486 162 68 487 163 76 488 171 76 489 171 74 490 170 66 491 162 0 492 121 89 493 197 90 494 195 90 495 195 91 496 196 0 497 121 95 498 199 64 499 3 92 500 0 92 501 0 2 502 200 95 503 199 94 504 201 6 505 128 93 506 126 93 507 126 4 508 202 94 509 201 4 510 203 93 511 126 89 512 40 89 513 40 0 514 204 4 515 203 2 516 205 92 517 148 6 518 128 6 519 128 94 520 206 2 521 205</p></polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_TV_01_visual" name="aws_TV_01_visual">
+      <node name="aws_TV_01_visual" id="aws_TV_01_visual" sid="aws_TV_01_visual"><matrix sid="matrix">1.000000 0.000000 0.000000 2.050247 0.000000 1.000000 0.000000 -2.684723 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_TV_01_visual-lib"><bind_material><technique_common><instance_material symbol="MaterialFBXASC032FBXASC03529" target="#MaterialFBXASC032FBXASC03529"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_TV_01_visual"></instance_visual_scene>
+  </scene>
 </COLLADA>

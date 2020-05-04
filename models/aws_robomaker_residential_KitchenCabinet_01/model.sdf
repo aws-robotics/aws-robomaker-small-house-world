@@ -37,7 +37,7 @@
         !-->
         <geometry>
           <mesh>
-            <uri>file://aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_collision.DAE</uri>
+            <uri>file://models/aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_collision.DAE</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -45,7 +45,7 @@
       <visual name="visual">
 	    <geometry>
           <mesh>
-            <uri>file://aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_visual.DAE</uri>
+            <uri>file://models/aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_visual.DAE</uri>
           </mesh>
         </geometry>
       <meta> <layer> 1 </layer></meta>
