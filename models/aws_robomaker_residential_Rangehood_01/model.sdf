@@ -8,7 +8,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_collision.DAE</uri>
+            <uri>file://models/aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_collision.DAE</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -16,7 +16,7 @@
       <visual name="visual">
 	    <geometry>
           <mesh>
-            <uri>model://aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_visual.DAE</uri>
+            <uri>file://models/aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_visual.DAE</uri>
           </mesh>
         </geometry>
       <meta> <layer> 2 </layer></meta>
