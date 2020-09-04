@@ -1,6 +1,6 @@
 <launch>
   <!-- Turtlebot robot model -->
-  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>                                                                                
+  <arg name="model" default="$(optenv TURTLEBOT3_MODEL waffle_pi)" doc="model type [burger, waffle, waffle_pi]"/>                                                                                
 
   <!-- 
       Only allow users to set (x,y,yaw), otherwise initial 
