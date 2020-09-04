@@ -1,7 +1,7 @@
 <!-- Copied from turtlebot3_navigation, allow initial pose arguments -->                                                                                                            
 <launch>
   <!-- Arguments -->
-  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>                                                                                
+  <arg name="model" default="$(optenv TURTLEBOT3_MODEL waffle_pi)" doc="model type [burger, waffle, waffle_pi]"/>                                                                                
   <arg name="map_file" default="$(find turtlebot3_navigation)/maps/map.yaml"/>
   <arg name="open_rviz" default="false"/>
   <arg name="initial_pose_x" default="0.0"/>                                                                                                                                        
