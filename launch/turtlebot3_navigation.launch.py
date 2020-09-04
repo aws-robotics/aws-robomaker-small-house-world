@@ -23,7 +23,7 @@ import launch
 from launch import LaunchDescription
 from launch.substitutions import LaunchConfiguration
 
-TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
+TURTLEBOT3_MODEL = os.environ.get('TURTLEBOT3_MODEL', 'waffle_pi')
 MAP_PATH = os.environ['HOME']
 
 # Below changes (line no 33 to 46 and 52) are added as a workaround for long path for map file.
