@@ -86,3 +86,13 @@ Below is a table showing portrait type to picture resolution data and custom ima
 | PortraitD_02 | 1024x450 | |
 | PortraitE_01 | 700x1024 | maggie |
 | PortraitE_02 | 700x1024 | iftach |
+
+# Disclaimer
+
+All objects in the scene should be static objects as intended for this sample app.
+If there is a need for some of objects to be non-static, change their 'static' flag in the world file to 'false', 
+and make sure they have correct mass and inertia values in their model.sdf
+Link: http://gazebosim.org/tutorials?tut=inertia&cat=build_robot
+
+Currently, objects in scene have inconsistent mass and inertia values, they will be fixed in the future change.
+Inconsistent mass and inertia should not affect static object simulation.
