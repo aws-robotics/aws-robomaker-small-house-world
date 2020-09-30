@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_Rangehood_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  2.6111312500e-01 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>1	</mass>
+	<inertia>
 	    <ixx>  1.9174859019e-01 </ixx>
 	    <ixy> -1.6433982015e-02 </ixy>
 	    <ixz>  1.7289632607e-04 </ixz>

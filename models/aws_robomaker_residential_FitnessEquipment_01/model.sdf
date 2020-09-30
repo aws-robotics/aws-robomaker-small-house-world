@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_FitnessEquipment_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  2.8002878906e-02 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>80	</mass>
+	<inertia>
 	    <ixx>  1.5231681051e-01 </ixx>
 	    <ixy> -1.0236824255e-02 </ixy>
 	    <ixz>  4.5347695138e-04 </ixz>

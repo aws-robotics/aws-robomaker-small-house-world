@@ -2,11 +2,9 @@
 <sdf version="1.6">
   <model name="aws_robomaker_residential_PortraitA_01">
     <link name="link">
-      		<inertial>
-	  <!-- Volume:  4.1935571290e-03 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+      <inertial>
+        <mass>1		</mass>
+	<inertia>
 	    <ixx>  4.3388701859e-02 </ixx>
 	    <ixy>  3.0630320763e-10 </ixy>
 	    <ixz> -9.1092117801e-12 </ixz>

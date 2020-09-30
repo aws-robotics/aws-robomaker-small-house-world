@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_Dumbbell_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  1.5696208008e-02 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>80	</mass>
+	<inertia>
 	    <ixx>  3.2483420183e-01 </ixx>
 	    <ixy>  7.1869842667e-09 </ixy>
 	    <ixz>  2.2513810968e-07 </ixz>

@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_SecurityCamera_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  6.6299102800e-04 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>1	</mass>
+	<inertia>
 	    <ixx>  2.6611078438e-03 </ixx>
 	    <ixy>  1.0706885011e-05 </ixy>
 	    <ixz>  2.0864173746e-07 </ixz>

@@ -4,10 +4,8 @@
     <link name="link">
     
       <inertial>
-	  <!-- Volume:  5.2108972200e-04 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>1	</mass>
+	<inertia>
 	    <ixx>  4.7421483504e-03 </ixx>
 	    <ixy>  2.0872507249e-06 </ixy>
 	    <ixz>  3.7868436407e-06 </ixz>

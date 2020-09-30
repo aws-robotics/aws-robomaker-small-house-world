@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_KitchenTable_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  9.1570953125e-02 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>12.3	</mass>
+	<inertia>
 	    <ixx>  3.6371012929e-01 </ixx>
 	    <ixy> -3.0145932773e-05 </ixy>
 	    <ixz> -1.9905388857e-07 </ixz>

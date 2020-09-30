@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_Handle_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  1.0693908700e-04 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>1	</mass>
+	<inertia>
 	    <ixx>  5.9193568765e-04 </ixx>
 	    <ixy>  2.3769548079e-04 </ixy>
 	    <ixz>  4.9127944303e-04 </ixz>

@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_FoldingDoor_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  5.4471231250e-01 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>1	</mass>
+	<inertia>
 	    <ixx>  9.3119001932e-01 </ixx>
 	    <ixy>  2.9413508071e-11 </ixy>
 	    <ixz>  2.9006137070e-14 </ixz>

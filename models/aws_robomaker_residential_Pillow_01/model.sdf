@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_Pillow_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  8.7492031250e-02 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>1	</mass>
+	<inertia>
 	    <ixx>  1.7975221029e-02 </ixx>
 	    <ixy> -5.4139437699e-04 </ixy>
 	    <ixz>  5.9639900062e-03 </ixz>

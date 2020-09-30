@@ -3,10 +3,8 @@
   <model name="aws_robomaker_residential_Chandelier_01">
     <link name="link">
       <inertial>
-	  <!-- Volume:  4.6604765625e-01 -->
-	  <mass> 1.0 </mass>
-	
-	  <inertia>
+        <mass>1	</mass>
+	<inertia>
 	    <ixx>  9.8314889873e-02 </ixx>
 	    <ixy>  8.1564130546e-05 </ixy>
 	    <ixz> -2.2898136825e-09 </ixz>
