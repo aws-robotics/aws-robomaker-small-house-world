@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_RoomCeiling_01">
     <link name="link">
       <inertial>
-        <mass>1	</mass>
+        <mass>1</mass>
 	<inertia>
 	    <ixx>  9.5783113230e+00 </ixx>
 	    <ixy>  4.9604356000e-02 </ixy>

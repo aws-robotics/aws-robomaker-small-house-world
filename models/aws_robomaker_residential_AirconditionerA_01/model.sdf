@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_AirconditionerA_01">
     <link name="link">
       <inertial>
-        <mass>1	</mass>
+        <mass>1</mass>
 	<inertia>
 	    <ixx>  8.0943111097e-02 </ixx>
 	    <ixy> -8.1265470074e-06 </ixy>

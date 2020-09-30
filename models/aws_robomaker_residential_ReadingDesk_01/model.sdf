@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_ReadingDesk_01">
     <link name="link">
       <inertial>
-        <mass>14.6	</mass>
+        <mass>14.6</mass>
 	<inertia>
 	    <ixx>  1.8121138382e-01 </ixx>
 	    <ixy> -3.6751827498e-05 </ixy>

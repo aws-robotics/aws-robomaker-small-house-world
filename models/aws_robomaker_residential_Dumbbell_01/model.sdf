@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_Dumbbell_01">
     <link name="link">
       <inertial>
-        <mass>80	</mass>
+        <mass>80</mass>
 	<inertia>
 	    <ixx>  3.2483420183e-01 </ixx>
 	    <ixy>  7.1869842667e-09 </ixy>

@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_KitchenUtensils_01">
     <link name="link">
       <inertial>
-        <mass>1	</mass>
+        <mass>1</mass>
 	<inertia>
 	    <ixx>  2.8922924509e-02 </ixx>
 	    <ixy>  6.1196599371e-04 </ixy>

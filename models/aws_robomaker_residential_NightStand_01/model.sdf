@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_NightStand_01">
     <link name="link">
       <inertial>
-        <mass>13.6	</mass>
+        <mass>13.6</mass>
 	<inertia>
 	    <ixx>  5.9068121342e-02 </ixx>
 	    <ixy> -0.0000000000e+00 </ixy>

@@ -4,7 +4,7 @@
     <link name="link">
 
       <inertial>
-        <!-- <mass>8.5	</mass>
+        <!-- <mass>8.5</mass>
 	<inertia>
 	    <ixx>  5.5200427517e-02 </ixx>
 	    <ixy>  1.2896722661e-02 </ixy>

@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_FloorB_01">
     <link name="link">
       <inertial>
-        <mass>100	</mass>
+        <mass>100</mass>
 	<inertia>
 	    <ixx>  8.9147242934e+00 </ixx>
 	    <ixy> -2.1042172774e-11 </ixy>

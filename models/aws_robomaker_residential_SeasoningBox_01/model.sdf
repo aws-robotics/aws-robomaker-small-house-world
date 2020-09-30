@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_SeasoningBox_01">
     <link name="link">
       <inertial>
-        <mass>1	</mass>
+        <mass>1</mass>
 	<inertia>
 	    <ixx>  8.5268036946e-03 </ixx>
 	    <ixy> -1.9335137502e-13 </ixy>

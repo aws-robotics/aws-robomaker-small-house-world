@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_Rangehood_01">
     <link name="link">
       <inertial>
-        <mass>1	</mass>
+        <mass>1</mass>
 	<inertia>
 	    <ixx>  1.9174859019e-01 </ixx>
 	    <ixy> -1.6433982015e-02 </ixy>

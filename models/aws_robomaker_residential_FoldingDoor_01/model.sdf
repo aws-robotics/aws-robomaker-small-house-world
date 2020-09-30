@@ -3,7 +3,7 @@
   <model name="aws_robomaker_residential_FoldingDoor_01">
     <link name="link">
       <inertial>
-        <mass>1	</mass>
+        <mass>1</mass>
 	<inertia>
 	    <ixx>  9.3119001932e-01 </ixx>
 	    <ixy>  2.9413508071e-11 </ixy>
