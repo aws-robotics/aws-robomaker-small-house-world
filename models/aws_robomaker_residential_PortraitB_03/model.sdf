@@ -3,8 +3,18 @@
   <model name="aws_robomaker_residential_PortraitB_03">
     <link name="link">
       <inertial>
-        <mass>1</mass>
-      </inertial>
+	  <!-- Volume:  5.7681733400e-03 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  4.0161427430e-02 </ixx>
+	    <ixy>  1.4352328739e-06 </ixy>
+	    <ixz> -3.6480670326e-07 </ixz>
+	    <iyy>  2.0215045670e-02 </iyy>
+	    <iyz> -4.3301252455e-07 </iyz>
+	    <izz>  6.0277852191e-02 </izz>
+	  </inertia>
+	</inertial>
       <collision name="collision">
         <geometry>
           <mesh>

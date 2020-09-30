@@ -3,8 +3,18 @@
   <model name="aws_robomaker_residential_SeasoningBox_01">
     <link name="link">
       <inertial>
-        <mass>1</mass>
-      </inertial>
+	  <!-- Volume:  1.5515793460e-03 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  8.5268036946e-03 </ixx>
+	    <ixy> -1.9335137502e-13 </ixy>
+	    <ixz> -0.0000000000e+00 </ixz>
+	    <iyy>  8.2608151425e-03 </iyy>
+	    <iyz>  9.0230641675e-13 </iyz>
+	    <izz>  8.7823851343e-04 </izz>
+	  </inertia>
+	</inertial>
       <collision name="collision">
         <geometry>
           <mesh>

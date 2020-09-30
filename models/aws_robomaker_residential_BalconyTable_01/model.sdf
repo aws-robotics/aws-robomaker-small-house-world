@@ -3,8 +3,18 @@
   <model name="aws_robomaker_residential_BalconyTable_01">
     <link name="link">
       <inertial>
-        <mass>15</mass>
-      </inertial>
+	  <!-- Volume:  1.3807625977e-02 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  3.7926968827e-02 </ixx>
+	    <ixy> -1.2029960869e-05 </ixy>
+	    <ixz> -3.1959867738e-08 </ixz>
+	    <iyy>  4.2586984249e-02 </iyy>
+	    <iyz> -6.7125164148e-05 </iyz>
+	    <izz>  3.7796417782e-02 </izz>
+	  </inertia>
+	</inertial>
       <collision name="collision">
         <geometry>
           <mesh>

@@ -3,19 +3,18 @@
   <model name="aws_robomaker_residential_Dumbbell_01">
     <link name="link">
       <inertial>
-        <mass>80</mass>
-
-        <!-- slender rod -->
-        <!-- 1/12 * M * L^2 -->
-        <inertia>
-          <ixx>14.601</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0</iyy>
-          <iyz>0</iyz>
-          <izz>14.601</izz>
-        </inertia>
-      </inertial>
+	  <!-- Volume:  1.5696208008e-02 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  3.2483420183e-01 </ixx>
+	    <ixy>  7.1869842667e-09 </ixy>
+	    <ixz>  2.2513810968e-07 </ixz>
+	    <iyy>  3.2483422731e-01 </iyy>
+	    <iyz> -2.4960594928e-07 </iyz>
+	    <izz>  1.4845265486e-02 </izz>
+	  </inertia>
+	</inertial>
       <collision name="collision">
         <geometry>
           <mesh>

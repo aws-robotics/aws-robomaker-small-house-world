@@ -3,16 +3,18 @@
   <model name="aws_robomaker_residential_ChairA_01">
     <link name="link">
       <inertial>
-          <mass>7.5</mass>
-          <inertia>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyz>0</iyz>
-            <ixx>0.217</ixx>
-            <iyy>0.217</iyy>
-            <izz>0.067</izz>
-          </inertia>
-      </inertial>
+	  <!-- Volume:  1.9755757812e-02 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  4.5075729743e-02 </ixx>
+	    <ixy> -6.2306474736e-03 </ixy>
+	    <ixz> -1.2994971650e-05 </ixz>
+	    <iyy>  4.3218438297e-02 </iyy>
+	    <iyz> -6.2426717352e-06 </iyz>
+	    <izz>  3.2980397725e-02 </izz>
+	  </inertia>
+	</inertial>
 
       <collision name="collision">
         <geometry>

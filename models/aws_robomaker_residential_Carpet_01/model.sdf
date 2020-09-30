@@ -3,8 +3,18 @@
   <model name="aws_robomaker_residential_Carpet_01">
     <link name="link">
       <inertial>
-        <mass>8.1</mass>
-      </inertial>
+	  <!-- Volume:  2.7795863281e-02 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  1.3412920773e+00 </ixx>
+	    <ixy> -0.0000000000e+00 </ixy>
+	    <ixz>  0.0000000000e+00 </ixz>
+	    <iyy>  2.3413254318e+00 </iyy>
+	    <iyz>  0.0000000000e+00 </iyz>
+	    <izz>  1.0000339302e+00 </izz>
+	  </inertia>
+	</inertial>
       
       <collision name="collision">
 

@@ -3,8 +3,18 @@
   <model name="aws_robomaker_residential_Door_01">
     <link name="link">
       <inertial>
-        <mass>1</mass>
-      </inertial>
+	  <!-- Volume:  3.4293787500e-01 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  4.1579161940e-01 </ixx>
+	    <ixy>  1.9172568793e-12 </ixy>
+	    <ixz> -0.0000000000e+00 </ixz>
+	    <iyy>  8.6226584334e-02 </iyy>
+	    <iyz>  2.0373952571e-12 </iyz>
+	    <izz>  4.9811538139e-01 </izz>
+	  </inertia>
+	</inertial>
       <collision name="collision">
         <geometry>
           <mesh>

@@ -3,16 +3,18 @@
   <model name="aws_robomaker_residential_ReadingDesk_01">
     <link name="link">
       <inertial>
-        <mass>14.6</mass>
-          <inertia>
-            <ixx>0.78</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.273</iyy>
-            <iyz>0</iyz>
-            <izz> 0.57375</izz>
-          </inertia>
-      </inertial>
+	  <!-- Volume:  9.1387132812e-02 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  1.8121138382e-01 </ixx>
+	    <ixy> -3.6751827498e-05 </ixy>
+	    <ixz> -1.6999191198e-04 </ixz>
+	    <iyy>  1.9237976572e-01 </iyy>
+	    <iyz>  3.5938042769e-04 </iyz>
+	    <izz>  3.4771175134e-02 </izz>
+	  </inertia>
+	</inertial>
       <collision name="collision">
         <geometry>
           <mesh>

@@ -4,17 +4,18 @@
     <link name="link">
 
       <inertial>
-    
-        <mass>0.1</mass>
-        <inertia>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyz>0</iyz>
-            <ixx>0.05288</ixx>
-            <iyy>0.05288</iyy>
-            <izz>0.09132</izz>
-          </inertia>
-      </inertial>
+	  <!-- Volume:  2.5410566410e-03 -->
+	  <mass> 1.0 </mass>
+	
+	  <inertia>
+	    <ixx>  1.5821894956e-02 </ixx>
+	    <ixy>  2.0426856750e-08 </ixy>
+	    <ixz>  1.3636295800e-08 </ixz>
+	    <iyy>  9.9157550863e-03 </iyy>
+	    <iyz> -3.5079934293e-08 </iyz>
+	    <izz>  1.5821917092e-02 </izz>
+	  </inertia>
+	</inertial>
 
       <collision name="collision">
         <geometry>
