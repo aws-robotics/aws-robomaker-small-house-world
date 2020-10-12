@@ -10,7 +10,7 @@
 
         <geometry>
           <mesh>
-            <uri>file://models/aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_collision.DAE</uri>
+            <uri>model://aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_collision.DAE</uri>
             <!-- <scale>0.9 0.9 0.9</scale> -->
             <scale>1 1 0.95</scale>
           </mesh>
@@ -38,7 +38,7 @@
       <visual name="visual">
 	    <geometry>
           <mesh>
-            <uri>file://models/aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_visual.DAE</uri>
+            <uri>model://aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_visual.DAE</uri>
           </mesh>
         </geometry>
       <meta> <layer> 1 </layer></meta>
