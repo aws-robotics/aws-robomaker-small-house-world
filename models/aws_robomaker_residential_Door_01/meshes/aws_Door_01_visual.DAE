@@ -2,7 +2,9 @@
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
   <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-09T10:41:33Z</created><keywords></keywords><modified>2018-10-09T10:41:33Z</modified><revision></revision><subject></subject><title></title><unit meter="1.000000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
   <library_images>
-    <image id="Map #5-image" name="Map #5"><init_from>../materials/textures/aws_Door_01.png</init_from></image>
+    <image id="Map #5-image" name="Map #5">
+      <init_from>../materials/textures/aws_Door_01.png</init_from>
+    </image>
   </library_images>
   <library_materials>
     <material id="Material #27" name="Material #27">
