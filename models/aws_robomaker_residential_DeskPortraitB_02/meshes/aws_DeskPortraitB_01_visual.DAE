@@ -6,7 +6,7 @@
       <init_from>../materials/textures/aws_DeskPortraitB_01.png</init_from>
     </image>
     <image id="Map #2-image" name="Map #2">
-      <init_from>../../../../photos/DeskPortraitA_02.jpg</init_from>
+      <init_from>../../../../photos/DeskPortraitB_02.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
