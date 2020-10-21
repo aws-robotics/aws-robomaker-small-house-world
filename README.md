@@ -2,7 +2,7 @@
 
 ![Gazebo01](docs/images/gazebo_01.png)
 
-## AWS Robomaker Small Warehouse World on Gzweb
+## AWS Robomaker Small House World on Gzweb
 
 ![Gzweb01](docs/images/gzweb_aws_house.PNG)## AWS Robomaker Small House World on Gzweb
 
@@ -44,6 +44,7 @@ gzserver worlds/small_house.world --verbose
 
 2) In another terminal, setup and run GzWeb
 - Clone GzWeb and checkout the correct branch (follow http://gazebosim.org/gzweb#install-collapse-1)
+- For Problems while installing gzweb try upgrading to nodejs version 10, this resolves the node-gyp errors, upgrade can be done using https://github.com/nodesource/distributions
 - Deploy GzWeb
     - export Gazebo model path and run the deploy script with `-m local`
 
