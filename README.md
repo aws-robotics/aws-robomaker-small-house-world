@@ -30,7 +30,7 @@ gazebo worlds/small_house.world
 ```
 
 ## Example: Running this world on Gazebo headless and running the UI on Gzweb
-*Tested in ROS Kinetic, Gazebo 7 with node version 10.22.1*
+*Tested in ROS Kinetic/Melodic, Gazebo 7/9 with node version 8.11.3/10.22.1*
 
 To open this world in Gzweb, There are two steps,
 
@@ -43,8 +43,13 @@ gzserver worlds/small_house.world --verbose
 ```
 
 2) In another terminal, setup and run GzWeb
-- Clone GzWeb and checkout the correct branch (follow http://gazebosim.org/gzweb#install-collapse-1)
-- For Problems while installing gzweb try upgrading to nodejs version 10, this resolves the node-gyp errors, upgrade can be done using https://github.com/nodesource/distributions
+- Install GzWeb by following the [official documentation](http://gazebosim.org/gzweb#install-collapse-1):
+
+  **Important**:
+  * The recommended NodeJS versions are 4 up to version 8.  
+  * Watch out for [conflicting installations of Node/NodeJS](https://askubuntu.com/questions/695155/node-nodejs-have-different-version)
+  * See [Troubleshooting section](http://gazebosim.org/gzweb#install-collapse-3) for other issues
+
 - Deploy GzWeb
     - export Gazebo model path and run the deploy script with `-m local`
 
