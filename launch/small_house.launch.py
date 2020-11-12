@@ -17,19 +17,14 @@
 # /* Author: Darby Lim */
 
 import os
-from ament_index_python.packages import get_package_share_directory
+
 import launch
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
-from launch.actions import IncludeLaunchDescription
-from launch.conditions import IfCondition
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
+from ament_index_python.packages import get_package_share_directory
 
-TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
 def generate_launch_description():
-    use_sim_time = launch.substitutions.LaunchConfiguration('use_sim_time', default='false')
     world_file_name = 'small_house.world'
     package_dir = get_package_share_directory('aws_robomaker_small_house_world')
     gazebo_ros = get_package_share_directory('gazebo_ros')
@@ -55,11 +50,15 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             name='use_sim_time',
-            default_value='false'
+            default_value='true'
         ),
-        DeclareLaunchArgument('state', 
+        DeclareLaunchArgument('state',
             default_value='true',
             description='Set "true" to load "libgazebo_ros_state.so"'),
         gazebo_server,
         gazebo_client,
     ])
+
+
+if __name__ == '__main__':
+    generate_launch_description()
