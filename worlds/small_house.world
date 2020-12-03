@@ -573,7 +573,7 @@
         <include>
             <uri>model://aws_robomaker_residential_SofaC_01</uri>
         </include>
-        <pose frame=''>0.775898 -0.411153 0.065992 -0.000464 -0.000071 0.005614</pose>
+        <pose frame=''>0.330699 -1.902792 0.065992 0.000000 0.000000 1.571733</pose>
 	</model>
 	<model name='Tableware_01_001'>
         <static>true</static>    
