@@ -4,7 +4,7 @@
 
 ## AWS Robomaker Small House World on Gzweb
 
-![Gzweb01](docs/images/gzweb_aws_house.PNG)## AWS Robomaker Small House World on Gzweb
+![Gzweb01](docs/images/gzweb_aws_house.png)## AWS Robomaker Small House World on Gzweb
 
 **Visit the [AWS RoboMaker website](https://aws.amazon.com/robomaker/) to learn more about building intelligent robotic applications with Amazon Web Services.**
 
@@ -84,9 +84,6 @@ $ rosws update
 $ rosdep install --from-paths . --ignore-src -r -y
 $ colcon build
 ```
-
-# Robot Simulation - Initial Position
-Do not use (0,0,0) for the initial position as it will collide with the lounge chairs. Instead, a resonable position is (3.5,1.0,0.0).
 
 # How to Replace Photos in Picture Frames
 
