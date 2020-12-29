@@ -51,9 +51,6 @@ rosdep install --from-paths . --ignore-src -r -y
 colcon build
 ```
 
-# Robot Simulation - Initial Position
-Do not use (0,0,0) for the initial position as it will collide with the lounge chairs. Instead, a resonable position is (3.5,1.0,0.0).
-
 # How to Replace Photos in Picture Frames
 
 Picture frames use two textures for the model:
