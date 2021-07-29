@@ -17,14 +17,12 @@
         </geometry>
 
         <surface>
-        <!--
           <friction>
             <ode> 
-              <mu>0.65</mu>
-              <mu2>0.65</mu2>
+              <mu>100</mu>
+              <mu2>50</mu2>
             </ode>
           </friction>
-          -->
           <contact>
             <ode>
               <!--<max_vel>0.01</max_vel>!-->
