@@ -36,7 +36,6 @@ colcon build
 
 # run in ROS
 source install/setup.sh
-export TURTLEBOT3_MODEL=waffle_pi
 ros2 launch aws_robomaker_small_house_world small_house.launch.py gui:=true
 ```
 
