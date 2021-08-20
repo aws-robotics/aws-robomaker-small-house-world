@@ -12,8 +12,6 @@
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>gazebo</exec_depend>
   <exec_depend>gazebo_plugins</exec_depend>
-  <exec_depend>turtlebot3_description</exec_depend>
-  <exec_depend>turtlebot3_navigation2</exec_depend>
 
   <export>
    <build_type>ament_cmake</build_type>
