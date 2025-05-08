@@ -1,17 +1,13 @@
-<?xml version="1.0" ?>
 <sdf version="1.6">
   <model name="aws_robomaker_residential_Dumbbell_01">
-    <link name="link">
+    <link name="link_Dumbbell_01">
       <inertial>
         <mass>80</mass>
-
-        <!-- slender rod -->
-        <!-- 1/12 * M * L^2 -->
         <inertia>
           <ixx>14.601</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0</iyy>
+          <iyy>1.0</iyy>
           <iyz>0</iyz>
           <izz>14.601</izz>
         </inertia>
@@ -24,27 +20,29 @@
           </mesh>
         </geometry>
         <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
+        <surface>
+          <contact>
+            <ode />
+          </contact>
+          <bounce />
+          <friction>
+            <torsional>
+              <ode />
+            </torsional>
+            <ode />
+          </friction>
+        </surface>
       </collision>
       <visual name="visual">
-	    <geometry>
+        <geometry>
           <mesh>
             <uri>model://aws_robomaker_residential_Dumbbell_01/meshes/aws_Dumbbell_01_visual.DAE</uri>
           </mesh>
         </geometry>
-      <meta> <layer> 1 </layer></meta>
-</visual>
+        <meta>
+          <layer> 1 </layer>
+        </meta>
+      </visual>
     </link>
     <static>1</static>
   </model>

@@ -16,47 +16,30 @@
 
 # /* Author: Darby Lim */
 
-import os
-
-import launch
-from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
 from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch.actions import SetEnvironmentVariable, IncludeLaunchDescription
+from launch.substitutions import PathJoinSubstitution
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    world_file_name = 'small_house.world'
-    package_dir = get_package_share_directory('aws_robomaker_small_house_world')
-    gazebo_ros = get_package_share_directory('gazebo_ros')
+    pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
+    pkg_small_house = get_package_share_directory('aws_robomaker_small_house_world')
 
-    gazebo_client = launch.actions.IncludeLaunchDescription(
-	launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(gazebo_ros, 'launch', 'gzclient.launch.py')),
-        condition=launch.conditions.IfCondition(launch.substitutions.LaunchConfiguration('gui'))
-     )
-    gazebo_server = launch.actions.IncludeLaunchDescription(
-        launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(gazebo_ros, 'launch', 'gzserver.launch.py'))
-    )
+    gz_launch_path = PathJoinSubstitution([pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py'])
+    world_path = PathJoinSubstitution([pkg_small_house, 'worlds', 'small_house.world'])
+    model_path = PathJoinSubstitution([pkg_small_house, 'models'])
 
     return LaunchDescription([
-        DeclareLaunchArgument(
-          'world',
-          default_value=[os.path.join(package_dir, 'worlds', world_file_name), ''],
-          description='SDF world file'),
-        DeclareLaunchArgument(
-            name='gui',
-            default_value='false'
+        SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', model_path),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(gz_launch_path),
+            launch_arguments={
+                'gz_args': [world_path],
+                'on_exit_shutdown': 'True'
+            }.items(),
         ),
-        DeclareLaunchArgument(
-            name='use_sim_time',
-            default_value='true'
-        ),
-        DeclareLaunchArgument('state',
-            default_value='true',
-            description='Set "true" to load "libgazebo_ros_state.so"'),
-        gazebo_server,
-        gazebo_client,
     ])
 
 

@@ -1,17 +1,17 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <sdf version="1.6">
   <model name="aws_robomaker_residential_ReadingDesk_01">
-    <link name="link">
+    <link name="link_ReadingDesk_01">
       <inertial>
         <mass>14.6</mass>
-          <inertia>
-            <ixx>0.78</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.273</iyy>
-            <iyz>0</iyz>
-            <izz> 0.57375</izz>
-          </inertia>
+        <inertia>
+          <ixx>0.78</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.273</iyy>
+          <iyz>0</iyz>
+          <izz> 0.57375</izz>
+        </inertia>
       </inertial>
       <collision name="collision">
         <geometry>
@@ -22,13 +22,15 @@
         </geometry>
       </collision>
       <visual name="visual">
-	    <geometry>
+        <geometry>
           <mesh>
             <uri>model://aws_robomaker_residential_ReadingDesk_01/meshes/aws_ReadingDesk_01_visual.DAE</uri>
           </mesh>
         </geometry>
-      <meta> <layer> 1 </layer></meta>
-</visual>
+        <meta>
+          <layer> 1 </layer>
+        </meta>
+      </visual>
     </link>
   </model>
 </sdf>

@@ -1,9 +1,17 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <sdf version="1.6">
   <model name="aws_robomaker_residential_PortraitA_01">
-    <link name="link">
+    <link name="link_PortraitA_01">
       <inertial>
         <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <iyy>0.01</iyy>
+          <izz>0.01</izz>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyz>0.0</iyz>
+        </inertia>
       </inertial>
       <collision name="collision">
         <geometry>
@@ -14,14 +22,16 @@
         </geometry>
       </collision>
       <visual name="visual">
-	    <geometry>
+        <geometry>
           <mesh>
             <uri>model://aws_robomaker_residential_PortraitA_01/meshes/aws_PortraitA_01_visual.DAE</uri>
           </mesh>
         </geometry>
-      <meta> <layer> 2 </layer></meta>
-</visual>
+        <meta>
+          <layer> 2 </layer>
+        </meta>
+      </visual>
     </link>
-	<static>1</static>
+    <static>1</static>
   </model>
 </sdf>

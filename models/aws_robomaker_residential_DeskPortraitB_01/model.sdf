@@ -1,30 +1,18 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <sdf version="1.6">
   <model name="aws_robomaker_residential_DeskPortraitB_01">
-    <link name="link">
-    
+    <link name="link_DeskPortraitB_01">
       <inertial>
         <mass>1</mass>
-        <!--
         <inertia>
-            <ixx>0.0835</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.16</iyy>
-            <iyz>0</iyz>
-            <izz>0.08347</izz>
-        </inertia>
-        -->
-        <inertia>
-            <ixx>0.0135</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.02</iyy>
-            <iyz>0</iyz>
-            <izz>0.01347</izz>
+          <ixx>0.0135</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.02</iyy>
+          <iyz>0</iyz>
+          <izz>0.01347</izz>
         </inertia>
       </inertial>
-
       <collision name="collision">
         <geometry>
           <mesh>
@@ -33,15 +21,16 @@
           </mesh>
         </geometry>
       </collision>
-
       <visual name="visual">
-	    <geometry>
+        <geometry>
           <mesh>
             <uri>model://aws_robomaker_residential_DeskPortraitB_01/meshes/aws_DeskPortraitB_01_visual.DAE</uri>
           </mesh>
         </geometry>
-      <meta> <layer> 1 </layer></meta>
-</visual>
+        <meta>
+          <layer> 1 </layer>
+        </meta>
+      </visual>
     </link>
   </model>
 </sdf>

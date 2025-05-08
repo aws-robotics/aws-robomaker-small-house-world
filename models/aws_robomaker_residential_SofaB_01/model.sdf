@@ -1,30 +1,36 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <sdf version="1.6">
   <model name="aws_robomaker_residential_SofaB_01">
-    <link name="link">
-
+    <link name="link_SofaB_01">
       <inertial>
         <mass>72.5</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <iyy>0.01</iyy>
+          <izz>0.01</izz>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyz>0.0</iyz>
+        </inertia>
       </inertial>
-
       <collision name="collision">
-      
         <geometry>
           <mesh>
             <uri>model://aws_robomaker_residential_SofaB_01/meshes/aws_SofaB_01_collision.DAE</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
-
       </collision>
       <visual name="visual">
-	    <geometry>
+        <geometry>
           <mesh>
             <uri>model://aws_robomaker_residential_SofaB_01/meshes/aws_SofaB_01_visual.DAE</uri>
           </mesh>
         </geometry>
-      <meta> <layer> 1 </layer></meta>
-</visual>
+        <meta>
+          <layer> 1 </layer>
+        </meta>
+      </visual>
     </link>
   </model>
 </sdf>
