@@ -18,45 +18,38 @@
 
 import os
 
-import launch
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from ament_index_python.packages import get_package_share_directory
+from launch.substitutions import LaunchConfiguration
+from launch.actions import ExecuteProcess
+from launch.actions import SetEnvironmentVariable
 
 
 def generate_launch_description():
     world_file_name = 'small_house.world'
     package_dir = get_package_share_directory('aws_robomaker_small_house_world')
-    gazebo_ros = get_package_share_directory('gazebo_ros')
+    world = LaunchConfiguration('world')
 
-    gazebo_client = launch.actions.IncludeLaunchDescription(
-	launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(gazebo_ros, 'launch', 'gzclient.launch.py')),
-        condition=launch.conditions.IfCondition(launch.substitutions.LaunchConfiguration('gui'))
-     )
-    gazebo_server = launch.actions.IncludeLaunchDescription(
-        launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(gazebo_ros, 'launch', 'gzserver.launch.py'))
-    )
+    model_path = os.path.join(package_dir, 'models')
+
+    gazebo_server_cmd_line = [
+        'gz', 'sim', '-r', '-v4', world]
+
+    gazebo = ExecuteProcess(
+        cmd=gazebo_server_cmd_line, output='screen')
 
     return LaunchDescription([
+        SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', model_path),
         DeclareLaunchArgument(
           'world',
           default_value=[os.path.join(package_dir, 'worlds', world_file_name), ''],
           description='SDF world file'),
         DeclareLaunchArgument(
-            name='gui',
-            default_value='false'
-        ),
-        DeclareLaunchArgument(
             name='use_sim_time',
             default_value='true'
         ),
-        DeclareLaunchArgument('state',
-            default_value='true',
-            description='Set "true" to load "libgazebo_ros_state.so"'),
-        gazebo_server,
-        gazebo_client,
+        gazebo,
     ])
 
 

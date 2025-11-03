@@ -1,38 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<sdf version='1.6'>
+<sdf version='1.11'>
   <world name='default'>
-    <!-- override the default position of the camera !-->
-    <gui>
-      <camera name='gzclient_camera'>
-      <!--
-        <pose>5 -4 2 0 0.2756 2.3561</pose>
-        -->
-        <pose>-4.4965503 -0.4874 1.508684 0 -0 0</pose>
-      </camera>
-    </gui>
-    <gravity>0 0 -9.8</gravity>
-    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
-    <atmosphere type='adiabatic'/>
-    <physics name='default_physics' default='0' type='ode'>
-      <max_step_size>0.001</max_step_size>
-      <real_time_factor>1</real_time_factor>
-      <real_time_update_rate>1000</real_time_update_rate>
+
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu">
+    </plugin>
+
+    <physics name="1ms" type="ignored">
+        <max_step_size>0.005</max_step_size>
+        <real_time_factor>1.0</real_time_factor>
     </physics>
-    <scene>
-      <ambient>0.4 0.4 0.4 1</ambient>
-      <background>0.7 0.7 0.7 1</background>
-      <shadows>false</shadows>
-      <grid>false</grid>
-      <origin_visual>false</origin_visual>
-    </scene>
-    <spherical_coordinates>
-      <surface_model>EARTH_WGS84</surface_model>
-      <latitude_deg>0</latitude_deg>
-      <longitude_deg>0</longitude_deg>
-      <elevation>0</elevation>
-      <heading_deg>0</heading_deg>
-    </spherical_coordinates>
 
   <model name='AirconditionerA_01_001'>
         <static>true</static>
@@ -561,13 +557,13 @@
         </include>
         <pose frame=''>9.107968 -2.651726 0.902458 -0.000006 0.000034 0.001290</pose>
 	</model>
-	<model name='ShoeRack_01_001'>
+	<!-- <model name='ShoeRack_01_001'>
         <static>true</static>    
         <include>
             <uri>model://aws_robomaker_residential_ShoeRack_01</uri>
         </include>
         <pose frame=''>4.297978 -5.173566 0 0 -0 0</pose>
-	</model>
+	</model> -->
 	<model name='SofaC_01_001'>
         <static>true</static>    
         <include>
@@ -833,5 +829,6 @@
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
     </light>
+    
   </world>
 </sdf>
